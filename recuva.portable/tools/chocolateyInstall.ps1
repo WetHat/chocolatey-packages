@@ -1,6 +1,6 @@
 ﻿$packageName = 'recuva.portable' # nuget ID
 $url = 'http://www.piriform.com/recuva/download/portable/downloadfile' # download url
-$shortcutRegistrationFile = 'shortcut.txt' # we register shortcuts for remocal on Uninstall here
+$shortcutRegistrationFile = 'shortcuts.txt' # we register shortcuts for remocal on Uninstall here
 
 [string]$installocation = Split-Path -parent $MyInvocation.MyCommand.Definition
 
@@ -35,14 +35,14 @@ Get-ChildItem -name $installocation -filter '*.exe' `| ForEach-Object {
       echo '' >"$($exe.FullName).gui"
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
-                                          -ChildPath 'Microsoft\Windows\Start Menu\Programs\Portable Apps'
+                                          -ChildPath 'Microsoft\Windows\Start Menu\Programs\Chocolatey Portable Apps'
       [string]$shortcut       = Join-Path -Path $shortcutFolder `                                          -ChildPath $shortcutName
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
                -FilePath (Join-Path -Path $installocation -ChildPath $shortcutRegistrationFile)
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
-        [System.IO.Directory]::CreateDirectory($shortcutFolder)
+        [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
       <# TODO: use this when it becomes available in chocolatey      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -WorkingDirectory $exe.FullName
