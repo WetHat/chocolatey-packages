@@ -29,7 +29,6 @@ Get-ChildItem -name $installocation -filter '*.exe' `| ForEach-Object {
     
     if ($publish)
     {
-      echo "Creating Start Menu Shortcut: $shortcutname"
       # Inform chocolatey that this is exe has gui
       echo '' >"$($exe.FullName).gui"
       
@@ -48,11 +47,19 @@ Get-ChildItem -name $installocation -filter '*.exe' `| ForEach-Object {
                                  -WorkingDirectory $exe.FullName
                                  ...
       #>
-      $wscript = New-Object -ComObject WScript.Shell
-      $lnk =  $wscript.CreateShortcut($shortcut)
-      $lnk.TargetPath = $exe.FullName
-      $lnk.WorkingDirectory = $exe.DirectoryName
-      $lnk.Save()        
+      try
+      {
+          $wscript = New-Object -ComObject WScript.Shell
+          $lnk =  $wscript.CreateShortcut($shortcut)
+          $lnk.TargetPath = $exe.FullName
+          $lnk.WorkingDirectory = $exe.DirectoryName
+          $lnk.Save()
+          echo "Created Start Menu Shortcut: $shortcutname"
+      }
+      catch
+      {
+        # It is not a showstopper, if shortcut creation fails
+      }
     }
     else
     {
