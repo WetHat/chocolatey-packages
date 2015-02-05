@@ -1,7 +1,6 @@
 ﻿$packageName = 'recuva.portable' # nuget ID
 $url = 'http://www.piriform.com/recuva/download/portable/downloadfile' # download url
 $shortcutRegistrationFile = 'shortcuts.txt' # we register shortcuts for remocal on Uninstall here
-
 [string]$installocation = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 # if we could get to the command line options, we could set this properly 
@@ -30,9 +29,10 @@ Get-ChildItem -name $installocation -filter '*.exe' `| ForEach-Object {
     
     if ($publish)
     {
-      echo "Creating Shortcut: $shortcutname"
+      echo "Creating Start Menu Shortcut: $shortcutname"
       # Inform chocolatey that this is exe has gui
       echo '' >"$($exe.FullName).gui"
+      
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
                                           -ChildPath 'Microsoft\Windows\Start Menu\Programs\Chocolatey Portable Apps'
