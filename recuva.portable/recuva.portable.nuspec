@@ -8,14 +8,15 @@
     <version>1.51.1063</version>
     <authors>Piriform</authors>
     <owners>WetHat</owners>
-    <description>Recuva recovers files deleted from your Windows computer, Recycle Bin, digital camera card, or MP3 player.</description>
+    <summary>Recuva File Recovery. Portable and adware free</summary>
+    <description>Recuva (portable) recovers files deleted from your Windows computer, Recycle Bin, digital camera card, or MP3 player.</description>
 
     <projectUrl>http://www.piriform.com/recuva</projectUrl>
-    <tags>admin undelete recover files</tags>
+    <tags>portable admin undelete recover files</tags>
 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>http://cdn.rawgit.com/__CHOCO_PKG_MAINTAINER_REPO__/master/icons/recuva.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Recuva256x256.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

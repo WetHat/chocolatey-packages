@@ -1,12 +1,11 @@
-﻿$packageName = 'recuva.portable'
+﻿$packageName = 'recuva.portable' # nuget ID
 $url = 'http://www.piriform.com/recuva/download/portable/downloadfile' # download url
+$shortcutRegistrationFile = 'shortcut.txt' # we register shortcuts for remocal on Uninstall here
 
-$installocation = Split-Path -parent $MyInvocation.MyCommand.Definition
-$parameters=$env:chocolateyPackageParameters
-echo $parameters > c:\otto.txt
+[string]$installocation = Split-Path -parent $MyInvocation.MyCommand.Definition
 
+# if we could get to the command line options, we could set this properly 
 [bool]$forceX86 = $false
-
 
 Install-ChocolateyZipPackage $packageName $url $installocation
 
@@ -14,39 +13,46 @@ $bitness = Get-ProcessorBits
 
 Get-ChildItem -name $installocation -filter '*.exe' `| ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installocation -ChildPath $_
-    [bool]$keep = $false
+    [bool]$publish = $false
     [string]$shortcutName=''
     if ($exe.BaseName -like '*64')
     {
       $shortcutName = 'Recuva (64bit).lnk'
       # we got the 64 bit executable
-      $keep = $bitness -eq 64
+      $publish = $bitness -eq 64
     }
     else
     {
       # we got the 32-bit executable
       $shortcutName = 'Recuva.lnk'
-      $keep = $bitness -eq 32
+      $publish = $bitness -eq 32
     }
-    echo "Shortcut name: $shortcutname - $keep"
-    if ($keep)
+    
+    if ($publish)
     {
+      echo "Creating Shortcut: $shortcutname"
       # Inform chocolatey that this is exe has gui
       echo '' >"$($exe.FullName).gui"
-      ## install a shortcut to the start menu
-      $shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
-                                  -ChildPath 'Microsoft\Windows\Start Menu\Programs\Portable Apps'
-      $shortcut = Join-Path -Path $shortcutFolder `                            -ChildPath $shortcutName
-      # register shortcut for removal
+      ## install a shortcut to the start menu to make this app discoverable
+      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+                                          -ChildPath 'Microsoft\Windows\Start Menu\Programs\Portable Apps'
+      [string]$shortcut       = Join-Path -Path $shortcutFolder `                                          -ChildPath $shortcutName
+      # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
-               -FilePath (Join-Path -Path $installocation -ChildPath 'shortcut.txt')
+               -FilePath (Join-Path -Path $installocation -ChildPath $shortcutRegistrationFile)
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder)
       }
-      <# Note yet available ?!      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
-                                 -WorkingDirectory $installocation
-       #>            
+      <# TODO: use this when it becomes available in chocolatey      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
+                                 -WorkingDirectory $exe.FullName
+                                 ...
+      #>
+      $wscript = New-Object -ComObject WScript.Shell
+      $lnk =  $wscript.CreateShortcut($shortcut)
+      $lnk.TargetPath = $exe.FullName
+      $lnk.WorkingDirectory = $exe.DirectoryName
+      $lnk.Save()        
     }
     else
     {
