@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>instantwp.portable</id>
+    <title>Instant Wordpress (portable)</title>
+    <version>4.4.2</version>
+    <authors>Corvideon</authors>
+    <owners>WetHat</owners>
+    <summary>Instant WordPress is a complete standalone, portable WordPress development environment.</summary>
+    <description>
+      Instant WordPress turns any Windows machine into a WordPress development server. It will even run from a USB stick.
+      It comes complete with it’s own built in Apache web server, PHP and MySQL installations that are started and stopped automatically.
+      Instant WordPress has a set of dummy WordPress posts and pages so that you do not have to create any data or posts to test themes and plugins.
+      It is self-configuring, so it should not conflict with any software already running on your machine.
+      Instant WordPress can be installed as many times as you wish and deleted by simply removing the folder that it is running from. Nothing is left on your machine.
+      Please Note: Instant WordPress is not suitable for live websites and should only be used for testing and development.
+    </description>
+    <projectUrl>http://www.instantwp.com</projectUrl>
+    <tags>instantwp.portable admin</tags>
+    <copyright>InstantWP © 2015 Corvideon</copyright>
+    <licenseUrl>http://www.instantwp.com/install-wordpress-locally/legal-stuff/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/master/icons/instantwp128x128png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes>
+      10/01/2015 – Instant WordPress Version 4.4.2
+      Instant WordPress Version 4.4.2 contains the following software:
+      - WordPress 4.1 (Updated)
+      - Apache 2.2.15 (Win32)
+      - PHP 5.4.36 (Updated)
+      -MySQL 5.1.46-community-nt
+      This version also contains an updated version of the Native Dashboard plugin.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
