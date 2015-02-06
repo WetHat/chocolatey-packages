@@ -1,7 +1,7 @@
-﻿$packageName = 'recuva.portable' # nuget ID
-$url = 'http://www.piriform.com/recuva/download/portable/downloadfile' # download url
-$shortcutRegistrationFile = 'shortcuts.txt' # we register shortcuts for remocal on Uninstall here
-$installocation = Split-Path -parent $MyInvocation.MyCommand.Definition
+﻿$packageName              = 'recuva.portable' # nuget ID
+$url                      = 'http://www.piriform.com/recuva/download/portable/downloadfile' # download url
+$shortcutRegistrationFile = 'shortcuts.txt' # we register shortcuts for removal on Uninstall here
+$installocation           = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 # if we could get to the command line options, we could set this properly 
 [bool]$forceX86 = $false
