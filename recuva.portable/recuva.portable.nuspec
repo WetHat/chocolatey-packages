@@ -4,7 +4,7 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>recuva.portable</id>
-    <title>Recuva File Recovery (portable)</title>
+    <title>Recuva File Recovery (Portable)</title>
     <version>1.51.1063</version>
     <authors>Piriform</authors>
     <owners>WetHat</owners>

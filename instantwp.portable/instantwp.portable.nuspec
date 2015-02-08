@@ -4,7 +4,7 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>instantwp.portable</id>
-    <title>Instant Wordpress (portable)</title>
+    <title>Instant WordPress (Portable)</title>
     <version>4.4.2</version>
     <authors>Corvideon</authors>
     <owners>WetHat</owners>
