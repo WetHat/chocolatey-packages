@@ -1,17 +1,17 @@
 ﻿$packageName              = 'recuva.portable' # nuget ID
 $url                      = 'http://www.piriform.com/recuva/download/portable/downloadfile' # download url
 $shortcutRegistrationFile = 'shortcuts.txt' # we register shortcuts for removal on Uninstall here
-$installocation           = Split-Path -parent $MyInvocation.MyCommand.Definition
+$installlocation          = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 # if we could get to the command line options, we could set this properly 
 [bool]$forceX86 = $false
 
-Install-ChocolateyZipPackage $packageName $url $installocation
+Install-ChocolateyZipPackage $packageName $url $installlocation
 
 $bitness = Get-ProcessorBits
 
-Get-ChildItem -name $installocation -filter '*.exe' `| ForEach-Object {
-    [System.IO.FileInfo]$exe = Join-Path -Path $installocation -ChildPath $_
+Get-ChildItem -name $installlocation -filter '*.exe' `| ForEach-Object {
+    [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
     [bool]$publish = $false
     [string]$shortcutName=''
     if ($exe.BaseName -like '*64')
@@ -38,7 +38,7 @@ Get-ChildItem -name $installocation -filter '*.exe' `| ForEach-Object {
       [string]$shortcut       = Join-Path -Path $shortcutFolder `                                          -ChildPath $shortcutName
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
-               -FilePath (Join-Path -Path $installocation -ChildPath $shortcutRegistrationFile)
+               -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistrationFile)
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
@@ -51,8 +51,9 @@ Get-ChildItem -name $installocation -filter '*.exe' `| ForEach-Object {
       {
           $wscript = New-Object -ComObject WScript.Shell
           $lnk =  $wscript.CreateShortcut($shortcut)
-          $lnk.TargetPath = $exe.FullName
+          $lnk.TargetPath       = $exe.FullName
           $lnk.WorkingDirectory = $exe.DirectoryName
+          $lnk.Description      = 'Recuva File Recovery'
           $lnk.Save()
           echo "Created Start Menu Shortcut: $shortcutname"
       }

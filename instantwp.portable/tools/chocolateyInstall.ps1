@@ -1,10 +1,11 @@
 ﻿$packageName              = 'instantwp.portable' # arbitrary name for the package, used in messages
 $url                      = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
-$installocation           = Split-Path -parent $MyInvocation.MyCommand.Definition
+$installlocation          = Split-Path -parent $MyInvocation.MyCommand.Definition
 $shortcutRegistrationFile = 'shortcuts.txt' # we register shortcuts for removal on Uninstall here
-$selfExtractingExe        = Join-Path -Path $installocation -ChildPath 'InstantWP_4.4.2.exe'
+$selfExtractingExe        = Join-Path -Path $installlocation -ChildPath 'InstantWP_4.4.2.exe'
 $validExitCodes           = @(0)
 $silentArgs               = '/S' 
+$shortcutName             = 'Instant WordPress.lnk'
 
 # Download the self-extracting archive
 Get-ChocolateyWebFile $packageName $selfExtractingExe $url 
@@ -15,20 +16,19 @@ Start-ChocolateyProcessAsAdmin $silentArgs $selfExtractingExe -validExitCodes $v
 Remove-Item -LiteralPath $selfExtractingExe -ErrorAction:SilentlyContinue
 
 # create .gui and .ignore files as appropriate
-Get-ChildItem -Name $installocation -filter '*.exe' -Recurse `| ForEach-Object {
-    [System.IO.FileInfo]$exe = Join-Path -Path $installocation -ChildPath $_
+Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `| ForEach-Object {
+    [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
     if ($exe.BaseName -eq 'InstantWP')
     {
       echo '' >"$($exe.FullName).gui"
-      $shortcutName = 'Instant WordPress.lnk'
-      
+
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
                                           -ChildPath 'Microsoft\Windows\Start Menu\Programs\Chocolatey Portable Apps'
       [string]$shortcut       = Join-Path -Path $shortcutFolder `                                          -ChildPath $shortcutName
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
-               -FilePath (Join-Path -Path $installocation -ChildPath $shortcutRegistrationFile)
+               -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistrationFile)
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
@@ -41,8 +41,9 @@ Get-ChildItem -Name $installocation -filter '*.exe' -Recurse `| ForEach-Object 
       {
           $wscript = New-Object -ComObject WScript.Shell
           $lnk =  $wscript.CreateShortcut($shortcut)
-          $lnk.TargetPath = $exe.FullName
+          $lnk.TargetPath       = $exe.FullName
           $lnk.WorkingDirectory = $exe.DirectoryName
+          $lnk.Description      = 'Standalone, portable WordPress development environment'
           $lnk.Save()
           echo "Created Start Menu Shortcut: $shortcutname"
       }
