@@ -37,11 +37,10 @@ set CALIBRE_LIBRARY_DIRECTORY=%USERPROFILE%\Documents\Calibre Library
 Set CALIBRE_TEMP_DIR=%TEMP%
 
 cd Calibre
-
+set PATH=%cd%
 echo %cd%	
 START /belownormal Calibre.exe --with-library "%CALIBRE_LIBRARY_DIRECTORY%"
-PAUSE
-"@ > $launcher
+"@ | Out-File -FilePath $launcher -Encoding ASCII
   
 ## install a shortcut to the start menu to make this app discoverable
 [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
@@ -63,11 +62,11 @@ try
 {
     $wscript = New-Object -ComObject WScript.Shell
     $lnk =  $wscript.CreateShortcut($shortcut)
-    $lnk.TargetPath       = $exe.FullName
-    $lnk.WorkingDirectory = $exe.DirectoryName
+    $lnk.TargetPath       = $launcher
+    $lnk.WorkingDirectory = $installlocation
     $lnk.Description      = 'Calibre e-book library manager'
     $lnk.IconLocation     = "$(Join-Path -Path $installlocation -ChildPath 'Calibre\Calibre.exe'),0"
-    $lnk.WindowStyle      = 1 # 7 = minimized
+    $lnk.WindowStyle      = 7 # 7 = minimized; 1 = normal
     $lnk.Save()
     echo "Created Start Menu Shortcut: $shortcutname"
 }
