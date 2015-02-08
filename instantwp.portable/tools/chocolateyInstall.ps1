@@ -11,6 +11,8 @@ Get-ChocolateyWebFile $packageName $selfExtractingExe $url
 # .. and run it to extract
 echo "Extracting $packageName ..."
 Start-ChocolateyProcessAsAdmin $silentArgs $selfExtractingExe -validExitCodes $validExitCodes
+# remove the selfextracting exe
+Remove-Item -LiteralPath $selfExtractingExe -ErrorAction:SilentlyContinue
 
 # create .gui and .ignore files as appropriate
 Get-ChildItem -Name $installocation -filter '*.exe' -Recurse `| ForEach-Object {
@@ -56,6 +58,3 @@ Get-ChildItem -Name $installocation -filter '*.exe' -Recurse `| ForEach-Object 
       echo '' >"$($exe.FullName).ignore"
     }
   }
-
-# remove the selfextracting exe
-Remove-Item -LiteralPath $selfExtractingExe -ErrorAction:SilentlyContinue
