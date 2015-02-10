@@ -1,11 +1,12 @@
-﻿$packageName              = 'instantwp.portable' # arbitrary name for the package, used in messages
-$url                      = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
-$installlocation          = Split-Path -parent $MyInvocation.MyCommand.Definition
-$shortcutRegistrationFile = 'shortcuts.txt' # we register shortcuts for removal on Uninstall here
-$selfExtractingExe        = Join-Path -Path $installlocation -ChildPath 'InstantWP_4.4.2.exe'
-$validExitCodes           = @(0)
-$silentArgs               = '/S' 
-$shortcutName             = 'Instant WordPress.lnk'
+﻿$packageName       = 'instantwp.portable' # arbitrary name for the package, used in messages
+$url               = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
+$installlocation   = Split-Path -parent $MyInvocation.MyCommand.Definition
+$shortcutLocation  = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutRegistry  = 'shortcuts.txt' # we register shortcuts for removal on Uninstall here
+$selfExtractingExe = Join-Path -Path $installlocation -ChildPath 'InstantWP_4.4.2.exe'
+$validExitCodes    = @(0)
+$silentArgs        = '/S' 
+$shortcutName      = 'Instant WordPress.lnk'
 
 # Download the self-extracting archive
 Get-ChocolateyWebFile $packageName $selfExtractingExe $url 
@@ -24,11 +25,11 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `| ForEach-Object
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
-                                          -ChildPath 'Microsoft\Windows\Start Menu\Programs\Chocolatey Portable Apps'
+                                          -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `                                          -ChildPath $shortcutName
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
-               -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistrationFile)
+               -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistry)
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
