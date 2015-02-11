@@ -18,7 +18,7 @@
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <!--<iconUrl>http://cdn.rawgit.com/WetHat/master/icons/calibre.portable.png</iconUrl>-->
+    <<iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/calibre256x256.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
