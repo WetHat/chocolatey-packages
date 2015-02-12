@@ -1,9 +1,8 @@
 $packageName    = 'ultraedit.install'
-$namePattern    = 'Ultraedit*'
-$versionPattern = '21.30*'
+$namePattern    = 'UltraEdit*'
 
 Get-WmiObject -Class 'Win32_Product' `
-| Where-Object { $_.Name -like $namePattern -and $_.Version -like $versionPattern } `
+| Where-Object { $_.Name -like $namePattern  } `
 | ForEach-Object {
     Write-Host "Uninstalling $($_.Name) version $($_.Version)"
     $_.Uninstall()
