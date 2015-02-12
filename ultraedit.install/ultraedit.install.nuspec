@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>ultraedit.install</id>
+    <title>UltraEdit - Text Editor</title>
+    <version>21.3</version>
+    <authors>IDM Computer Solutions</authors>
+    <owners>WetHat</owners>
+    <summary>UltraEdit Programmer's Editor</summary>
+    <description>30 days trial of the UltraEdit text, HTML and hex editor, and advanced PHP, Perl, Java and JavaScript editor for programmers. UltraEdit is also an XML editor including a tree-style XML parser. UltraEdit supports disk-based 64-bit file handling (standard) on both 32- and 64-bit Windows platforms.</description>
+    <projectUrl>http://www.ultraedit.com/products/ultraedit.html</projectUrl>
+    <tags>ultraedit.install admin</tags>
+    <copyright>Copyright (c) 1994-2014, IDM Computer Solutions Inc</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Ultraedit256x256.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes>
+    New FTP/SFTP features
+    • Enable Keep Alive
+    • Enable IPv6
+
+     New Find in Files improvements
+     • Stunning performance increase when writing to output window
+
+     New code folding improvements
+    • Code folding guide now draws with many nested folds/unfolds
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
