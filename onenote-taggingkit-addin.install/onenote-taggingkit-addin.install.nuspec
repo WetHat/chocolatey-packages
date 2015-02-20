@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>onenote-taggingkit-addin.install</id>
     <title>OneNote Tagging Kit Add-In</title>
     <version>2.5.5420.30670</version>
     <authors>WetHat</authors>
     <owners>WetHat</owners>
     <summary>A free to-use add-in to add social tagging to OneNote for the desktop</summary>
-    <description>This add-in for OneNote 2010 and 2013 (desktop) is based on the built-in OneNote tagging System but takes tagging of notes to the next level:
+    <description>This add-in for OneNote 2010 and 2013 (desktop) is based on the built-in OneNote tagging system but takes tagging of notes to the next level.
+    
+      Features:
       * Page Tags can be added/removed from pages on-the-fly
       * Search refinement using page tags (facetted search)
       * Page tags are available and fully operational for all users of shared OneNote notebooks (requires add-in to be installed on OneNote clients)
@@ -28,9 +29,11 @@
     <releaseNotes>
     New Features in this Release
     * Option to automatically track notes related to the note currently viewed in OneNote. See Find related notes for more information.
+    
     Bugfixes
     * Tagging Kit error box optionally opens web browser with troubleshooting tips. (Addresses issue 1005: app crashed when using settings dialogbox )
     * Improved resilience against bad XML returned from OneNote
+    
     Other Changes
     * Logging improvements
     </releaseNotes>
