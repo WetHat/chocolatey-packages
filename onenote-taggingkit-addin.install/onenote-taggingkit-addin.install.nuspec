@@ -9,7 +9,7 @@
     <authors>WetHat</authors>
     <owners>WetHat</owners>
     <summary>A free to-use add-in to add social tagging to OneNote for the desktop</summary>
-    <description>This asdd-in for OneNote 2010 and 2013 is based on the built-in OneNote tagging System but takes tagging of notes to the next level:
+    <description>This add-in for OneNote 2010 and 2013 (desktop) is based on the built-in OneNote tagging System but takes tagging of notes to the next level:
       * Page Tags can be added/removed from pages on-the-fly
       * Search refinement using page tags (facetted search)
       * Page tags are available and fully operational for all users of shared OneNote notebooks (requires add-in to be installed on OneNote clients)
