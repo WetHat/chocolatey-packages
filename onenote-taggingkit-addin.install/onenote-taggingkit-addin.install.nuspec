@@ -25,7 +25,15 @@
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+    New Features in this Release
+    * Option to automatically track notes related to the note currently viewed in OneNote. See Find related notes for more information.
+    Bugfixes
+    * Tagging Kit error box optionally opens web browser with troubleshooting tips. (Addresses issue 1005: app crashed when using settings dialogbox )
+    * Improved resilience against bad XML returned from OneNote
+    Other Changes
+    * Logging improvements
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
