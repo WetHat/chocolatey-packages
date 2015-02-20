@@ -3,6 +3,10 @@ $namePattern    = 'UltraEdit*'
 Get-WmiObject -Class 'Win32_Product' `
 | Where-Object { $_.Name -like $namePattern  } `
 | ForEach-Object {
-    Write-Host "Uninstalling $($_.Name) version $($_.Version)"
-    $_.Uninstall()
+    $retcode = $_.Uninstall()
+    if ($retcode.ReturnValue -ne 0)
+    {
+      throw "Uninstallation of $($_.Name) - $($_.Version) failed with error code: $($retcode.ReturnValue)"
+    } 
+    Write-Host "Uninstalled $($_.Name) - $($_.Version)"
   }
