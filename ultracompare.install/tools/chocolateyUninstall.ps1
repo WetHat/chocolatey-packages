@@ -1,4 +1,3 @@
-$packageName    = 'ultracompare.install'
 $namePattern    = 'UltraCompare*'
 
 Get-WmiObject -Class 'Win32_Product' `

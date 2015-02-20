@@ -1,4 +1,3 @@
-$packageName    = 'ultraedit.install'
 $namePattern    = 'UltraEdit*'
 
 Get-WmiObject -Class 'Win32_Product' `
