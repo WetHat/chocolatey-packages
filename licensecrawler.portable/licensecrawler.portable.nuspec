@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>licensecrawler.portable</id>
+    <title>LicenseCrawler (Portable)</title>
+    <version>1.44.785</version>
+    <authors>Martin Klinzmann</authors>
+    <owners>WetHat</owners>
+    <summary>LicenseCrawler can discover application product keys, serial numbers, or licensess</summary>
+    <description>If you want to setup your computer system again you need to have the licenses and serial numbers at hand for all the software programs that you have purchased and registered. This does include the Windows product key but also other serial numbers for applications like Nero, Office, VMWare and pretty much every other application.
+    
+    Instead of searching for the keys in your e-mails, manuals and recipes you could use another approach. LicenseCrawler is an application that scans the Windows Registry for Windows product keys and other serial numbers and licenses.
+    
+    It can discover application product keys and other serial numbers or licenses very quickly and supports all versions of Windows operating system from Windows 95 over Windows 7 to Windows Server 2008 R2 (64Bit).
+    
+    The portable-version can be run from any location and would be a perfect fit for a USB stick.
+    
+    The software is ideal to backup your system, help IT-Service members and for forensic services.
+    
+    Private User: You can backup your private computer complete for free!
+    Commercial User: If the LicenseCrawle for or in a company, you have to order a license. 
+    </description>
+    <projectUrl>http://www.klinzmann.name/licensecrawler.htm</projectUrl>
+    <tags>licensecrawler portable recovery admin forensic license serialnumber</tags>
+    <copyright>License Crawler Copyright © 2010</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/licensecrawler128x128.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
