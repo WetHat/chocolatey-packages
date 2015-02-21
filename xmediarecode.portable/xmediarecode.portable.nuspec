@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>xmediarecode.portable</id>
+    <title>XMedia Recode (Portable)</title>
+    <version>3.2.1.7</version>
+    <authors>Sebastian Dörfler</authors>
+    <owners>WetHat</owners>
+    <summary>XMedia Recode converts almost all known audio and video formats</summary>
+    <description>XMedia Recode can convert almost all known audio and video formats, including 3GP, 3GPP, 3GPP2, AAC, AC3, ADTS, AMR, ASF, AVI, AVISynth, DVD, FLAC, FLV, H.261, H.263, H.264, M4A , M1V, M2V, M4V, Matroska (MKV), MMF, MPEG-1, MPEG-2, MPEG-4, TS, TRP, MP2, MP3, MP4, MP4V, MOV, QT, OGG, PSP, RM, (S ) VCD, SWF, VOB, WAV, WebM, WMA and WMV.
+    XMedia Recode can only convert unprotected DVDs.
+    XMedia Recode converts: 3GP to AVI, 3GP to FLV, AC3 to MP3, AC3 to WAV, ASF to 3GP, ASF to FLV, ASF to MP4, AVI to FLV, AVI to 3GP, FLAC to MP3, FLAC to WMA, FLV to 3GP, FLV to Mp3, DVD to 3GP, DVD to AC3, DVD to AVI, DVD to MP3, DVD to MP4, DVD to MOV, DVD to SVCD, DVD to VCD, DVD to WMV, OGG to MP3, OGG to WMA, MPEG to AVI, MP2 to MP3, MP4 to FLV, MP4 to AVI, M4P to MP3, MOV to 3GP, MOV to AVI, MOV to FLV, WMA to MP3, WMV to FLV, WAV to MP3</description>
+    <projectUrl>http://www.xmedia-recode.de/en/index.html</projectUrl>
+    <tags>xmediarecode portable conversion videoconversion audioconversion transcoding</tags>
+    <copyright>Copyright © 2007-2015 Sebastian Dörfler</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/xmediarecode128x128.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
