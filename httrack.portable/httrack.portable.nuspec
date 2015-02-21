@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>httrack.portable</id>
+    <title>HTTrack Website Copier (Portable)</title>
+    <version>3.48.19</version>
+    <authors>Xavier Roche</authors>
+    <owners>WetHat</owners>
+    <summary>HTTrack is a free (GPL, libre/free software) and easy-to-use offline browser utility</summary>
+    <description>HTTrack allows you to download a World Wide Web site from the Internet to a local directory, building recursively all directories, getting HTML, images, and other files from the server to your computer. HTTrack arranges the original site's relative link-structure. Simply open a page of the "mirrored" website in your browser, and you can browse the site from link to link, as if you were viewing it online. HTTrack can also update an existing mirrored site, and resume interrupted downloads. HTTrack is fully configurable, and has an integrated help system. </description>
+    <projectUrl>http://www.httrack.com/page/1/en/index.html</projectUrl>
+    <tags>httrack.portable</tags>
+    <copyright>© 2015 Xavier Roche and other contributors </copyright>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/httrack128x128.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>Engine fixes (keep-alive, redirects, new hashtables, unit tests)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
