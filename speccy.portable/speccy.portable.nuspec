@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>speccy.portable</id>
+    <title>Speccy (Portable)</title>
+    <version>1.28.709</version>
+    <authors>Piriform</authors>
+    <owners>WetHat</owners>
+    <summary>Speccy Advanced System Information Tool</summary>
+    <description>
+      Speccy was designed as a free electronic "what's inside" sticker for your PC.
+      
+      If you need to add more memory to your system, for example, you can check how many memory slots your computer has and what memory's already installed. Then you can go out and buy the right type of memory to add on or replace what you've already got.
+      
+      If you're going to be selling your PC, you can use Speccy to quickly list out the components. Or, if you're buying a PC, you can use Speccy to check that the computer has what the label says it has.
+      
+      Also, Speccy comes in handy for support. If you're on the phone with technical support and they want to know what video card you have installed, there's no need to hunt around Windows. Speccy has all the information on one easy-to-understand screen.
+    </description>
+    <projectUrl>http://www.piriform.com/speccy</projectUrl>
+    <tags>speccy portable admin hardware system systeminfo BIOS</tags>
+    <copyright>© Copyright 2005-2015 Piriform Ltd - All rights reserved </copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Speccy256x256.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
