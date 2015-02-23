@@ -1,5 +1,5 @@
 ﻿$packageName         = 'licensecrawler.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://www.klinzmann.name/files/licensecrawler_1.44.785.zip' # download url
+$url                 = 'http://www.klinzmann.name/files/licensecrawler.zip' # download url
 $installlocation     = Split-Path -parent $MyInvocation.MyCommand.Definition
 $shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
 $shortcutRegistry    = 'shortcuts.txt' # we register shortcuts for removal on Uninstall here
