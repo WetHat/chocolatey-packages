@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>gpu-z.portable</id>
+    <title>TechPowerUp GPU-Z (Portable)</title>
+    <version>0.8.1</version>
+    <authors>TechPowerUp</authors>
+    <owners>WetHat</owners>
+    <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
+    <description>
+    Main Features
+    • Supports NVIDIA, ATI and Intel graphics devices
+    • Displays adapter, GPU and display information
+    • Displays overclock, default clocks and 3D clocks (if available)
+    • Includes a GPU load test to verify PCI-Express lane configuration
+    • Validation of results 
+    • GPU-Z can create a backup of your graphics card BIOS
+    • No installation required, optional installer is available
+    • Support for Windows XP / Vista / Windows 7 / Windows 8 (both 32 and 64 bit versions are supported)
+    • .. and yes, the author of CPU-Z has granted us permission to use a name similar to his product. Thanks Franck.
+    </description>
+    <projectUrl>http://www.techpowerup.com/downloads/SysInfo/GPU-Z/</projectUrl>
+    <tags>gpu-z.portable</tags>
+    <copyright>Copyright © 2004-2015 www.techpowerup.com. All rights reserved</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/gpu-z256x256.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>
+    • Added full GeForce GTX 960 support
+    • Added preliminary NVIDIA GM200 support
+    • Fixed NVIDIA GM107 ROP count
+    • Added support for NVIDIA GTX 980M, GTX 970M, GTX 660 (960 shaders), GT 705, GT 720, GT 745M, NVS 310, Grid K200
+    • Added support for AMD R9 255, FirePro W7100, HD 8370D
+    • Added preliminary support for Intel Broadwell Graphics
+    • Fixed sensor window having wrong size when using startup option -tab 2
+    • Improved memory vendor detection on NVIDIA
+    • Added PCI-Express bus usage sensor on NVIDIA
+    • Fixed OpenCL detection for Vesuvius GPU
+    • Improved detection for future AMD devices
+    • Disabled memory vendor detection on future APUs
+    • Added millisecond precision for sensor logging when refresh faster than 1 sec
+    • Fixed some rare application crashes
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
