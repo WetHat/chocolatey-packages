@@ -7,7 +7,8 @@ $shortcutName        = 'Xmedia Recode.lnk'
 $shortcutDescription = 'Video / Audio Transcoder' 
 Install-ChocolateyZipPackage $packageName $url $installlocation
 
-Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `| ForEach-Object {
+Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
+| ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
     if ($exe.BaseName -eq 'XMedia Recode')
     {
@@ -16,7 +17,8 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `| ForEach-Object
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
                                           -ChildPath $shortcutLocation 
-      [string]$shortcut       = Join-Path -Path $shortcutFolder `                                          -ChildPath $shortcutName
+      [string]$shortcut       = Join-Path -Path $shortcutFolder `
+                                          -ChildPath $shortcutName
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
                -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistry)
@@ -24,7 +26,8 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `| ForEach-Object
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-       <# TODO: use this when it becomes available in chocolatey      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
+       <# TODO: use this when it becomes available in chocolatey
+      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -WorkingDirectory $exe.FullName
                                  ...
       #>
@@ -36,11 +39,11 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `| ForEach-Object
           $lnk.WorkingDirectory = $exe.DirectoryName
           $lnk.Description      = $shortcutDescription
           $lnk.Save()
-          echo "Created Start Menu Shortcut: $shortcutname"
+          Write-Host "Created Start Menu Shortcut: $shortcutname"
       }
       catch
       {
-        echo 'Shortcut creation failed..'
+        Write-Host 'Shortcut creation failed..'
         # It is not a showstopper, if shortcut creation fails
       }
     }

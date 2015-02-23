@@ -11,7 +11,8 @@ Install-ChocolateyZipPackage $packageName $url $installlocation
 
 $bitness = Get-ProcessorBits
 
-Get-ChildItem -name $installlocation -filter '*.exe' `| ForEach-Object {
+Get-ChildItem -name $installlocation -filter '*.exe' `
+| ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
     [bool]$publish = $false
     [string]$shortcutName=''
@@ -36,7 +37,8 @@ Get-ChildItem -name $installlocation -filter '*.exe' `| ForEach-Object {
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
                                           -ChildPath $shortcutLocation 
-      [string]$shortcut       = Join-Path -Path $shortcutFolder `                                          -ChildPath $shortcutName
+      [string]$shortcut       = Join-Path -Path $shortcutFolder `
+                                          -ChildPath $shortcutName
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
                -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistry)
@@ -44,7 +46,8 @@ Get-ChildItem -name $installlocation -filter '*.exe' `| ForEach-Object {
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-      <# TODO: use this when it becomes available in chocolatey      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
+      <# TODO: use this when it becomes available in chocolatey
+      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -WorkingDirectory $exe.FullName
                                  ...
       #>
@@ -56,7 +59,7 @@ Get-ChildItem -name $installlocation -filter '*.exe' `| ForEach-Object {
           $lnk.WorkingDirectory = $exe.DirectoryName
           $lnk.Description      = 'Recuva File Recovery'
           $lnk.Save()
-          echo "Created Start Menu Shortcut: $shortcutname"
+          Write-Host "Created Start Menu Shortcut: $shortcutname"
       }
       catch
       {

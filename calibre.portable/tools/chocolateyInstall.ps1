@@ -13,7 +13,7 @@ $shortcutName      = 'Calibre.lnk'
 # Download the self-extracting archive
 Get-ChocolateyWebFile $packageName $selfExtractingExe $url 
 # .. and run it to extract
-echo "Extracting $packageName ..."
+Write-Host "Extracting $packageName ..."
 Start-ChocolateyProcessAsAdmin $env:TEMP $selfExtractingExe -validExitCodes $validExitCodes
 
 $stagingFolder = (Join-Path -Path $env:TEMP -ChildPath 'Calibre Portable')
@@ -68,11 +68,11 @@ try
     $lnk.IconLocation     = "$(Join-Path -Path $installlocation -ChildPath 'Calibre\Calibre.exe'),0"
     $lnk.WindowStyle      = 7 # 7 = minimized; 1 = normal
     $lnk.Save()
-    echo "Created Start Menu Shortcut: $shortcutname"
+    Write-Host "Created Start Menu Shortcut: $shortcutname"
 }
 catch
 {
-  echo 'Shortcut creation failed..'
+  Write-Host 'Shortcut creation failed..'
   # It is not a showstopper, if shortcut creation fails
 }
 
