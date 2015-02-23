@@ -23,9 +23,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/onenotetaggingkit_256x256.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="dotnet4.5" />
+    </dependencies>
     <releaseNotes>
     New Features in this Release
     * Option to automatically track notes related to the note currently viewed in OneNote. See Find related notes for more information.
