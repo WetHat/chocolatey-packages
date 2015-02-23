@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>uniextract.portable</id>
+    <title>Universal Extractor (Portable)</title>
+    <version>1.6.1</version>
+    <authors>Jared Breland</authors>
+    <owners>WetHat</owners>
+    <summary>Decompress and extract files from any type of archive or installer</summary>
+    <description>Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc.
+    
+    Please note that Universal Extractor is not intended to be a general purpose archiving program.  It cannot (and never will) create archives, and therefore cannot fully replace archivers such as 7-Zip or WinRAR.  What it will do, however, is allow you to extract files from virtually any type of archive, regardless of source, file format, compression method, etc.
+    
+    The original motivation behind this project was to create an easy, convenient way to extract files from various types of installation packages without the need to remember arcane command line switches or track down separate utilities to handle the unpacking.  Over time, and with the encouragement of its many users and the fine folks over on the MSFN forum, it has evolved into a mature and very capable unarchiving utility that many, including myself, find indispensable.
+    </description>
+    <projectUrl>http://www.legroom.net/software/uniextract</projectUrl>
+    <tags>uniextract portable extractor unpacker</tags>
+    <copyright>© 2014 by Jared Breland</copyright>
+    <licenseUrl>http://creativecommons.org/licenses/by-sa/3.0/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/uniextract128x128.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
