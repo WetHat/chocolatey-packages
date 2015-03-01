@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>cpu-z.portable</id>
+    <title>CPU-Z System information (Portable)</title>
+    <version>1.72.0</version>
+    <authors>Franck Delattre</authors>
+    <owners>WetHat</owners>
+    <summary>CPU-Z is a freeware that gathers information on some of the main devices of your system</summary>
+    <description>CPU-Z gathers information on some of the main devices of your system:
+    * Processor name and number, codename, process, package, cache levels.
+    * Mainboard and chipset.
+    * Memory type, size, timings, and module specifications (SPD).
+    * Real time measurement of each core's internal frequency, memory frequency</description>
+    <projectUrl>http://www.cpuid.com/softwares/cpu-z.html</projectUrl>
+    <tags>cpu-z portable system hardware BIOS components admin</tags>
+    <copyright></copyright>
+    <!-- <licenseUrl>__REPLACE__</licenseUrl> -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/cpu-z128x128.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>
+    • Preliminary support for Intel Skylake.
+    • Fixed support for Windows 10 build 9926
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
