@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>vlc.portable</id>
+    <title>VLC media player (Portable)</title>
+    <version>2.2.0</version>
+    <authors>VLC team</authors>
+    <owners>WetHat</owners>
+    <summary>VLC is a free and open source cross-platform multimedia player.</summary>
+    <description>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</description>
+    <projectUrl>http://www.videolan.org/</projectUrl>
+    <tags>vlc portable multimedia player audio video streaming codec</tags>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/vlc150x150.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>
+      VLC 2.2.0 "Weatherwax" is a new major update of VLC.
+      VLC 2.2.0 auto-rotates the videos taken from phones, to fight Vertical Video Syndrome!
+      VLC now resumes where you left off in all versions
+      Improves support for new HD codecs, VP9, opus and H.265/HEVC, for decoding and for encoding.
+      Extensions are now downloadable from within the application.
+      VLSub extension can download subtitles from the application.
+      We release at the same time, new versions and betas for iOS, Android, Windows Phone, Android TV and Windows RT.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
