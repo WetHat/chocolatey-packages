@@ -13,12 +13,14 @@ Get-ChocolateyWebFile $packageName $rar $url
 Write-Host "Extracting $packageName ..."
 
 Start-Process -FilePath $unrar `
-              -Wait `              -WindowStyle Hidden `
+              -Wait `
+              -WindowStyle Hidden `
               -ArgumentList 'x',$rar,"$installlocation\"
 
 Remove-Item -Path $unrar,$rar
            
-Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `| ForEach-Object {
+Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
+| ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
     if ($exe.BaseName -eq 'UniExtract')
     {
@@ -27,15 +29,18 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `| ForEach-Object
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
                                           -ChildPath $shortcutLocation 
-      [string]$shortcut       = Join-Path -Path $shortcutFolder `                                          -ChildPath $shortcutName
+      [string]$shortcut       = Join-Path -Path $shortcutFolder `
+                                          -ChildPath $shortcutName
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
+               -Append `
                -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistry)
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-       <# TODO: use this when it becomes available in chocolatey      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
+       <# TODO: use this when it becomes available in chocolatey
+      Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -WorkingDirectory $exe.FullName
                                  ...
       #>

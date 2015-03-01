@@ -41,6 +41,7 @@ Get-ChildItem -name $installlocation -filter '*.exe' `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
+               -Append `
                -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistry)
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
