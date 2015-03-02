@@ -1,12 +1,12 @@
-$namePattern = 'OneNote Tagging Kit'
+$packageName = 'onenote-taggingkit-addin.install'
+$namePattern = '*OneNote Tagging Kit*'
 
-Get-WmiObject -Class 'Win32_Product' `
-| Where-Object { $_.Name -like $namePattern  } `
+Get-ItemProperty -Path @( 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
+                          'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*' ) `
+                 -ErrorAction:SilentlyContinue `
+| Where-Object {
+    $_.DisplayName -like $namePattern
+  } `
 | ForEach-Object {
-    $retcode = $_.Uninstall()
-    if ($retcode.ReturnValue -ne 0)
-    {
-      throw "Uninstallation of $($_.Name) - $($_.Version) failed with error code: $($retcode.ReturnValue)"
-    } 
-    Write-Host "Uninstalled $($_.Name) - $($_.Version)"
+    Uninstall-ChocolateyPackage $packageName 'MSI' "$($_.PSChildName) /qn"
   }
