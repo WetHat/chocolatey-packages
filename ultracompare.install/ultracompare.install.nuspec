@@ -10,7 +10,7 @@
     <summary>Compare files. Compare folders. Merge Differences</summary>
     <description>30 days trial of the UltraCompare is a folder compare and file compare application loaded with features to enable you to compare text files and folders, word documents, and even zip files and jar archives. UltraCompare includes text compare, binary file compare with the capability to merge differences between compared files. Got folders? UltraCompare also supports Folder compare - including local/network directory compare, zip file compare , and FTP Compare. UltraCompare supports automatic, easy folder synchronization, and a duplicate file finder as well. - See more at: http://www.ultraedit.com/products/ultracompare.html#sthash.TOlJptwL.dpuf</description>
     <projectUrl>http://www.ultraedit.com/products/ultracompare.html</projectUrl>
-    <tags>ultracompare compare merge diff synchronize</tags>
+    <tags>admin ultracompare compare merge diff synchronize</tags>
     <copyright>Copyright (c) 1994-2014, IDM Computer Solutions Inc</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->

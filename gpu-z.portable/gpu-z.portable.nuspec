@@ -22,7 +22,7 @@
     • .. and yes, the author of CPU-Z has granted us permission to use a name similar to his product. Thanks Franck.
     </description>
     <projectUrl>http://www.techpowerup.com/downloads/SysInfo/GPU-Z/</projectUrl>
-    <tags>gpu-z.portable</tags>
+    <tags>admin gpu-z portable graphicscard systeminformation</tags>
     <copyright>Copyright © 2004-2015 www.techpowerup.com. All rights reserved</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->

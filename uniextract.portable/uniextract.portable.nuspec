@@ -16,7 +16,7 @@
     The original motivation behind this project was to create an easy, convenient way to extract files from various types of installation packages without the need to remember arcane command line switches or track down separate utilities to handle the unpacking.  Over time, and with the encouragement of its many users and the fine folks over on the MSFN forum, it has evolved into a mature and very capable unarchiving utility that many, including myself, find indispensable.
     </description>
     <projectUrl>http://www.legroom.net/software/uniextract</projectUrl>
-    <tags>uniextract portable extractor unpacker</tags>
+    <tags>admin uniextract portable extractor unpacker</tags>
     <copyright>© 2014 by Jared Breland</copyright>
     <licenseUrl>http://creativecommons.org/licenses/by-sa/3.0/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

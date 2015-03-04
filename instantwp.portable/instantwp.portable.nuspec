@@ -18,7 +18,7 @@
       Please Note: Instant WordPress is not suitable for live websites and should only be used for testing and development.
     </description>
     <projectUrl>http://www.instantwp.com</projectUrl>
-    <tags>instantwp development wordpress portable</tags>
+    <tags>admin instantwp development wordpress portable</tags>
     <copyright>InstantWP © 2015 Corvideon</copyright>
     <licenseUrl>http://www.instantwp.com/install-wordpress-locally/legal-stuff/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -14,7 +14,7 @@
     * Memory type, size, timings, and module specifications (SPD).
     * Real time measurement of each core's internal frequency, memory frequency</description>
     <projectUrl>http://www.cpuid.com/softwares/cpu-z.html</projectUrl>
-    <tags>cpu-z portable system hardware BIOS components admin</tags>
+    <tags>admin cpu-z portable system hardware BIOS components</tags>
     <copyright></copyright>
     <!-- <licenseUrl>__REPLACE__</licenseUrl> -->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

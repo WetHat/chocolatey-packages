@@ -14,7 +14,7 @@
     WinMerge is highly useful for determining what has changed between project versions, and then merging changes between versions. WinMerge can be used as an external differencing/merging tool or as a standalone application.
     </description>
     <projectUrl>http://winmerge.org/</projectUrl>
-    <tags>winmerge portable diff merge differencing</tags>
+    <tags>admin winmerge portable diff merge differencing</tags>
     <copyright>(c) 1996-2013 Dean P. Grimm / Thingamahoochie Software</copyright>
     <licenseUrl>http://winmerge.org/about/license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

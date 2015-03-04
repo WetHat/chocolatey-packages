@@ -13,7 +13,7 @@
     
     For each crash displayed in the upper pane, you can view the details of the device drivers loaded during the crash in the lower pane. BlueScreenView also mark the drivers that their addresses found in the crash stack, so you can easily locate the suspected drivers that possibly caused the crash. </description>
     <projectUrl>http://www.nirsoft.net/utils/blue_screen_view.html</projectUrl>
-    <tags>bluescreenview.portable</tags>
+    <tags>admin bluescreenview portable bluescreen</tags>
     <copyright>Copyright (c) 2009 - 2015 Nir Sofer</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
