@@ -18,9 +18,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/inkscape256x256.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
     <releaseNotes>
     This release marks the culmination of a multi-year effort to switch to a new internal graphics rendering engine, Cairo. This brings performance enhancements and more accurate rendering of drawings. Thanks go especially to Google for sponsoring much of this work. 
     </releaseNotes>

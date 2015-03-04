@@ -16,9 +16,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/httrack128x128.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
     <releaseNotes>Engine fixes (keep-alive, redirects, new hashtables, unit tests)</releaseNotes>
   </metadata>
   <files>

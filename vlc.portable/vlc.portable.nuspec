@@ -16,9 +16,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/vlc150x150.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
     <releaseNotes>
       VLC 2.2.0 "Weatherwax" is a new major update of VLC.
       VLC 2.2.0 auto-rotates the videos taken from phones, to fight Vertical Video Syndrome!

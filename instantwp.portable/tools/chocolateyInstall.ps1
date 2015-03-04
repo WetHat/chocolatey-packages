@@ -1,21 +1,17 @@
-﻿$packageName       = 'instantwp.portable' # arbitrary name for the package, used in messages
-$url               = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
-$installlocation   = Split-Path -parent $MyInvocation.MyCommand.Definition
-$shortcutLocation  = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
-$shortcutRegistry  = 'shortcuts.txt' # we register shortcuts for removal on Uninstall here
-$selfExtractingExe = Join-Path -Path $installlocation -ChildPath 'InstantWP_4.4.2.exe'
-$validExitCodes    = @(0)
-$silentArgs        = '/S' 
-$shortcutName      = 'Instant WordPress.lnk'
+﻿$packageName         = 'instantwp.portable' # arbitrary name for the package, used in messages
+$url                 = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
+$installlocation     = Split-Path -parent $MyInvocation.MyCommand.Definition
+$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutName        = 'Instant WordPress.lnk'
+$shortcutDescription = 'Standalone, portable WordPress development environment'
 
-# Download the self-extracting archive
-Get-ChocolateyWebFile $packageName $selfExtractingExe $url 
-# .. and run it to extract
-Write-Host "Extracting $packageName ..."
-Start-ChocolateyProcessAsAdmin $silentArgs $selfExtractingExe -validExitCodes $validExitCodes
-# remove the selfextracting exe
-Remove-Item -LiteralPath $selfExtractingExe -ErrorAction:SilentlyContinue
+$appBase             = Split-Path -Parent `
+                                  -Path (Split-Path -Parent $MyInvocation.MyCommand.Definition)
+$installlocation     = Join-Path -Path $appBase -ChildPath 'App'
+$shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
+Install-ChocolateyPackage $packageName 'EXE' "/S /D=$installlocation" $url -validExitCodes @(0)
+ 
 # create .gui and .ignore files as appropriate
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
@@ -32,31 +28,15 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
                -Append `
-               -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistry)
+               -FilePath $shortcutRegistry
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-       <# TODO: use this when it becomes available in chocolatey
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
-                                 -WorkingDirectory $exe.FullName
-                                 ...
-      #>
-      try
-      {
-          $wscript = New-Object -ComObject WScript.Shell
-          $lnk =  $wscript.CreateShortcut($shortcut)
-          $lnk.TargetPath       = $exe.FullName
-          $lnk.WorkingDirectory = $exe.DirectoryName
-          $lnk.Description      = 'Standalone, portable WordPress development environment'
-          $lnk.Save()
-          Write-Host "Created Start Menu Shortcut: $shortcutname"
-      }
-      catch
-      {
-        Write-Host 'Shortcut creation failed..'
-        # It is not a showstopper, if shortcut creation fails
-      }
+                                 -Targetpath $exe.FullName `
+                                 -WorkingDirectory $exe.DirectoryName `
+                                 -Description $shortcutDescription
     }
     else
     {

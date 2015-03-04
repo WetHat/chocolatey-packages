@@ -1,33 +1,30 @@
-﻿$packageName       = 'calibre.portable' # arbitrary name for the package, used in messages
-$url               = 'http://download.calibre-ebook.com/2.20.0/calibre-portable-installer-2.20.0.exe' # download url
-$installlocation   = Split-Path -parent $MyInvocation.MyCommand.Definition
-$shortcutLocation  = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
-$shortcutRegistry  = 'shortcuts.txt' # we register shortcuts for removal on uninstall here
-$selfExtractingExe = Join-Path -Path $installlocation -ChildPath 'calibre-portable-installer.exe'
-$validExitCodes    = @(0)
-$launcher          = Join-Path -path $installlocation -ChildPath 'calibre-portable.bat'
-$shortcutName      = 'Calibre.lnk'
+﻿$packageName         = 'calibre.portable' # arbitrary name for the package, used in messages
+$url                 = 'http://download.calibre-ebook.com/2.20.0/calibre-portable-installer-2.20.0.exe' # download url
+$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutName        = 'Calibre E-Book Manager.lnk'
+$shortcutDescription = 'Calibre e-book library manager'
+$validExitCodes      = @(0)
 
-# main helpers - these have error handling tucked into them already
-# installer, will assert administrative rights
-# Download the self-extracting archive
-Get-ChocolateyWebFile $packageName $selfExtractingExe $url 
-# .. and run it to extract
-Write-Host "Extracting $packageName ..."
-Start-ChocolateyProcessAsAdmin $env:TEMP $selfExtractingExe -validExitCodes $validExitCodes
+$appBase             = Split-Path -Parent `
+                                  -Path (Split-Path -Parent $MyInvocation.MyCommand.Definition)
+$installlocation     = Join-Path -Path $appBase -ChildPath 'App'
+$shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
+$launcher            = Join-Path -Path $installlocation -ChildPath 'calibre-portable.bat'
 
-$stagingFolder = (Join-Path -Path $env:TEMP -ChildPath 'Calibre Portable')
+Install-ChocolateyPackage $packageName 'EXE' $env:ProgramData $url -validExitCodes $validExitCodes
 
-Move-Item -Path (Join-Path -Path $stagingFolder -ChildPath '*') `
+Write-Host "Moving calibre into place ..."
+Move-Item -Path (Join-Path -Path $env:ProgramData -ChildPath 'Calibre Portable\Calibre\*') `
           -Destination $installlocation
 
-# remove the staging folder 
-Remove-Item -LiteralPath $stagingFolder -ErrorAction:SilentlyContinue
-
-# remove the selfextracting exe
-Remove-Item -LiteralPath $selfExtractingExe -ErrorAction:SilentlyContinue
-
+Write-Host "Cleaning up Staging folder ..."
+Remove-Item -Force `
+            -Recurse `
+            -Path (Join-Path -Path $env:ProgramData -ChildPath 'Calibre Portable')
+            
 # Generate a launch file
+Write-Host "Generating Launch File"
+
 @"
 @echo ON
 
@@ -36,7 +33,7 @@ Set CALIBRE_TEMP_DIR=%TEMP%
 
 cd Calibre
 set PATH=%cd%
-echo %cd%	
+
 START /belownormal Calibre.exe
 "@ | Out-File -FilePath $launcher -Encoding ASCII
   
@@ -48,34 +45,17 @@ START /belownormal Calibre.exe
 # register shortcut for removal on uninstall
 Out-File -InputObject $shortcut `
          -Append `
-         -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistry)
+         -FilePath $shortcutRegistry
 if (![System.IO.Directory]::Exists( $shortcutFolder))
 {
   [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
 }
 
-<# TODO: use this when it becomes available in chocolatey
 Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
-                            -WorkingDirectory $exe.FullName
-                            ...
-#>
-try
-{
-    $wscript = New-Object -ComObject WScript.Shell
-    $lnk =  $wscript.CreateShortcut($shortcut)
-    $lnk.TargetPath       = $launcher
-    $lnk.WorkingDirectory = $installlocation
-    $lnk.Description      = 'Calibre e-book library manager'
-    $lnk.IconLocation     = "$(Join-Path -Path $installlocation -ChildPath 'Calibre\Calibre.exe'),0"
-    $lnk.WindowStyle      = 7 # 7 = minimized; 1 = normal
-    $lnk.Save()
-    Write-Host "Created Start Menu Shortcut: $shortcutname"
-}
-catch
-{
-  Write-Host 'Shortcut creation failed..'
-  # It is not a showstopper, if shortcut creation fails
-}
+                           -TargetPath $launcher `
+                           -WorkingDirectory $installlocation `
+                           -IconLocation (Join-Path -Path $installlocation -ChildPath 'Calibre.exe') `
+                           -Description $shortcutDescription
 
 # ignore all executables
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `

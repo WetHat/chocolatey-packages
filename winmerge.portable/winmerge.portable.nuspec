@@ -20,9 +20,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/winmerge128x128.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
     <releaseNotes>
     WinMerge 2.14 is an important update to WinMerge. There are lots of improvements and bug fixes since 2.12.4 stable release.
     

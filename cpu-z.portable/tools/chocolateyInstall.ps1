@@ -1,9 +1,12 @@
 ﻿$packageName         = 'cpu-z.portable' # arbitrary name for the package, used in messages
 $url                 = 'ftp://ftp.cpuid.com/cpu-z/cpu-z_1.72-en.zip' # download url
-$installlocation     = Split-Path -parent $MyInvocation.MyCommand.Definition
 $shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
-$shortcutRegistry    = 'shortcuts.txt' # we register shortcuts for removal on Uninstall here
 $shortcutDescription = 'Information on some of the main devices of your system'
+
+$appBase             = Split-Path -Parent `
+                                  -Path (Split-Path -Parent $MyInvocation.MyCommand.Definition)
+$installlocation     = Join-Path -Path $appBase -ChildPath 'App'
+$shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
 Install-ChocolateyZipPackage $packageName $url $installlocation
 
@@ -41,31 +44,15 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       # register shortcut for removal on uninstall
       Out-File -InputObject $shortcut `
                -Append `
-               -FilePath (Join-Path -Path $installlocation -ChildPath $shortcutRegistry)
+               -FilePath $shortcutRegistry
       if (![System.IO.Directory]::Exists( $shortcutFolder))
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-       <# TODO: use this when it becomes available in chocolatey
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
-                                 -WorkingDirectory $exe.FullName
-                                 ...
-      #>
-      try
-      {
-          $wscript = New-Object -ComObject WScript.Shell
-          $lnk =  $wscript.CreateShortcut($shortcut)
-          $lnk.TargetPath       = $exe.FullName
-          $lnk.WorkingDirectory = $exe.DirectoryName
-          $lnk.Description      = $shortcutDescription
-          $lnk.Save()
-          Write-Host "Created Start Menu Shortcut: $shortcutname"
-      }
-      catch
-      {
-        Write-Host 'Shortcut creation failed..'
-        # It is not a showstopper, if shortcut creation fails
-      }
+                                 -Targetpath $exe.FullName `
+                                 -WorkingDirectory $exe.DirectoryName `
+                                 -Description $shortcutDescription
     }
     else
     {
