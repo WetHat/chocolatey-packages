@@ -1,6 +1,5 @@
 ﻿$packageName         = 'instantwp.portable' # arbitrary name for the package, used in messages
 $url                 = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
-$installlocation     = Split-Path -parent $MyInvocation.MyCommand.Definition
 $shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
 $shortcutName        = 'Instant WordPress.lnk'
 $shortcutDescription = 'Standalone, portable WordPress development environment'
