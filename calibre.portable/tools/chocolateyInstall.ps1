@@ -14,8 +14,11 @@ $launcher            = Join-Path -Path $installlocation -ChildPath 'calibre-port
 Install-ChocolateyPackage $packageName 'EXE' $env:ProgramData $url -validExitCodes $validExitCodes
 
 Write-Host "Moving calibre into place ..."
-Move-Item -Path (Join-Path -Path $env:ProgramData -ChildPath 'Calibre Portable\Calibre\*') `
-          -Destination $installlocation
+New-Item -Path $installlocation -ItemType Directory -ErrorAction:SilentlyContinue
+Copy-Item -Path (Join-Path -Path $env:ProgramData -ChildPath 'Calibre Portable\Calibre\') `
+          -Destination $installlocation `
+          -Recurse `
+          -Force
 
 Write-Host "Cleaning up Staging folder ..."
 Remove-Item -Force `
