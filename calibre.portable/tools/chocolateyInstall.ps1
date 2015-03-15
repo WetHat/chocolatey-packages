@@ -1,5 +1,5 @@
 ﻿$packageName         = 'calibre.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.calibre-ebook.com/2.20.0/calibre-portable-installer-2.20.0.exe' # download url
+$url                 = 'http://download.calibre-ebook.com/2.21.0/calibre-portable-installer-2.21.0.exe' # download url
 $shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
 $shortcutName        = 'Calibre E-Book Manager.lnk'
 $shortcutDescription = 'Calibre e-book library manager'
