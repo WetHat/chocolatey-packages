@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>windlg.portable</id>
+    <title>Windows Data Lifeguard Diagnostics (Portable)</title>
+    <version>1.28</version>
+    <authors>Western Digital</authors>
+    <owners>WetHat</owners>
+    <summary>Data Lifeguard Diagnostic for Windows</summary>
+    <description>Windows Data Lifeguard Diagnostic is a tool to test WD internal and external drives. In additional, it can provide you with the model and serial of WD drives attached to the system.</description>
+    <projectUrl>http://support.wdc.com/product/download.asp?groupid=608&amp;sid=3&amp;lang=en</projectUrl>
+    <tags>windlg.portable</tags>
+    <!--<copyright></copyright>-->
+    <!--<licenseUrl>__REPLACE__</licenseUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/windlg128x128.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
+    <releaseNotes>
+    Resolved Issues:
+    • Fixed a problem that caused tests on Windows 8 to fail while testing a TRS drive on an AMD PC.
+    • Fixed a problem that caused a drive’s volumes to be locked and inaccessible after Quick Test or Extended Test is run.
+    • Modified the drive discovery method to determine the capacity of USB drives.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
