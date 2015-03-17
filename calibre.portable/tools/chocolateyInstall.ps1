@@ -7,23 +7,25 @@ $validExitCodes      = @(0)
 
 $appBase             = Split-Path -Parent `
                                   -Path (Split-Path -Parent $MyInvocation.MyCommand.Definition)
+$choco               = Split-Path -Parent (Split-Path -Parent $appBase)
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 $launcher            = Join-Path -Path $installlocation -ChildPath 'calibre-portable.bat'
 
-Install-ChocolateyPackage $packageName 'EXE' $env:ProgramData $url -validExitCodes $validExitCodes
+## We install to a staging folder first so that calibre does not complain
+## about the path being too long           
+Install-ChocolateyPackage $packageName 'EXE' $choco $url -validExitCodes $validExitCodes
 
 Write-Host "Moving calibre into place ..."
 New-Item -Path $installlocation -ItemType Directory -ErrorAction:SilentlyContinue
-Copy-Item -Path (Join-Path -Path $env:ProgramData -ChildPath 'Calibre Portable\Calibre\') `
+Move-Item -Path (Join-Path -Path $choco -ChildPath 'Calibre Portable\Calibre\*') `
           -Destination $installlocation `
-          -Recurse `
           -Force
 
 Write-Host "Cleaning up Staging folder ..."
 Remove-Item -Force `
             -Recurse `
-            -Path (Join-Path -Path $env:ProgramData -ChildPath 'Calibre Portable')
+            -Path (Join-Path -Path $choco -ChildPath 'Calibre Portable')
             
 # Generate a launch file
 Write-Host "Generating Launch File"
