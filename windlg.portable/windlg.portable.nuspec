@@ -11,7 +11,7 @@
     <summary>Data Lifeguard Diagnostic for Windows</summary>
     <description>Windows Data Lifeguard Diagnostic is a tool to test WD internal and external drives. In additional, it can provide you with the model and serial of WD drives attached to the system.</description>
     <projectUrl>http://support.wdc.com/product/download.asp?groupid=608&amp;sid=3&amp;lang=en</projectUrl>
-    <tags>windlg.portable</tags>
+    <tags>admin windlg portable diagnostics harddisk herddrive</tags>
     <!--<copyright></copyright>-->
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
