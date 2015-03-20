@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>instantwp.portable</id>
+    <id>instantwordpress.portable</id>
     <title>Instant WordPress (Portable)</title>
     <version>4.4.2</version>
     <authors>Corvideon</authors>
@@ -18,7 +18,7 @@
       Please Note: Instant WordPress is not suitable for live websites and should only be used for testing and development.
     </description>
     <projectUrl>http://www.instantwp.com</projectUrl>
-    <tags>admin instantwp development wordpress portable</tags>
+    <tags>admin instantwp instantwordpress development wordpress portable</tags>
     <copyright>InstantWP © 2015 Corvideon</copyright>
     <licenseUrl>http://www.instantwp.com/install-wordpress-locally/legal-stuff/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
