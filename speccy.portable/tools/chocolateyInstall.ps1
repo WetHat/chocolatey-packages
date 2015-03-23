@@ -1,6 +1,6 @@
 ﻿$packageName         = 'speccy.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://www.piriform.com/speccy/download/portable/downloadfile' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Advanced System Information Tool'
 
 $appBase             = Split-Path -Parent `
@@ -36,7 +36,7 @@ Get-ChildItem -name $installlocation -filter '*.exe' `
       echo '' >"$($exe.FullName).gui"
       
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

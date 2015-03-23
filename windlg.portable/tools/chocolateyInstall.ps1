@@ -1,6 +1,6 @@
 ﻿$packageName         = 'windlg.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://download.wdc.com/windlg/WinDlg_v1_28.zip' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Data Lifeguard Diagnostics.lnk'
 $shortcutDescription = 'WinDlg_v1_28.zip'
 
@@ -19,7 +19,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

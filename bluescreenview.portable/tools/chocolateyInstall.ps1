@@ -1,7 +1,7 @@
 ﻿$packageName         = 'bluescreenview.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://www.nirsoft.net/utils/bluescreenview.zip' # download url
 $url64               = 'http://www.nirsoft.net/utils/bluescreenview-x64.zip'
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'BlueScreenView.lnk'
 $shortcutDescription = 'View crash information stored in the MiniDump files created on blue screen of Windows'
 
@@ -20,7 +20,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

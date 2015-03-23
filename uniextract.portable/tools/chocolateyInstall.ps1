@@ -1,6 +1,6 @@
 ﻿$packageName         = 'uniextract.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://www.legroom.net/files/software/uniextract161_noinst.rar' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Universal Extractor.lnk'
 $shortcutDescription = 'Decompress and extract files from any type of archive or installer'
 
@@ -31,7 +31,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

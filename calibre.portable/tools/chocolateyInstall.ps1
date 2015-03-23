@@ -1,6 +1,6 @@
 ﻿$packageName         = 'calibre.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://download.calibre-ebook.com/2.22.0/calibre-portable-installer-2.22.0.exe' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Calibre E-Book Manager.lnk'
 $shortcutDescription = 'Calibre e-book library manager'
 $validExitCodes      = @(0)
@@ -43,7 +43,7 @@ START /belownormal Calibre.exe
 "@ | Out-File -FilePath $launcher -Encoding ASCII
   
 ## install a shortcut to the start menu to make this app discoverable
-[string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+[string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                     -ChildPath $shortcutLocation
 [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                     -ChildPath $shortcutName

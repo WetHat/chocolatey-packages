@@ -1,6 +1,6 @@
 ﻿$packageName         = 'cpu-z.portable' # arbitrary name for the package, used in messages
 $url                 = 'ftp://ftp.cpuid.com/cpu-z/cpu-z_1.72-en.zip' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Information on some of the main devices of your system'
 
 $appBase             = Split-Path -Parent `
@@ -37,7 +37,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

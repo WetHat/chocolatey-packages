@@ -1,6 +1,6 @@
 ﻿$packageName         = 'winmerge.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://heanet.dl.sourceforge.net/project/winmerge/stable/2.14.0/WinMerge-2.14.0-exe.zip' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'WinMerge.lnk'
 $shortcutDescription = 'Open Source differencing and merging tool'
 
@@ -19,7 +19,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

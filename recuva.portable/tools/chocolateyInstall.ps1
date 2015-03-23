@@ -1,6 +1,6 @@
 ﻿$packageName      = 'recuva.portable' # nuget ID
 $url              = 'http://www.piriform.com/recuva/download/portable/downloadfile' # download url
-$shortcutLocation = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation = 'Chocolatey'
 $shortcutDescription = 'Recuva File Recovery'
 # if we could get to the command line options, we could set this properly 
 [bool]$forceX86 = $false
@@ -37,7 +37,7 @@ Get-ChildItem -name $installlocation -filter '*.exe' `
       echo '' >"$($exe.FullName).gui"
       
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

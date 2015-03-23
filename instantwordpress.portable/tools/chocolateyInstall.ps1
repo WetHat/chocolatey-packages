@@ -1,6 +1,6 @@
 ﻿$packageName         = 'instantwp.portable' # arbitrary name for the package, used in messages
 $url                 = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Instant WordPress.lnk'
 $shortcutDescription = 'Standalone, portable WordPress development environment'
 
@@ -20,7 +20,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

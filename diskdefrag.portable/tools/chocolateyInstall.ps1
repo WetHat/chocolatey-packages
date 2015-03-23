@@ -1,6 +1,6 @@
 ﻿$packageName         = 'diskdefrag.portable'
 $url                 = 'http://www.auslogics.com/en/downloads/disk-defrag/ausdiskdefragportable.exe' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Auslogics Disk Defrag.lnk'
 $shortcutDescription = 'Compact and fast harddisk defragmenter'
 
@@ -20,7 +20,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

@@ -1,7 +1,7 @@
 ﻿$packageName         = 'inkscape.portable' # arbitrary name for the package, used in messages
 $url                 = 'https://inkscape.global.ssl.fastly.net/media/resources/file/Inkscape-0.91-1-win32.7z' # download url
 $url64               = 'https://inkscape.global.ssl.fastly.net/media/resources/file/Inkscape-0.91-1-win64.7z' # 64bit URL here or remove - if installer decides, then use $url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Powerful, free vector graphics (svg) design tool'
 
 $appBase             = Split-Path -Parent `
@@ -38,7 +38,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

@@ -1,6 +1,6 @@
 ﻿$packageName         = 'procexp.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://download.sysinternals.com/files/ProcessExplorer.zip' # download url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Process Explorer (Sysinternals).lnk'
 $shortcutDescription = 'Shows information about which handles and DLLs processes have opened or loaded'
 
@@ -19,7 +19,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName

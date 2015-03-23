@@ -1,7 +1,7 @@
 ﻿$packageName         = 'httrack.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://download.httrack.com/httrack-noinst-3.48.21.zip' # download url
 $url64               = 'http://download.httrack.com/httrack_x64-noinst-3.48.21.zip' # 64bit URL here or remove - if installer decides, then use $url
-$shortcutLocation    = 'Microsoft\Windows\Start Menu\Programs\Chocolatey'
+$shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'HTTrack Website Copier.lnk'
 $shortcutDescription = 'Free and easy-to-use offline browser utility'
 
@@ -20,7 +20,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
-      [string]$shortcutFolder = Join-Path -Path $env:ALLUSERSPROFILE `
+      [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
                                           -ChildPath $shortcutLocation 
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
