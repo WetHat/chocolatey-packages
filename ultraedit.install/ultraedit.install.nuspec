@@ -4,7 +4,7 @@
   <metadata>
     <id>ultraedit.install</id>
     <title>UltraEdit - Text Editor</title>
-    <version>21.3</version>
+    <version>22.0</version>
     <authors>IDM Computer Solutions</authors>
     <owners>WetHat</owners>
     <summary>UltraEdit Programmer's Editor</summary>
@@ -19,16 +19,39 @@
       <dependency id="" version="" />
     </dependencies>-->
     <releaseNotes>
-    New FTP/SFTP features
-    • Enable Keep Alive
-    • Enable IPv6
+    Document Map
+    	◦ "Filmstrip" overview of active file for visual context and quick navigation
+	◦ Zoom in or out to see more or less of the file
+	◦ Optionally shows bookmarks, code folding, and active line
+	◦ Optionally reposition caret on click
+	◦ Toggle via View -> Views/Lists or via toolbar icon
 
-    New Find in Files improvements
-    • Stunning performance increase when writing to output window
+    Vertically split window
+	    ◦ Accessible via Window menu or via splitter next to horizontal scrollbar
+	    ◦ Split window both vertically and horizontally for 4-way view of file
 
-    New code folding improvements
-    • Code folding guide now draws with many nested folds/unfolds
-    </releaseNotes>
+    "Recently Closed Files" menu item
+	◦ Added beneath "Recently Opened Files" in File menu
+	◦ Includes a "first in, first out" ordered list of most recently closed files
+	◦ Mirrors same number of entries set for "Recently Opened Files"
+
+    Cut/copy all bookmarked lines (Search -> Bookmarks submenu)
+    Trim Leading Spaces (Format menu)
+    New Macro commands ◦CopyAllBookmarkLines
+	◦ CutAllBookmarkLines
+	◦ TrimLeadingSpaces
+
+    New Scripting commands (UltraEdit.activeDocument) ◦copyAllBookmarkLines
+	◦ cutAllBookmarkLines
+	◦ trimLeadingSpaces
+
+    New key mapping commands ◦FormatTrimLeadingSpaces (CTRL + \ is default)
+	◦ FormatTrimTrailingSpaces (CTRL + / is default)
+	◦ ViewShowHideDocumentMap
+	◦ EditCopyAllBookmarkedLines
+	◦ EditCutAllBookmarkedLines
+	◦ WindowVerticalSplitWindow
+  </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
