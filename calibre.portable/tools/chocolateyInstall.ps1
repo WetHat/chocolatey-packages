@@ -43,7 +43,7 @@ START /belownormal Calibre.exe
 "@ | Out-File -FilePath $launcher -Encoding ASCII
   
 ## install a shortcut to the start menu to make this app discoverable
-[string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
+[string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
                                     -ChildPath $shortcutLocation
 [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                     -ChildPath $shortcutName
