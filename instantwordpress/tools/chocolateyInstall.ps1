@@ -1,4 +1,4 @@
-﻿$packageName         = 'instantwp.portable' # arbitrary name for the package, used in messages
+﻿$packageName         = 'instantwordpress' # nuget package ID
 $url                 = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Instant WordPress.lnk'

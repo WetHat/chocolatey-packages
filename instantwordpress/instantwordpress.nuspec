@@ -3,8 +3,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>instantwordpress.portable</id>
-    <title>Instant WordPress (Portable)</title>
+    <id>instantwordpress</id>
+    <title>Instant WordPress</title>
     <version>4.4.2</version>
     <authors>Corvideon</authors>
     <owners>WetHat</owners>
