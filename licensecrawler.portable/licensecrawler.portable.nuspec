@@ -22,7 +22,7 @@
     Commercial User: If the LicenseCrawle for or in a company, you have to order a license. 
     </description>
     <projectUrl>http://www.klinzmann.name/licensecrawler.htm</projectUrl>
-    <tags>admin licensecrawler portable recovery forensic license serialnumber</tags>
+    <tags>licensecrawler portable recovery forensic license serialnumber</tags>
     <copyright>License Crawler Copyright © 2010</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->

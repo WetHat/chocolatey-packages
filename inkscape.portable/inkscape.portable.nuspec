@@ -12,7 +12,7 @@
     Inkscape is a drawing and painting tool similar to Illustrator, CorelDraw, and Xara X, but with features, new tools, and interface style of its own. It emphasizes the W3C standard Scalable Vector Graphics (SVG) file format, but reads and writes a wealth of other formats including PDF, so it is an easy complement to your other graphics and desktop tools. Best of all, Inkscape is created *by* the community *for* the community: Inkscape is 100% Open Source and freely available to everyone in the world.
     </description>
     <projectUrl>https://inkscape.org/en/</projectUrl>
-    <tags>admin inkscape portable vectorgraphics svg</tags>
+    <tags>inkscape portable vectorgraphics svg</tags>
     <copyright></copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

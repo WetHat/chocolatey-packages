@@ -11,7 +11,7 @@
     <summary>VLC is a free and open source cross-platform multimedia player.</summary>
     <description>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.</description>
     <projectUrl>http://www.videolan.org/</projectUrl>
-    <tags>admin vlc portable multimedia player audio video streaming codec</tags>
+    <tags>vlc portable multimedia player audio video streaming codec</tags>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->

@@ -13,7 +13,7 @@
       Calibre was developed by users of e-books for users of e-books. It saves and manages e-books, supporting a variety of formats. It also supports e-book syncing with a variety of popular e-book readers and will, within DRM restrictions, convert e-books between differing formats. Calibre helps to organize the personal e-book library by allowing the user to sort and group e-books by metadata fields. Metadata can be pulled from many different sources (ISBNdb.com, Google Books, Amazon, LibraryThing). Search for author, title or keyword in the whole library, is possible.
     </description>
     <projectUrl>http://calibre-ebook.com</projectUrl>
-    <tags>admin calibre ebook conversion viewer editor server</tags>
+    <tags>calibre ebook conversion viewer editor server</tags>
     <copyright>(c) Kovid Goyal</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

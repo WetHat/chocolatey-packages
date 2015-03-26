@@ -18,7 +18,7 @@
       Also, Speccy comes in handy for support. If you're on the phone with technical support and they want to know what video card you have installed, there's no need to hunt around Windows. Speccy has all the information on one easy-to-understand screen.
     </description>
     <projectUrl>http://www.piriform.com/speccy</projectUrl>
-    <tags>speccy portable admin hardware system systeminfo BIOS</tags>
+    <tags>speccy portable hardware system systeminfo BIOS</tags>
     <copyright>© Copyright 2005-2015 Piriform Ltd - All rights reserved </copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->

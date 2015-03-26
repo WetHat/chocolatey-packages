@@ -15,7 +15,7 @@
     The unique capabilities of Process Explorer make it useful for tracking down DLL-version problems or handle leaks, and provide insight into the way Windows and applications work.
     </description>
     <projectUrl>https://technet.microsoft.com/en-us/sysinternals/bb896653</projectUrl>
-    <tags>admin procexp portable system processes handle dll sysinternals</tags>
+    <tags>procexp portable system processes handle dll sysinternals</tags>
     <copyright>(c) 2008-2014 Mark Russinovich</copyright>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb896653</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

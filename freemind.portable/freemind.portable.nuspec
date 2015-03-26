@@ -11,7 +11,7 @@
     <summary>FreeMind is a premier free mind-mapping software written in Java</summary>
     <description>You have a tool at hand that remarkably resembles the tray slips of Robert Pirsig, described in his sequel to Zen and the Art of Motorcycle Maintenance called Lila. Do you want to refactor your essays in a similar way you would refactor software? Or do you want to keep personal knowledge base, which is easy to manage? Why don't you try FreeMind? Do you want to prioritize, know where you are, where you've been and where you are heading, as Stephen Covey would advise you? Have you tried FreeMind to keep track of all the things that are needed for that? </description>
     <projectUrl>http://freemind.sourceforge.net/wiki/index.php/Main_Page</projectUrl>
-    <tags>admin freemind portable diagramming mindmapping</tags>
+    <tags>freemind portable diagramming mindmapping</tags>
     <copyright>(c) 2000-1013 Jörg Müller, Daniel Polansky, Christian Foltin, Dimitry Polivaev</copyright>
     <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

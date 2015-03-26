@@ -15,7 +15,7 @@
      BluetoothView can also notify you when a new Bluetooth device is detected, by displaying a balloon in your taskbar or by playing a small beep sound.
     </description>
     <projectUrl>http://www.nirsoft.net/utils/blue_screen_view.html</projectUrl>
-    <tags>admin bluetoothview portable bluetooth system network</tags>
+    <tags>bluetoothview portable bluetooth system network</tags>
     <copyright>Copyright (c) 2008 - 2015 Nir Sofer</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
