@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>mediathekview.portable</id>
+    <title>MediathekView (Portable)</title>
+    <version>9.0</version>
+    <authors>W. Xaver</authors>
+    <owners>WetHat</owners>
+    <summary>Online-Mediathek Viewer deutschprachiger TV Sender</summary>
+    <description>Das Programm MediathekView durchsucht die Online-Mediatheken verschiedener Sender (ARD, ZDF, Arte, 3Sat, SWR, BR, MDR, NDR, WDR, HR, RBB, ORF, SF) und listet die gefundenen Sendungen auf. Die Liste kann mit verschiedenen Filtern nach Beiträgen durchsucht werden. Mit einem Programm eigener Wahl können die Filme angesehen und aufgezeichnet werden. Es lassen sich Abos anlegen und neue Beiträge automatisch herunterladen.</description>
+    <projectUrl>http://zdfmediathk.sourceforge.net/index.html</projectUrl>
+    <tags>mediathekview portable tv mediathek</tags>
+    <!-- <copyright></copyright> -->
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/MediathekView256x256.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+      <dependency id="javaruntime-platformspecific" />
+    </dependencies>
+    <releaseNotes>
+    - Film-Url auch in HD und Klein in die Zwischenablage kopieren
+    - Anzeige der Plattengröße (freier Platz) beim Anlegen eines Downloads
+    - eigene exe (Skripte) fürs Starten vom USB-Stick 
+    - neue Option: "-fastauto", wie "-auto" aber es werden keine Filmbeschreibungen mit geladen, spart Speicher und beschleunigt schwache Hardware 
+    - neue Option: "nur Filme der letzten x Tage laden", (in den Einstellungen) spart Speicher und beschleunigt schwache Hardware, muss in der GUI gesetzt werden und ist dann auch in "-auto" aktiv 
+    - "Downloads um XX:YY Uhr starten", neue Option in den Downloads - neuer Sender: Phoenix, SR
+    - Kontrolle der max. Pfadlänge unter Windows
+    - Umstellung der Kontrolle der Bandbreite, jetzt gilt die Vorgabe für JEDEN Download nicht mehr als Summe für alle
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
