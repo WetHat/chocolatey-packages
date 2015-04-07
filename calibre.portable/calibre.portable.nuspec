@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.22</version>
+    <version>2.23</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -23,25 +23,30 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-        New Features
-        
-        * Book List: When editing data in the book list directly, expand the editor widget to use all available width if the data does not fit inside the current column width
-        * Edit Book: When re-opening a previously edited book, restore all open files and the cursor position. Can be disabled in Preferences->Main Window
-        * Advanced search builder: Allow using days/weeks/months/years when building a date based search with number of days ago.
-        * Amazon metadata download: Speedup metadata download from amazon.com when an ASIN is specified by trying the product page directly first instead of running a search.
-        * Implement updating metadata in DOCX files
-        
-        Bug Fixes
-        
-        * ODT Input: Add support for intra-document cross-references.
-        * PDF Output: Fix incorrect encoding of ASCII control characters and some Chines characters in metadata and Table of Contents strings.
-        * Amazon metadata download: Work around amazon server problems where it does not return Kindle Editions in search results when not logged in.
-        * Fix Manage Authors dialog causing current search in the book list to be cleared.
-        * Conversion: Fix a regression in 2.21 that caused conversion to fail for books with invalid pseudo-class CSS selectors.
-        * Content server: Fix OPDS categories not showing books for composite column categories if the column contains a colon.
-        * Single convert dialog: Only write metadata updates if metadata actually changed. Also show a nicer error message when a file is locked by another process.
-        * Open With: Fix error when scanning for default programs on windows for some file types
-        * Edit Book: Fix Preview panel sometimes not working when opening multiple html files one after the other very quickly
+    New Features
+		•Allow adding an empty ebook in various formats to existing book records by right clicking the Add Books button 
+		•Add ability to create additional empty formats to the 'Add empty book' command 
+		•News download: Add API to cleanly abort the download of an article during the preprocess stage based on the article's contents. 
+		•Update the version of Qt bundled with calibre to 5.4.1. This fixes various minor bugs, most notably, improving text rendering on linux. 
+	Bug Fixes
+		•MOBI Input: Fix links not working in viewer for MOBI files that contain anchors placed on linebreak elements. 
+		Closes tickets: 1439450
+	
+		•Book details panel: Fix copying Path link by right clicking on it not working. 
+		Closes tickets: 1437756
+	
+		•Fix a regression that caused importing of a single book from a directory to fail if the directory has no ebook files in it 
+		•Column Icons: Fix apostrophes in icon filenames causing errors. 
+		Closes tickets: 1436690
+		
+		•Edit Book: Fix a regression that caused Remove unused CSS to fail on invalid CSS selectors, instead of ignoring them 
+		•Open With: Fix open with failing to get list of default programs on windows if the registry contains missing ProgIDs. 
+		Closes tickets: 1434990
+	Improved news sources
+		•Esquire
+		•Courrier International
+		•CNET
+		•Tagesschau
     </releaseNotes>
   </metadata>
   <files>
