@@ -17,7 +17,13 @@ $launcher            = Join-Path -Path $installlocation -ChildPath 'calibre-port
 Install-ChocolateyPackage $packageName 'EXE' $choco $url -validExitCodes $validExitCodes
 
 Write-Host "Moving calibre into place ..."
-New-Item -Path $installlocation -ItemType Directory -ErrorAction:SilentlyContinue
+Remove-Item -Path $installlocation `
+            -Force `
+            -Recurse `
+            -ErrorAction:SilentlyContinue
+New-Item -Path $installlocation `
+         -ItemType Directory `
+         -ErrorAction:SilentlyContinue
 Move-Item -Path (Join-Path -Path $choco -ChildPath 'Calibre Portable\Calibre\*') `
           -Destination $installlocation `
           -Force
