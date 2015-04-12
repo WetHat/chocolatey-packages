@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.23</version>
+    <version>2.24</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,29 +24,44 @@
     </dependencies>
     <releaseNotes>
     New Features
-		•Allow adding an empty ebook in various formats to existing book records by right clicking the Add Books button 
-		•Add ability to create additional empty formats to the 'Add empty book' command 
-		•News download: Add API to cleanly abort the download of an article during the preprocess stage based on the article's contents. 
-		•Update the version of Qt bundled with calibre to 5.4.1. This fixes various minor bugs, most notably, improving text rendering on linux. 
-	Bug Fixes
-		•MOBI Input: Fix links not working in viewer for MOBI files that contain anchors placed on linebreak elements. 
-		Closes tickets: 1439450
-	
-		•Book details panel: Fix copying Path link by right clicking on it not working. 
+		•E-book viewer: Add an option to not save the bookmarks inside EPUB files, under the Miscellaneous section of the viewer preferences 
+		•Manage User Categories: Allow restricting the visible items to only those present in the current Virtual Library (if any) 
+		•Book details panel: Allow copying full path to ebook files by right clicking on the format link. 
 		Closes tickets: 1437756
 	
-		•Fix a regression that caused importing of a single book from a directory to fail if the directory has no ebook files in it 
-		•Column Icons: Fix apostrophes in icon filenames causing errors. 
-		Closes tickets: 1436690
+	Bug Fixes
+		•Edit Book: Fix GIF format images being corrupted when using the builtin image editor to make changes to them. 
+		Closes tickets: 1440398
 		
-		•Edit Book: Fix a regression that caused Remove unused CSS to fail on invalid CSS selectors, instead of ignoring them 
-		•Open With: Fix open with failing to get list of default programs on windows if the registry contains missing ProgIDs. 
-		Closes tickets: 1434990
+		•Edit Book: When dragging and dropping files to re-order them in the file browser, fix the final order being dependent on the order the files were selected in. 
+		Closes tickets: 1440598
+		
+		•Conversion: Fix error when converting a document that contains an invalid function based CSS selector without parentheses. 
+		Closes tickets: 1440278
+		
+		•Edit Book: Fix regression that caused pressing Alt+X to type unicode characters to not work 
+		•Device view: Preserve position in list of books when deleting books from the device view 
+		•Make the context menu for the book details popup window work the same way as for the book details panel 
+		•Get Books: Update amazon store plugin for website changes 
+		•PDF Metadata: When choosing between reading metadata from the Info dict and the XMP block, consider both the MetadataData and the ModifyDate in the XMP block, since there exist PDF metadata writing tools that update one and not the other. 
+		Closes tickets: 1440304
+		
+		•Fix a regression that caused ebook viewer to remember the state of the Table of Contents panel when quitting on OS X. 
+		Closes tickets: 1440444
+		
+		•Prevent Enter key on Manage authors/tags/etc. dialogs from closing the dialog. 
+		Closes tickets: 1440146
+	
+	
 	Improved news sources
-		•Esquire
-		•Courrier International
-		•CNET
-		•Tagesschau
+		•Le Temps
+		•United Daily
+		•Liberty Times
+		•Apple Daily
+		•China Times
+		•House News
+		•Providence Journal
+		•Harvard Business Review
     </releaseNotes>
   </metadata>
   <files>
