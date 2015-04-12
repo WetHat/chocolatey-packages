@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.2.2.0</version>
+    <version>3.2.2.4</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -20,7 +20,18 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+    XMedia Recode 3.2.2.4
+		•Update of ffmpeg
+		•Update of vpx (1.4.0) Codec
+		•Updated japanese language file
+		•Updated czech language file
+		•Updated italian language file
+		•New profiles ( Samsung, LG, HTC )
+
+	Troubleshooting
+		•Fixed minor bugs
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
