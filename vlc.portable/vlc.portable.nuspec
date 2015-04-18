@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>vlc.portable</id>
     <title>VLC media player (Portable)</title>
-    <version>2.2.0</version>
+    <version>2.2.1</version>
     <authors>VLC team</authors>
     <owners>WetHat</owners>
     <summary>VLC is a free and open source cross-platform multimedia player.</summary>
@@ -20,13 +20,9 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      VLC 2.2.0 "Weatherwax" is a new major update of VLC.
-      VLC 2.2.0 auto-rotates the videos taken from phones, to fight Vertical Video Syndrome!
-      VLC now resumes where you left off in all versions
-      Improves support for new HD codecs, VP9, opus and H.265/HEVC, for decoding and for encoding.
-      Extensions are now downloadable from within the application.
-      VLSub extension can download subtitles from the application.
-      We release at the same time, new versions and betas for iOS, Android, Windows Phone, Android TV and Windows RT.
+      VLC 2.2.1 "Terry Pratchett" is a fixed version of 2.2.0 "WeatherWax"
+      
+      It fixes numerous crashes (FLAC, SPC), codec issues (VP9, Atrac3, AAC), regressions and several issues (Resume, MP4 chapters, MKV over network) and security issues
     </releaseNotes>
   </metadata>
   <files>

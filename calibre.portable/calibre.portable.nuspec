@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.24</version>
+    <version>2.25</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,44 +24,36 @@
     </dependencies>
     <releaseNotes>
     New Features
-		•E-book viewer: Add an option to not save the bookmarks inside EPUB files, under the Miscellaneous section of the viewer preferences 
-		•Manage User Categories: Allow restricting the visible items to only those present in the current Virtual Library (if any) 
-		•Book details panel: Allow copying full path to ebook files by right clicking on the format link. 
-		Closes tickets: 1437756
-	
+		•Edit Book: Make embedding fonts using the manage fonts dialog easier. You can now double click on a font family to see what faces for that family area available on your computer and install new fonts directly from the dialog. 
+		•Book Details panel: Allow deleting tags/series/publisher/etc. by right clicking on the link in the book details panel. 
+		Closes tickets: 1442925
+		
+		•E-book viewer: Allow expanding/collapsing all items in the Table of Contents view by right clicking 
+		•When using the View specific format action add an 'Open With' button to choose a specific program to view the specified format 
+		•Fetch News: Add API to allow recipe writers to easily resolve internal links to point to the downloaded versions of articles 
+		•DOCX Input: Add support for DOCX files created by Word 2013 in 'Strict' mode 
+		•When getting cover from comic files, use smart filename sorting to find the first filename, recognizing numbers inside the filenames. 
+
 	Bug Fixes
-		•Edit Book: Fix GIF format images being corrupted when using the builtin image editor to make changes to them. 
-		Closes tickets: 1440398
+		•E-book viewer: When displaying multiple pages per screen fix whole screen scrolling so that it works as expected even at the end of the file, when their might be fewer pages left than would fill the screen. 
+		•DOCX Input: Automatically resize large images used as bullets in lists, to compensate for the fact that HTML renderers do not do this. 
+		•Book list: Prevent yes/no columns from making the minimum row height too large. 
+		•Template language: Fix raw_field() function returning incorrect values for lists 
+		•Edit book: Fix book locale changing when OPF edited if OPF contains a country code in addition to a language code 
+		•Edit Book: Fix escaped HTML tags in the comments metadata being reported as mis-spelled words. 
+		Closes tickets: 1441925
 		
-		•Edit Book: When dragging and dropping files to re-order them in the file browser, fix the final order being dependent on the order the files were selected in. 
-		Closes tickets: 1440598
-		
-		•Conversion: Fix error when converting a document that contains an invalid function based CSS selector without parentheses. 
-		Closes tickets: 1440278
-		
-		•Edit Book: Fix regression that caused pressing Alt+X to type unicode characters to not work 
-		•Device view: Preserve position in list of books when deleting books from the device view 
-		•Make the context menu for the book details popup window work the same way as for the book details panel 
-		•Get Books: Update amazon store plugin for website changes 
-		•PDF Metadata: When choosing between reading metadata from the Info dict and the XMP block, consider both the MetadataData and the ModifyDate in the XMP block, since there exist PDF metadata writing tools that update one and not the other. 
-		Closes tickets: 1440304
-		
-		•Fix a regression that caused ebook viewer to remember the state of the Table of Contents panel when quitting on OS X. 
-		Closes tickets: 1440444
-		
-		•Prevent Enter key on Manage authors/tags/etc. dialogs from closing the dialog. 
-		Closes tickets: 1440146
-	
+		•Edit Book: Fix regression that caused copying of non-breaking spaces to not work when using the keyboard shortcuts 
+		•Open With: Fix open with not working for programs from the Microsoft Office suite 
+
+	New news sources
+		•MIT Technology Review Magazine by Michael Marotta
+		•The Codeless Code by April King
 	
 	Improved news sources
-		•Le Temps
-		•United Daily
-		•Liberty Times
-		•Apple Daily
-		•China Times
-		•House News
-		•Providence Journal
-		•Harvard Business Review
+		•Die Zeit
+		•NZZ Webpaper
+		•Arcamax
     </releaseNotes>
   </metadata>
   <files>
