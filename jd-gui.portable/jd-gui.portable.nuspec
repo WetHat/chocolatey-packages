@@ -19,7 +19,7 @@
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/jd.portable.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/jD-gui128x128.png</iconUrl>
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
       <dependency id="javaruntime-platformspecific" />
