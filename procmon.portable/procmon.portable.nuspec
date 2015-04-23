@@ -16,7 +16,7 @@
     <!-- <licenseUrl></licenseUrl>  license is part of the application--> 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Procmon48x48.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/procmon48x48.png</iconUrl>
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
