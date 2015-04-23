@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>autoruns.portable</id>
     <title>Autoruns (Portable)</title>
-    <version>13.2</version>
+    <version>13.3</version>
     <authors>Mark Russinovich</authors>
     <owners>WetHat</owners>
     <summary>Shows what programs are configured to run during system bootup or login</summary>
@@ -15,7 +15,7 @@
     <projectUrl>https://technet.microsoft.com/en-us/sysinternals/bb963902</projectUrl>
     <tags>autoruns portable autostart sysinternals</tags>
     <copyright>(c) 2002-2015 Mark Russinovich</copyright>
-    <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb963902</licenseUrl>
+    <!-- <licenseUrl></licenseUrl>  license is part of the application--> 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Autoruns128x128.png</iconUrl>
