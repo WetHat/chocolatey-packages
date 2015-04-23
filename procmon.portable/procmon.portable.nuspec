@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>procmon.portable</id>
+    <title>Process Monitor (Portable)</title>
+    <version>3.1</version>
+    <authors>Mark Russinovich</authors>
+    <owners>WetHat</owners>
+    <summary>Advanced monitoring tool for Windows that shows real-time file system, Registry and process/thread activity</summary>
+    <description>Combines the features of two legacy Sysinternals utilities, Filemon and Regmon, and adds an extensive list of enhancements including rich and non-destructive filtering, comprehensive event properties such session IDs and user names, reliable process information, full thread stacks with integrated symbol support for each operation, simultaneous logging to a file, and much more.</description>
+    <projectUrl>https://technet.microsoft.com/en-us/sysinternals/bb896645</projectUrl>
+    <tags>procmon portable sysinternals process monitoring microsoft techenet</tags>
+    <copyright>(c) 1996-2014 Mark Russinovich</copyright>
+    <!-- <licenseUrl></licenseUrl>  license is part of the application--> 
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Procmon48x48.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
