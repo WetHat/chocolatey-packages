@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>atom.portable</id>
+    <title>Atom Text Editor (Portable)</title>
+    <version>0.194.0</version>
+    <authors>https://github.com/orgs/atom/people</authors>
+    <owners>WetHat</owners>
+    <summary>Hackable text editor for the 21st Century</summary>
+    <description>A tool you can customize to do anything, but also use productively on the first day without ever touching a config file. Atom is modern, approachable, and hackable to the core.</description>
+    <projectUrl>https://atom.io/</projectUrl>
+    <tags>atom portable texteditor text editor</tags>
+    <!-- <copyright></copyright> -->
+    <licenseUrl>https://github.com/atom/atom/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/atom256x256.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
+    <releaseNotes>
+    •Fixed an issue on Linux and Windows where running certain apm commands failed with a  Could not determine current Atom version installed  message
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
