@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.25</version>
+    <version>2.26</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,36 +24,33 @@
     </dependencies>
     <releaseNotes>
     New Features
-		•Edit Book: Make embedding fonts using the manage fonts dialog easier. You can now double click on a font family to see what faces for that family area available on your computer and install new fonts directly from the dialog. 
-		•Book Details panel: Allow deleting tags/series/publisher/etc. by right clicking on the link in the book details panel. 
-		Closes tickets: 1442925
-		
-		•E-book viewer: Allow expanding/collapsing all items in the Table of Contents view by right clicking 
-		•When using the View specific format action add an 'Open With' button to choose a specific program to view the specified format 
-		•Fetch News: Add API to allow recipe writers to easily resolve internal links to point to the downloaded versions of articles 
-		•DOCX Input: Add support for DOCX files created by Word 2013 in 'Strict' mode 
-		•When getting cover from comic files, use smart filename sorting to find the first filename, recognizing numbers inside the filenames. 
-
+		•Driver for the soon to be released Kobo Glo HD 
+	
 	Bug Fixes
-		•E-book viewer: When displaying multiple pages per screen fix whole screen scrolling so that it works as expected even at the end of the file, when their might be fewer pages left than would fill the screen. 
-		•DOCX Input: Automatically resize large images used as bullets in lists, to compensate for the fact that HTML renderers do not do this. 
-		•Book list: Prevent yes/no columns from making the minimum row height too large. 
-		•Template language: Fix raw_field() function returning incorrect values for lists 
-		•Edit book: Fix book locale changing when OPF edited if OPF contains a country code in addition to a language code 
-		•Edit Book: Fix escaped HTML tags in the comments metadata being reported as mis-spelled words. 
-		Closes tickets: 1441925
+		•Do not use a separate process to draw the splash screen. This might fix the issue of calibre randomly freezing on startup on a few windows systems 
+		•MOBI Ouput: Fix :first-letter applied to elements containing a comment causing conversion to fail 
+		•Properly display names of libraries containing the ampersand character. 
+		Closes tickets: 1447188
 		
-		•Edit Book: Fix regression that caused copying of non-breaking spaces to not work when using the keyboard shortcuts 
-		•Open With: Fix open with not working for programs from the Microsoft Office suite 
+		•When sorting filenames in comics treat the file extension as a secondary sort key. Fixes xyz.jpg sorting before xyz_1.jpg 
+		•Fix a regression in 2.25 that broke the search &amp; replace wizard in the conversion dialog when converting a book with multiple formats 
+		•Content server: Fix errors when library contains enough virtual libraries to cause grouping. 
+		Closes tickets: 1446282
+		
+		•Manage tags dialog: Fix setting a tag to empty causes an unhandled error. 
+		Closes tickets: 1446318
+		
+		•E-book viewer: Fix a regression that caused the viewer to occasionally skip the last page in a chapter when displaying more than one pages per screen and scrolling by screen 
+		•Edit Book: Fix open OPF file not being refreshed when deleting items from the file browser. 
+		Closes tickets: 1445634
 
 	New news sources
-		•MIT Technology Review Magazine by Michael Marotta
-		•The Codeless Code by April King
-	
+		•Discover Magazine Monthly by Michael Marotta
+		
 	Improved news sources
-		•Die Zeit
-		•NZZ Webpaper
-		•Arcamax
+		•WirtschaftsWoche Online
+		•Wired
+		•CNN
     </releaseNotes>
   </metadata>
   <files>
