@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>hugin.portable</id>
+    <title>Hugin (Portable)</title>
+    <version>2014.0.0</version>
+    <authors>Pablo d'Angelo and others</authors>
+    <owners>WetHat</owners>
+    <summary>Panorama Photo Stitcher</summary>
+    <description>
+     An easy to use cross-platform panoramic imaging toolchain based on Panorama Tools. 
+
+     With Hugin you can assemble a mosaic of photographs into a complete immersive panorama, stitch any series of overlapping pictures and much more. 
+   </description>
+    <projectUrl>http://hugin.sourceforge.net/</projectUrl>
+    <tags>hugin portable panoramastitching panorama stitching photostitching hdr</tags>
+    <copyright></copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/hugin128x128.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
+    <releaseNotes>
+		Changes Since 2013.0.0
+		•inherit many of the libpano improvements (of version 2.9.19)
+		•the translation plane variables Tpy and Tpp have been added to the GUI (better support for translation parameters, e.g. for nadir images. A pano with translation parameters can now be rotated)
+		•improvement of the GPU remapping code (bug fixes in the glue code, added some missing GPU transformations. Now fisheye lenses are supported by GPU code as well)
+		•better support for line control point in Control points tab (it still requires that the same image is displayed left and right for full features, but also better support for line control points above several images)
+		•obsolete programs matchpoint, nona_gui and PTBatcher have been removed
+		•outdated translations have been removed from the default install
+		•initialize the colour balance values during loading with EXIF values (this information is only stored and decoded by some cameras (mainly models by Panasonic, Pentax, Olympus, Nikon))
+		•improved the assistant
+		•allow customization of exiftool command used to copy metadata to output images
+	
+		New command line tools for CLI processing:
+		•pto_mask: manipulate mask in project file
+		•pto_template: apply template to project file
+		•pto_move: move or copy project files with all associated images
+	
+	
+		Other Improvements
+		•Many more improvements and bug fixes.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
