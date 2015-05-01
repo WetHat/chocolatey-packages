@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.26</version>
+    <version>2.27</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -23,34 +23,30 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-    New Features
-		•Driver for the soon to be released Kobo Glo HD 
-	
-	Bug Fixes
-		•Do not use a separate process to draw the splash screen. This might fix the issue of calibre randomly freezing on startup on a few windows systems 
-		•MOBI Ouput: Fix :first-letter applied to elements containing a comment causing conversion to fail 
-		•Properly display names of libraries containing the ampersand character. 
-		Closes tickets: 1447188
+     New Features
+		•Edit metadata dialog: Add a clear button for the publisher. 
+		Closes tickets: 1449105
 		
-		•When sorting filenames in comics treat the file extension as a secondary sort key. Fixes xyz.jpg sorting before xyz_1.jpg 
-		•Fix a regression in 2.25 that broke the search &amp; replace wizard in the conversion dialog when converting a book with multiple formats 
-		•Content server: Fix errors when library contains enough virtual libraries to cause grouping. 
-		Closes tickets: 1446282
+		•DOCX Input: Add option to not insert page breaks between endnotes. 
+		Closes tickets: 1448433
 		
-		•Manage tags dialog: Fix setting a tag to empty causes an unhandled error. 
-		Closes tickets: 1446318
+		•calibredb list: Allow outputting the book languages as well. 
+		Closes tickets: 1445853
 		
-		•E-book viewer: Fix a regression that caused the viewer to occasionally skip the last page in a chapter when displaying more than one pages per screen and scrolling by screen 
-		•Edit Book: Fix open OPF file not being refreshed when deleting items from the file browser. 
-		Closes tickets: 1445634
+		•Italian translation of Quick Start Guide 
+		•Embed metadata: When embedding metadata fails for some books, add an option to show the failed books in the book list 
+		Closes tickets: 1449076
+		
+		•Animate the main toolbar when a device is connected/disconnected, to indicate that the contents of the toolbar have changed 
 
-	New news sources
-		•Discover Magazine Monthly by Michael Marotta
+	Bug Fixes
+		•E-book viewer: When printing, print to a PDF file instead of directly to the printer. This fixes printing not working on some systems. 
+		Closes tickets: 1448330
 		
-	Improved news sources
-		•WirtschaftsWoche Online
-		•Wired
-		•CNN
+		•AZW3 Input: Handle kindlegen produced azw3 files that do not use normal HTML anchors for linking. 
+		•Fix too many open files errors that could occur in a few places on OS X 
+		•Do not allow user to hide all columns in book list via the context menu, as restoring them becomes difficult 
+
     </releaseNotes>
   </metadata>
   <files>
