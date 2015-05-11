@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.2.2.7</version>
+    <version>3.2.2.9</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -21,16 +21,14 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-		•Update of ffmpeg
-		•Updated italian language file
-		•Updated french language file
-		•New profiles ( Wiko )
-		•VP9 codec: Added "AQ Mode" option
-		•VP9 codec: Added "Tile Columns" option
-		•VP9 codec: Added "Tile Rows" option
-	Troubleshooting
-		•Fixed crash when using 2 pass encoding
-		•Fixed minor bugs
+		XMedia Recode 3.2.2.9
+			•Update of ffmpeg
+			•Update of libdvdread 5.0.3
+			•Updated italian language file
+			
+		Troubleshooting
+			•Fixed issue setting the video resolution
+			•Fixed minor bugs
     </releaseNotes>
   </metadata>
   <files>
