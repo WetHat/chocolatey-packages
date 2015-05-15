@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.27</version>
+    <version>2.28</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,29 +24,16 @@
     </dependencies>
     <releaseNotes>
      New Features
-		•Edit metadata dialog: Add a clear button for the publisher. 
-		Closes tickets: 1449105
-		
-		•DOCX Input: Add option to not insert page breaks between endnotes. 
-		Closes tickets: 1448433
-		
-		•calibredb list: Allow outputting the book languages as well. 
-		Closes tickets: 1445853
-		
-		•Italian translation of Quick Start Guide 
-		•Embed metadata: When embedding metadata fails for some books, add an option to show the failed books in the book list 
-		Closes tickets: 1449076
-		
-		•Animate the main toolbar when a device is connected/disconnected, to indicate that the contents of the toolbar have changed 
-
+		* Conversion of all ebook formats to Microsoft Word (DOCX) files
+		* Add keyboard shortcuts (Ctrl+Right, Ctrl+Left) to switch between virtual library tabs.
+		* When sending email using GMX pause for five minutes between books, to prevent GMX from blocking the account. The delay can be configured via Preferences->Tweaks
 	Bug Fixes
-		•E-book viewer: When printing, print to a PDF file instead of directly to the printer. This fixes printing not working on some systems. 
-		Closes tickets: 1448330
-		
-		•AZW3 Input: Handle kindlegen produced azw3 files that do not use normal HTML anchors for linking. 
-		•Fix too many open files errors that could occur in a few places on OS X 
-		•Do not allow user to hide all columns in book list via the context menu, as restoring them becomes difficult 
-
+		* Open With: Fix application icons in XDG_DATA_HOME on linux not being found and fix unhandled error when choosing non-executable files as applications.
+		* AZW3 Output: Remove duplicate anchors to workaround some Kindle renderers using the last occurrence of an anchor as the target instead of the first.
+		* Fix language definition on body tag being ignored during conversion
+		* Edit book: When importing multiple files into the book, import them in the order sorted by their filenames instead of in random order
+		* E-book viewer: Fix print to pdf not working on some windows systems with non-ascii usernames and non-utf-8 system locales. Also make the print to pdf dialog a little easier to use.
+		* Edit Book: Fix TOC editor window not remembering its last used size
     </releaseNotes>
   </metadata>
   <files>

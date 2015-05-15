@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.2.2.9</version>
+    <version>3.2.3.0</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -21,14 +21,18 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-		XMedia Recode 3.2.2.9
-			•Update of ffmpeg
-			•Update of libdvdread 5.0.3
-			•Updated italian language file
-			
-		Troubleshooting
-			•Fixed issue setting the video resolution
-			•Fixed minor bugs
+	XMedia Recode 3.2.3.0
+		•Update of ffmpeg
+		•Updated italian language file
+		•Updated portuguese language file
+		•Updated french language file
+		•MOV container: Added ‘Uncompressed YUV 4:1:1 12-bit’ support 
+		•MOV container: Added ‘Uncompressed 4:4:4 10-bit’ support 
+		•MOV container: Added ‘Uncompressed packed 4:4:4’ support 
+		•MOV container: Added ‘Avid 1:1 10-bit RGB Packer’ support 
+
+	Troubleshooting
+		•Fixed minor bugs
     </releaseNotes>
   </metadata>
   <files>
