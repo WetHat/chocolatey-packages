@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>jd-gui.portable</id>
     <title>jD GUI (Portable)</title>
-    <version>1.0.0.5</version>
+    <version>1.1.0.0</version>
     <authors>Emmanuel Dupuy</authors>
     <owners>WetHat</owners>
     <summary>Standalone graphical utility that displays Java source codes of “.class” files</summary>
@@ -25,8 +25,16 @@
       <dependency id="javaruntime-platformspecific" />
     </dependencies>
     <releaseNotes>
-    ##Re-architecture &amp; porting from C++ to Java/Groovy.
-    ##JD-GUI includes JD-Core 0.7.1.
+    * Fixes #17, Option for Line Endings
+    * Adds support for Retina/HiDPI displays on OS X
+    * Updates API
+    * Fixes saved file name
+    * Fixes JTabbedPane.SCROLL_TAB_LAYOUT side effect on history
+    * Fixes the main window title 
+    * Fixes NPE and tree renderer 
+    * Adds support for EAR files
+    * Adds support for WAR files
+    * Adds a indexer &amp; a viewer for SQL files 
     </releaseNotes>
   </metadata>
   <files>

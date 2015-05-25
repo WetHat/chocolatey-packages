@@ -21,15 +21,12 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-	XMedia Recode 3.2.3.0
+	XMedia Recode 3.2.3.2
 		•Update of ffmpeg
-		•Updated italian language file
-		•Updated portuguese language file
-		•Updated french language file
-		•MOV container: Added ‘Uncompressed YUV 4:1:1 12-bit’ support 
-		•MOV container: Added ‘Uncompressed 4:4:4 10-bit’ support 
-		•MOV container: Added ‘Uncompressed packed 4:4:4’ support 
-		•MOV container: Added ‘Avid 1:1 10-bit RGB Packer’ support 
+		•Updated japanese language file
+		•MOV container: Added ‘huffYUV’ support 
+		•MOV container: Added ‘Uncompressed packed MS 4:4:4:4’ support
+		•New profiles ( Huawei, HTC, Sony, Wiko )
 
 	Troubleshooting
 		•Fixed minor bugs

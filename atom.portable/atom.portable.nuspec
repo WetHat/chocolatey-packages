@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>0.199.0</version>
+    <version>0.201.0</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
@@ -21,15 +21,10 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-        •Atom now bundles Autocomplete Plus and the completion providers for HTML, CSS, Less, Sass, snippets, and the Atom API
-		•Opening editors is now significantly faster than previously releases
-		•Fixed an issue where packages with invalid Git repository URLs in their  package.json  file wouldn't load
-		•Running  atom  with no arguments from the command line now re-opens the previously-opened windows. Use  atom .  to open the current working directory
-		•Fixed an issue that prevented Atom from re-opening its previously opened windows during startup on Linux and Windows
-		•The Fuzzy Finder now highlights the portions of the file path that match the search text
-		•The Command Palette now highlights the portions of the command name that match the search text
-		•Fixed an issue on Linux and Windows 7 where the spell checker would fail to highlight misspelled words
-		•Fixed an issue where  fs  and  path  would be accidentally available as global variables
+        •Atom now ships with Bootstrap 3.3.4
+		•Fixed an issue where tabbing through snippet tab stops failed
+		•Fixed an issue where auto-flowing text would fail in certain cases
+		•The  editor.softWrapHangingIndent  setting is now configurable on a per-language basis from the Settings view
     </releaseNotes>
   </metadata>
   <files>
