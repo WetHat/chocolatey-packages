@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.28</version>
+    <version>2.29</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,16 +24,27 @@
     </dependencies>
     <releaseNotes>
      New Features
-		* Conversion of all ebook formats to Microsoft Word (DOCX) files
-		* Add keyboard shortcuts (Ctrl+Right, Ctrl+Left) to switch between virtual library tabs.
-		* When sending email using GMX pause for five minutes between books, to prevent GMX from blocking the account. The delay can be configured via Preferences->Tweaks
+		•Allow opening the full Tag Editor dialog directly from the book list by holding down the Shift key while starting an edit of a tag-like field. For example, click on the tags field for a book and press Shift-F2 
+		•Tag Browser: Allow undoing the deletion of items in the Manage categories window 
+		•calibredb add: Allow setting arbitrary identifiers, not just ISBN. 
+		Closes tickets: 1458620
+
+		•Add a 'Retry' button to the news download failed error message. 
+		Closes tickets: 1458076
+
 	Bug Fixes
-		* Open With: Fix application icons in XDG_DATA_HOME on linux not being found and fix unhandled error when choosing non-executable files as applications.
-		* AZW3 Output: Remove duplicate anchors to workaround some Kindle renderers using the last occurrence of an anchor as the target instead of the first.
-		* Fix language definition on body tag being ignored during conversion
-		* Edit book: When importing multiple files into the book, import them in the order sorted by their filenames instead of in random order
-		* E-book viewer: Fix print to pdf not working on some windows systems with non-ascii usernames and non-utf-8 system locales. Also make the print to pdf dialog a little easier to use.
-		* Edit Book: Fix TOC editor window not remembering its last used size
+		•DOCX Output: Detect the common idiom of placing centered images as inline images inside a containing centered block and render the resulting image as a floating centered image in the DOCX file. 
+		Closes tickets: 1455502
+		
+		•DOCX Output: Fix incorrect handling of bold/italic in paragraphs where the majority of text is either bold or italic instead of normal 
+		•Table of Contents editor: Fix save/load of settings in the XPath wizard not working across restarts 
+		•Get Books: Update the Kobo Store plugin for website changes 
+
+	Improved news sources
+		•Popular Science
+		•General Knowledge Today
+		•Scientific American
+		•Wired Magazine
     </releaseNotes>
   </metadata>
   <files>

@@ -1,0 +1,9 @@
+  modified:   atom.portable/atom.portable.nuspec
+  modified:   atom.portable/tools/chocolateyInstall.ps1
+  modified:   autoruns.portable/autoruns.portable.nuspec
+  modified:   calibre.portable/calibre.portable.nuspec
+  modified:   calibre.portable/tools/chocolateyInstall.ps1
+  modified:   gpu-z.portable/gpu-z.portable.nuspec
+  modified:   gpu-z.portable/tools/chocolateyInstall.ps1
+  modified:   procmon.portable/procmon.portable.nuspec
+  modified:   xmediarecode.portable/xmediarecode.portable.

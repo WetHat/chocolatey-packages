@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>gpu-z.portable</id>
     <title>TechPowerUp GPU-Z (Portable)</title>
-    <version>0.8.2</version>
+    <version>0.8.3</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
     <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
@@ -31,29 +31,15 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-	• Added graphics card lookup button
-	• Added Windows 10 support
-	• Added support for NVIDIA Titan X
-	• Added support for AMD R9 255, FirePro W7100, HD 8370D, AMD R9 M280X, R9 M295X
-	• Added support for NVIDIA GTX 980M, GTX 970M, GTX 965M, GTX 845M, GTX 760 Ti OEM, GTX 660 (960 shaders), GT 705, GT 720, GT 745M, NVS 310, Grid K200
-	• Added support for Intel Broadwell Graphics
-	• Improved Intel GMA3600 support
-	• Improved hardware access stability on AMD Kaveri
-	• Fixed GTX 970 ROP count
-	• The driver version readout will now display WHQL status
-	• Added AMD APU logo and updated other logos
-	• Added PCI-Express bus usage sensor on NVIDIA
-	• Added registry key (Force_WDDM_Mem_Sensor=1) to bypass NVIDIA driver memory monitoring and use WDDM monitoring instead
-	• Web links now opened in default browser
-	• Fixed NVIDIA BIOS save hanging system on Windows 8 and newer
-	• Show N/A on Intel IGP memory size
-	• Fixed GPU-Z icon disappearing on shortcuts
-	• Fixed blank line between sensor logfile entries
-	• GPU-Z can now start properly from encrypted system drive
-	• Displayed Catalyst version only includes version number
-	• Fixed OpenCL detection on HD 7970M
-	• CrossFire on AMD cards no longer displayed as ATI CrossFire
-	• Disabled memory vendor detection on future APUs
+	•Added VGA BIOS UEFI support indicator
+	•Added support for NVIDIA GTX 980 Ti, GTX 965M, GTX 950M, NVS315, GT 750 (GK106)
+	•Added support for AMD Fiji, Radeon R2/R3 Graphics (Mullins APU)
+	•Added support for various Intel Broadwell SKUs
+	•Fixed missing NVIDIA PerfCap sensor in some cases
+	•Added support for HBM memory
+	•Fixed GT200B die size
+	•Fixed some NV42 specs
+	•Improved OpenCl detection code
     </releaseNotes>
   </metadata>
   <files>

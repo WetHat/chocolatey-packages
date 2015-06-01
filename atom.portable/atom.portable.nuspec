@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>0.201.0</version>
+    <version>0.204.0</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
@@ -21,10 +21,7 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-        •Atom now ships with Bootstrap 3.3.4
-		•Fixed an issue where tabbing through snippet tab stops failed
-		•Fixed an issue where auto-flowing text would fail in certain cases
-		•The  editor.softWrapHangingIndent  setting is now configurable on a per-language basis from the Settings view
+        •Fixed an issue where the  unset!  keybinding override did not work correctly
     </releaseNotes>
   </metadata>
   <files>
