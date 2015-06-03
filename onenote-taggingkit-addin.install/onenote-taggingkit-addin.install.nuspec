@@ -4,7 +4,7 @@
   <metadata>
     <id>onenote-taggingkit-addin.install</id>
     <title>OneNote Tagging Kit Add-In</title>
-    <version>2.5.5420.30670</version>
+    <version>2.6.5632.31373</version>
     <authors>WetHat</authors>
     <owners>WetHat</owners>
     <summary>A free to-use add-in to add social tagging to OneNote for the desktop</summary>
@@ -27,15 +27,7 @@
       <dependency id="dotnet4.5" />
     </dependencies>
     <releaseNotes>
-    New Features in this Release
-    * Option to automatically track notes related to the note currently viewed in OneNote. See Find related notes for more information.
     
-    Bugfixes
-    * Tagging Kit error box optionally opens web browser with troubleshooting tips. (Addresses issue 1005: app crashed when using settings dialogbox )
-    * Improved resilience against bad XML returned from OneNote
-    
-    Other Changes
-    * Logging improvements
     </releaseNotes>
   </metadata>
   <files>
