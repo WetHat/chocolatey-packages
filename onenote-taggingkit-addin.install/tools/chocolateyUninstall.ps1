@@ -8,5 +8,5 @@ Get-ItemProperty -Path @( 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentV
     $_.DisplayName -like $namePattern
   } `
 | ForEach-Object {
-    Uninstall-ChocolateyPackage $packageName 'MSI' "$($_.PSChildName) /qn"
+    Uninstall-ChocolateyPackage $packageName 'MSI' "$($_.PSChildName) /qn /norestart"
   }
