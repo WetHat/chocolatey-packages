@@ -1,4 +1,4 @@
-﻿$packageName         = 'licensecrawler.portable' # arbitrary name for the package, used in messages
+﻿$packageName         = 'licensecrawler.portable'
 $url                 = 'http://www.klinzmann.name/files/licensecrawler.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'LicenseCrawler.lnk'

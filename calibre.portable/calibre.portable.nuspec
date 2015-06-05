@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.29</version>
+    <version>2.30</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -23,28 +23,33 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-     New Features
-		•Allow opening the full Tag Editor dialog directly from the book list by holding down the Shift key while starting an edit of a tag-like field. For example, click on the tags field for a book and press Shift-F2 
-		•Tag Browser: Allow undoing the deletion of items in the Manage categories window 
-		•calibredb add: Allow setting arbitrary identifiers, not just ISBN. 
-		Closes tickets: 1458620
-
-		•Add a 'Retry' button to the news download failed error message. 
-		Closes tickets: 1458076
-
+    New Features
+		•An option to auto-convert a book on adding even if it is already in the output format (Preferences->Adding Books). 
+		Closes tickets: 1460477
+		
+		•E-book viewer: If there are entries in the Table of Contents that are long enough to be truncated, display the full text in a popup menu when the mouse hovers over the item. 
+		Closes tickets: 1460093
+		
+		•News download: Add support for turning off SSL certificate verification in individual recipes 
+		•Kobo driver: Support for upcoming firmware version 3.16 
+		Closes tickets: 1461964
 	Bug Fixes
-		•DOCX Output: Detect the common idiom of placing centered images as inline images inside a containing centered block and render the resulting image as a floating centered image in the DOCX file. 
+		•DOCX Output: Fix aspect ratio of images being distorted when the input document specifies image width but not height or vice-versa. 
 		Closes tickets: 1455502
 		
-		•DOCX Output: Fix incorrect handling of bold/italic in paragraphs where the majority of text is either bold or italic instead of normal 
-		•Table of Contents editor: Fix save/load of settings in the XPath wizard not working across restarts 
-		•Get Books: Update the Kobo Store plugin for website changes 
-
-	Improved news sources
-		•Popular Science
-		•General Knowledge Today
-		•Scientific American
-		•Wired Magazine
+		•DOCX Output: Fix extra page breaks being inserted in some situations. 
+		Closes tickets: 1455502
+		
+		•LIT Input: Fix smarten punctuation not working for text (as opposed to HTML) based LIT files. 
+		Closes tickets: 1460998
+		
+		•EPUB metadata: Fix extraction of cover image from EPUB 3 files that do not use EPUB 2 backward compatible markup and that have incorrect cover page markup as well. 
+		Closes tickets: 1461321
+		
+		•Book details panel: On windows use only \ as a path separator when copying file paths 
+		•Edit Book: Fix Saved searches panel not working well with very long search/replace expressions 
+		•OS X: Fix changing preferences causing 'Email to selected recipients...' appearing multiple times in the Connect/Share menu. 
+		Closes tickets: 1460089
     </releaseNotes>
   </metadata>
   <files>
