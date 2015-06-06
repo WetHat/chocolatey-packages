@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>0.206.0</version>
+    <version>0.207.0</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
@@ -21,9 +21,8 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-        •Atom now ships with the 1.0 API enabled and no longer loads packages that use deprecated APIs. You can run Atom with  --include-deprecated-apis  to still load them but the APIs will be completely removed in the upcoming 1.0 release.
-        •Atom now has built-in support for preview tabs. Check the  Use Preview Tabs  option from the Tabs package settings to enable. Tabs will be reused across opened files unless they are edited or double clicked. You can also run  tabs:keep-preview-tab  from the Command Palette to retain the tab.
-        •Switched to a tiled rendering strategy to improve text editor rendering performance, especially scrolling.
+       •Atom now automatically re-enables the Tabs and Tree View packages when the deprecated Sublimes Tabs is installed
+       •Fixed an issue where opening the Settings View would show an error notification
     </releaseNotes>
   </metadata>
   <files>

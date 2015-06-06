@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.2.3.2</version>
+    <version>3.2.3.3</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -21,12 +21,14 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-	XMedia Recode 3.2.3.2
+     XMedia Recode 3.2.3.3
 		•Update of ffmpeg
 		•Updated japanese language file
-		•MOV container: Added ‘huffYUV’ support 
-		•MOV container: Added ‘Uncompressed packed MS 4:4:4:4’ support
-		•New profiles ( Huawei, HTC, Sony, Wiko )
+		•Updated czech language file
+		•Updated italian language file
+		•Updated russian language file
+		•MOV container: Added ‘Uncompressed packed 4:2:0’ support 
+		•MOV container: Added ‘Ut Video’ support
 
 	Troubleshooting
 		•Fixed minor bugs

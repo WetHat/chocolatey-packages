@@ -4,7 +4,7 @@
   <metadata>
     <id>ultraedit.install</id>
     <title>UltraEdit - Text Editor</title>
-    <version>22.0</version>
+    <version>22.10</version>
     <authors>IDM Computer Solutions</authors>
     <owners>WetHat</owners>
     <summary>UltraEdit Programmer's Editor</summary>
@@ -19,39 +19,33 @@
       <dependency id="" version="" />
     </dependencies>-->
     <releaseNotes>
-    Document Map
-    	◦ "Filmstrip" overview of active file for visual context and quick navigation
-	◦ Zoom in or out to see more or less of the file
-	◦ Optionally shows bookmarks, code folding, and active line
-	◦ Optionally reposition caret on click
-	◦ Toggle via View -> Views/Lists or via toolbar icon
+    •Smarter indentation of auto-completed XML/HTML close tags
+        ◦After closing tag is automatically, inserted press Enter
+    	◦UE will reposition and properly indent the closing tag on the line beneath the new (active) line
 
-    Vertically split window
-	    ◦ Accessible via Window menu or via splitter next to horizontal scrollbar
-	    ◦ Split window both vertically and horizontally for 4-way view of file
+	•Convert Quick Find to multi-select
+	    ◦Press Ctrl + , (comma) with Highlight All active to convert them to multi-selections
+		◦Select some text, then press Ctrl + , to convert all occurrences of selection to multi-selections
+		◦Create custom key mapping in Advanced -> Configuration -> Key Mapping (ViewConvertHighlightedToSelection)
 
-    "Recently Closed Files" menu item
-	◦ Added beneath "Recently Opened Files" in File menu
-	◦ Includes a "first in, first out" ordered list of most recently closed files
-	◦ Mirrors same number of entries set for "Recently Opened Files"
-
-    Cut/copy all bookmarked lines (Search -> Bookmarks submenu)
-    Trim Leading Spaces (Format menu)
-    New Macro commands ◦CopyAllBookmarkLines
-	◦ CutAllBookmarkLines
-	◦ TrimLeadingSpaces
-
-    New Scripting commands (UltraEdit.activeDocument) ◦copyAllBookmarkLines
-	◦ cutAllBookmarkLines
-	◦ trimLeadingSpaces
-
-    New key mapping commands ◦FormatTrimLeadingSpaces (CTRL + \ is default)
-	◦ FormatTrimTrailingSpaces (CTRL + / is default)
-	◦ ViewShowHideDocumentMap
-	◦ EditCopyAllBookmarkedLines
-	◦ EditCutAllBookmarkedLines
-	◦ WindowVerticalSplitWindow
-  </releaseNotes>
+	•Highlight All Selected and search highlighting shown in the Document Map
+	•Highlight All Selected now uses entire selection (instead of just word under caret)
+	•Performance improvements for multi-caret editing with many selections/carets
+	•Document Map improvements with column mode, selecting, changing syntax highlighting, etc.
+	•Added support for Select All in "Edit Macro" dialog
+	•Addressed display issues in Asian languages (Chinese, Japanese, Korean) with child windows, file tabs, tooltips, and other UI elements 
+	•Improved selection and highlighting in column mode
+	•Addressed split window issues
+	•Addressed issues with Revert to Saved after manually changing file encoding
+	•Addressed issues when converting file encoding and then reverting to saved
+	•Addressed issue with Wrap after column #, insert CR/LF
+	•Addressed issue with line change indicator not showing for changes on first line of folded/hidden block
+	•Addressed some minor Find/Find in Files issues
+	•Addressed issues with Recently Closed Files list
+	•Addressed CSS syntax highlighting colors with some themes
+	•Addressed issue with Open Address Bar width
+	•Various other minor improvements
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
