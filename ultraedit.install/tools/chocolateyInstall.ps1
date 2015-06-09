@@ -5,4 +5,5 @@ $silentArgs     = '/qn /norestart'
 $validExitCodes = @(0) 
 $installlocation= Split-Path -parent $MyInvocation.MyCommand.Definition
 
-Install-ChocolateyPackage $packageName $installerType $silentArgs $url  -validExitCodes $validExitCodes
+## Make sure new installer is cached by adding version
+Install-ChocolateyPackage "$packageName.22.10" $installerType $silentArgs $url  -validExitCodes $validExitCodes
