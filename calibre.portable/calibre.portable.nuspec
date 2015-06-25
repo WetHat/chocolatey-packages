@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.30</version>
+    <version>2.31</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,32 +24,40 @@
     </dependencies>
     <releaseNotes>
     New Features
-		•An option to auto-convert a book on adding even if it is already in the output format (Preferences->Adding Books). 
-		Closes tickets: 1460477
-		
-		•E-book viewer: If there are entries in the Table of Contents that are long enough to be truncated, display the full text in a popup menu when the mouse hovers over the item. 
-		Closes tickets: 1460093
-		
-		•News download: Add support for turning off SSL certificate verification in individual recipes 
-		•Kobo driver: Support for upcoming firmware version 3.16 
-		Closes tickets: 1461964
+    	•E-book viewer: Make the search engine used for searching for selected text configurable (in the Miscellaneous section of the viewer preferences) 
+
 	Bug Fixes
-		•DOCX Output: Fix aspect ratio of images being distorted when the input document specifies image width but not height or vice-versa. 
-		Closes tickets: 1455502
+		•E-book viewer: Fix dragging to select text with the mouse causing the page to slide sideways in paged mode, if the mouse leaves the text area. 
+		Closes tickets: 1464862
 		
-		•DOCX Output: Fix extra page breaks being inserted in some situations. 
-		Closes tickets: 1455502
+		•E-book viewer: Fix transitioning between full screen mode and normal mode sometimes causing current position to not be preserved. 
+		Closes tickets: 1466082
 		
-		•LIT Input: Fix smarten punctuation not working for text (as opposed to HTML) based LIT files. 
-		Closes tickets: 1460998
+		•AZW3 Input: Ignore incorrect text encoding (incorrectly encoded bytes are now replaced by placeholders) instead of erroring out. 
+		Closes tickets: 1465769
 		
-		•EPUB metadata: Fix extraction of cover image from EPUB 3 files that do not use EPUB 2 backward compatible markup and that have incorrect cover page markup as well. 
-		Closes tickets: 1461321
+		•Get Books: Update Legimi and CDP store plugins for website changes 
+		•Fix Cybook Nolimbook not being detected in linux and OS X. 
+		Closes tickets: 1464382
 		
-		•Book details panel: On windows use only \ as a path separator when copying file paths 
-		•Edit Book: Fix Saved searches panel not working well with very long search/replace expressions 
-		•OS X: Fix changing preferences causing 'Email to selected recipients...' appearing multiple times in the Connect/Share menu. 
-		Closes tickets: 1460089
+		•DOCX Output: Fix internal hyperlinks being ignored when they point to a HTML file whose &lt;body&gt; element has an id. 
+		Closes tickets: 1464086
+		
+		•Edit Book: Fix groups in replace template being interpreted backwards when search direction is up 
+		•Searching: When search as you type is active, do not change automatically change focus to the book list when searching, unless the user presses Enter. 
+		Closes tickets: 1463042
+		
+		•Font subsetting: Fix subsetting removing some needed ligatures when subsetting some Arabic fonts 
+		•Prevent errors when testing email sending even if stderr on the host machine is broken 
+		
+	New news sources
+		•Various Ukranian news sources by rpalyvoda
+		
+	Improved news sources
+		•Baltimore Sun
+		•El Mercurio Chile
+		•Sydney Morning Herald
+
     </releaseNotes>
   </metadata>
   <files>

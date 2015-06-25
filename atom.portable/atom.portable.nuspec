@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>0.209.0</version>
+    <version>0.211.0</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
@@ -21,9 +21,9 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-		•Fixed an issue where editor focus was lost when clicking a tab
-		•Fixed an issue where Atom would steal focus multiple times during startup
-		•Fixed an issue on Windows where  atom  and  apm  failed when run from an MSYS2 shell
+		•Fixed an issue where clicking the fold button in the gutter would sometimes create a fold in the wrong place.
+		•The default editor font, font size, and line height have been adjusted to improve readability. Adjustments can still be made in the Settings view.
+
     </releaseNotes>
   </metadata>
   <files>

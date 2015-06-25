@@ -1,5 +1,5 @@
-﻿$packageID           = 'atom.portable' # nuget package id
-$url                 = 'https://github.com/atom/atom/releases/download/v0.209.0/atom-windows.zip' # download url
+﻿$packageID           = 'atom.portable'
+$url                 = 'https://github.com/atom/atom/releases/download/v0.211.0/atom-windows.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Atom Text Editor.lnk'
 $shortcutDescription = 'Hackable text editor for the 21st Century'
