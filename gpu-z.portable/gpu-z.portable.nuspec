@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>gpu-z.portable</id>
     <title>TechPowerUp GPU-Z (Portable)</title>
-    <version>0.8.3</version>
+    <version>0.8.4</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
     <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
@@ -15,7 +15,7 @@
     • Displays adapter, GPU and display information
     • Displays overclock, default clocks and 3D clocks (if available)
     • Includes a GPU load test to verify PCI-Express lane configuration
-    • Validation of results 
+    • Validation of results
     • GPU-Z can create a backup of your graphics card BIOS
     • No installation required, optional installer is available
     • Support for Windows XP / Vista / Windows 7 / Windows 8 (both 32 and 64 bit versions are supported)
@@ -31,15 +31,14 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-	•Added VGA BIOS UEFI support indicator
-	•Added support for NVIDIA GTX 980 Ti, GTX 965M, GTX 950M, NVS315, GT 750 (GK106)
-	•Added support for AMD Fiji, Radeon R2/R3 Graphics (Mullins APU)
-	•Added support for various Intel Broadwell SKUs
-	•Fixed missing NVIDIA PerfCap sensor in some cases
-	•Added support for HBM memory
-	•Fixed GT200B die size
-	•Fixed some NV42 specs
-	•Improved OpenCl detection code
+      •Added PowerColor Radeon Fury X Giveaway
+      •Added full AMD Radeon Fury X support
+      •Added support for AMD R7 360
+      •Added support for Broadwell GT3e
+      •Added high-quality DPI aware vendor logos
+      •Whitespace cleanup in Intel VGA BIOS strings
+      •Fixed UEFI checkbox color on ASUS ROG
+      •Fixed UEFI checkbox displayed as checked when unknown
     </releaseNotes>
   </metadata>
   <files>

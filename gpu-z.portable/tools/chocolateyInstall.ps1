@@ -1,5 +1,5 @@
 ﻿$packageName         = 'gpu-z.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://us1-dl.techpowerup.com/SysInfo/GPU-Z/GPU-Z.0.8.3.exe' # download url
+$url                 = 'http://us1-dl.techpowerup.com/SysInfo/GPU-Z/GPU-Z.0.8.4.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'TechPowerUp GPU-Z.lnk'
 $shortcutDescription = 'Provides vital information about your video card and graphics processor'
@@ -10,7 +10,7 @@ $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 $app                 = Join-Path -Path $installlocation -ChildPath 'GPU-Z.exe'
 
-Get-ChocolateyWebFile $packageName $app $url 
+Get-ChocolateyWebFile $packageName $app $url
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
@@ -21,7 +21,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
