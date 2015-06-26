@@ -1,4 +1,4 @@
-﻿$packageID           = 'mediathekview.portable' # nuget package id
+﻿$packageID           = 'mediathekview.portable.9.060' # includes version as download url is version neutral
 $url                 = 'http://softlayer-ams.dl.sourceforge.net/project/zdfmediathk/Mediathek/Mediathek%209/MediathekView_9.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Mediathek View.lnk'
@@ -20,7 +20,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
@@ -31,7 +31,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-      
+
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -Targetpath $exe.FullName `
                                  -WorkingDirectory $exe.DirectoryName `

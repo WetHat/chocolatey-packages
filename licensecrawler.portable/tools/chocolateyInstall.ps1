@@ -1,4 +1,4 @@
-﻿$packageName         = 'licensecrawler.portable'
+﻿$packageName         = 'licensecrawler.portable.1.47.825' # includes version as download url is version neutral
 $url                 = 'http://www.klinzmann.name/files/licensecrawler.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'LicenseCrawler.lnk'
@@ -20,7 +20,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall

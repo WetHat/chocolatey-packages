@@ -1,4 +1,4 @@
-﻿$packageName         = 'speccy.portable' # arbitrary name for the package, used in messages
+﻿$packageName         = 'speccy.portable.1.28.709' # includes version as download url is version neutral
 $url                 = 'http://www.piriform.com/speccy/download/portable/downloadfile' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Advanced System Information Tool'
@@ -29,15 +29,15 @@ Get-ChildItem -name $installlocation -filter '*.exe' `
       $shortcutName = 'Speccy.lnk'
       $publish = $bitness -eq 32
     }
-    
+
     if ($publish)
     {
       # Inform chocolatey that this is exe has gui
       echo '' >"$($exe.FullName).gui"
-      
+
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall

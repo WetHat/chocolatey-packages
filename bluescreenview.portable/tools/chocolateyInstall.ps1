@@ -1,4 +1,4 @@
-﻿$packageName         = 'bluescreenview.portable' # arbitrary name for the package, used in messages
+﻿$packageName         = 'bluescreenview.portable.1.55' # includes version as download url is version neutral
 $url                 = 'http://www.nirsoft.net/utils/bluescreenview.zip' # download url
 $url64               = 'http://www.nirsoft.net/utils/bluescreenview-x64.zip'
 $shortcutLocation    = 'Chocolatey'
@@ -21,7 +21,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
