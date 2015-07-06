@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.2.3.5</version>
+    <version>3.2.3.6</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -21,18 +21,16 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-     XMedia Recode 3.2.3.5
-		•Update of ffmpeg
-		•Updated japanese language file
-		•Updated czech language file
-		•Updated italian language file
-		•VP8 codec: Added "Datarate undershoot (min) target (%)" option
-		•VP8 codec: Added "Datarate overshoot (max) target (%)" option
-		•New profiles ( Huawei, HTC, Sony, Wiko )
-	
-	Troubleshooting
-		•Fixed minor bugs
+      XMedia Recode 3.2.3.6
+       •Update of ffmpeg
+       •Update of Xvid Codec (1.3.4)
+       •Updated japanese language file
+       •Updated czech language file
+       •Updated italian language file
+       •Updated french language file
 
+      Troubleshooting
+       •Fixed minor bugs
     </releaseNotes>
   </metadata>
   <files>
