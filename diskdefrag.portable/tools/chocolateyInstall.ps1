@@ -1,9 +1,9 @@
-﻿$packageName         = 'diskdefrag.portable.5.4' # includes version as download url is version neutral
+﻿$packageName         = 'diskdefrag.portable.6.0' # includes version as download url is version neutral
 $url                 = 'http://www.auslogics.com/en/downloads/disk-defrag/ausdiskdefragportable.exe' # download url
 $shortcutLocation    = 'Chocolatey'
-$shortcutName        = 'Auslogics Disk Defrag.lnk'
 $shortcutDescription = 'Compact and fast harddisk defragmenter'
 
+$shortcutName        = 'Auslogics Disk Defrag.lnk'
 $appBase             = Split-Path -Parent `
                                   -Path (Split-Path -Parent $MyInvocation.MyCommand.Definition)
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'

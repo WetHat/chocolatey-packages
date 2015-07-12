@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>ssd-z.portable</id>
     <title>SSD-Z (Portable)</title>
-    <version>15.3.15</version>
+    <version>15.7.11</version>
     <authors>Anders Jakobsen</authors>
     <owners>WetHat</owners>
     <summary>Detailed info about your solid-state disks and harddrives</summary>
@@ -21,6 +21,31 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
+    •The keyboard shortcut modifier to change tabs, was changed from Alt to Control. E.g. [Ctrl + 3].
+    •Added keyboard shortcuts to resize the window. Using [Alt + 1, 2, 3, 4] will resize the window to 100%, 150%, 250% or 300%. Last two are width only.
+    •New Tab: "Config". This tab allows for customization of SSD-Z. The Config tab can be opened by pressing [F2] or from the system menu.
+    •Settings are now stored in an INI file, in the same folder as the EXE. What's saved: last active tab, last active device, window position, temperature unit, plus a few other things.
+    •The mousewheel can now scroll the visible tabs, if there are too many to fit at once.
+    •Partition Tab: The volume list now shows the percentage of free space left.
+    •Improved interpretation for certain SMART attributes.
+    •Improved several tooltips to be more clear about what the specific field show.
+    •Benchmark Tab: Improved the IOPS benchmark by using queue depth.
+    •More SSDs have been added to the database.
+    •Added support for a few more vendors and their associated logo.
+    •Fixed clicking on the temperature field on the device tab to swap unit. This will now property update the displayed temperature, instead of turning into "n/a".
+    •Partition Tab: Added a column showing if a partition is aligned on a 4k boundry.
+    •DevSlp is now listed in the capabilities, for devices that support it.
+    •Removed the "-expand" command line parameter. It has been made useless now that the window size is remembered between sessions.
+    •Benchmark Tab: Replaced the specific benchmark selection buttons with a dropdown list.
+    •Benchmark Tab: The benchmark data is now remembered, even if another benchmark is activated or another device is selected. Only doing a full refresh, [Ctrl + F5] or bottom left button, will clear benchmark data.
+    •Benchmark Tab: Some benchmarks can now be aborted when running. This is just a temporary fix until the benchmarks are properly threaded.
+    •Added a keyboard shortcut [F4] to activate the previously selected tab.
+    •SMART Tab: The attribute name of the selected item can now be copied to the clipboard using [Ctrl + C] or by double clicking the attribute.
+    •Added "system.stay_on_top" option to make SSD-Z stay on top.
+    •Identify Tab: Many words now displays a description of what each individual bit means.
+    •Added debugging option "system.enum_scsi_debug". When enabled, "\\.\ScsiX:" devices will be enumerated.
+    •New Tab: "Submit". Here you can submit your SSD to the TechPowerUp database. Having access to the submitted information of many SSDs will help improve future versions.
+    •Increased the default window width, to accommodate the increased number of tabs
     </releaseNotes>
   </metadata>
   <files>
