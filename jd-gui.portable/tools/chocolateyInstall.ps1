@@ -1,5 +1,5 @@
 ﻿$packageID           = 'jd-gui.portable' # nuget package id
-$url                 = 'https://github.com/java-decompiler/jd-gui/releases/download/v1.2.0/jd-gui-1.2.0.jar' # download url
+$url                 = 'https://github.com/java-decompiler/jd-gui/releases/download/v1.3.0/jd-gui-1.3.0.jar' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'jD GUI.lnk'
 $shortcutDescription = 'Java decompiler'
@@ -11,7 +11,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 $launcher            = Join-Path -Path $installlocation -ChildPath 'jD.bat'
 $app                 = Join-Path -Path $installlocation -ChildPath 'jd.jar'
 
-Get-ChocolateyWebFile $packageName $app $url 
+Get-ChocolateyWebFile $packageName $app $url
 
 # Generate a launch file
 Write-Host "Generating Launch File"
@@ -22,7 +22,7 @@ START javaw -jar $app
 
 ## install a shortcut to the start menu to make this app discoverable
 [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
-                                    -ChildPath $shortcutLocation 
+                                    -ChildPath $shortcutLocation
 [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                     -ChildPath $shortcutName
 # register shortcut for removal on uninstall
@@ -33,7 +33,7 @@ if (![System.IO.Directory]::Exists( $shortcutFolder))
 {
   [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
 }
-                         
+
 Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                            -TargetPath $launcher `
                            -WorkingDirectory $installlocation `

@@ -1,5 +1,5 @@
 ﻿$packageName         = 'calibre.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.calibre-ebook.com/2.31.0/calibre-portable-installer-2.31.0.exe' # download url
+$url                 = 'http://download.calibre-ebook.com/2.32.1/calibre-portable-installer-2.32.1.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Calibre E-Book Manager.lnk'
 $shortcutDescription = 'Calibre e-book library manager'
@@ -13,7 +13,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 $launcher            = Join-Path -Path $installlocation -ChildPath 'calibre-portable.bat'
 
 ## We install to a staging folder first so that calibre does not complain
-## about the path being too long           
+## about the path being too long
 Install-ChocolateyPackage $packageName 'EXE' $choco $url -validExitCodes $validExitCodes
 
 Write-Host "Moving calibre into place ..."
@@ -32,7 +32,7 @@ Write-Host "Cleaning up Staging folder ..."
 Remove-Item -Force `
             -Recurse `
             -Path (Join-Path -Path $choco -ChildPath 'Calibre Portable')
-            
+
 # Generate a launch file
 Write-Host "Generating Launch File"
 
@@ -47,7 +47,7 @@ set PATH=%cd%
 
 START /belownormal Calibre.exe
 "@ | Out-File -FilePath $launcher -Encoding ASCII
-  
+
 ## install a shortcut to the start menu to make this app discoverable
 [string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
                                     -ChildPath $shortcutLocation
