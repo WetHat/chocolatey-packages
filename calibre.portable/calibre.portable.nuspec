@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.32.1</version>
+    <version>2.33.0</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,79 +24,25 @@
     </dependencies>
     <releaseNotes>
       New Features
-        •E-book viewer: Automatically save the current reading position every ten seconds. Prevents loss of reading position on crash/forced shutdown.
-        Closes tickets: 1473737
+        •Driver for SONY DPT-S1.
+        Closes tickets: 1476093
 
-        •Edit Book: Check Book: Add checks for missing OPF version and toc references and for text placed directly inside the body tag
-        Closes tickets: 1468649
+        •Edit Book: When showing suggestions for mis-spelled words, also show suggestions from user created word lists
+        •Edit Book: Check Book: Add a check for "invalid" ids
 
-        •calibredb: Add a new search sub-command that can be used to generate a list of book ids from a search expression
-        •Tag Editor: Place the keyboard focus on the last edited field.
-        Closes tickets: 1473140
+      Bug Fixes
+        •Conversion: Ignore stylesheets linked via media queries that use device specific features.
+        Closes tickets: 1476089
 
-        •Edit metadata dialog: When clicking Next and Previous preserve the current tab of the edit comments widget.
-        Closes tickets: 1467129
+        •Fix covers not being read from some TXTZ files.
+        Closes tickets: 1475984
 
-        •Linux: Various fixes to make calibre work when compiled against the latest versions of Qt and PyQt
-        Closes tickets: 1471083
-
-        •Edit Book: Allow drag and drop of files onto dock icon on OS X
-
-        Bug Fixes
-        •There was a regression in 2.32.0 that caused conversion to PDF to fail, the fix for this was released in 2.32.1
-        •E-book viewer: Fix a regression in the previous release that caused the maximum text width setting in full screen mode to be ignored when switching from normal to full screen.
-        Closes tickets: 1467164
-
-        •Fix error in template dialog when using {id} in send to device preferences.
-        Closes tickets: 1474513
-
-        •Edit Book/Book polishing: Fix EPUB books with opf files that use a non-default namespace for the OPF namespace being corrupted.
-        Closes tickets: 1471419
-
-        •OS X: Workaround for Qt 5 regression that causes any errors during startup to be hidden behind the splash screen.
-        Closes tickets: 1473017
-
-        •Conversion: Fix incorrect relative URLs being generated when an HTML or CSS file is placed higher in the folder hierarchy than the opf file.
-        Closes tickets: 1474287
-
-        •FB2 Output: Fix error when using the sectionize with toc option and the input documents Table of Contents contains multiple items pointing to the same HTML file.
-        Closes tickets: 1471125
-
-        •Conversion: Fix error when input document contains a font size exactly one point away from the base size.
-        Closes tickets: 1472291
-
-        •Device drivers: Handle devices with undecodeable filenames in their filesystem. Simply ignore those files.
-        Closes tickets: 1467433
-
-        •Fix Cmd+Left/Right keyboard shortcut not working when editing items in the book list on OS X.
-        Closes tickets: 1469554
-
-        •Fix corrupted text in the jobs list on some non-English windows installs
-        Closes tickets: 1469549
-
-        •Edit Book: Workaround for a Qt regression that caused 'See what changed' after a search and replace on OS X causing the application to become unresponsive.
-        Closes tickets: 1466732
-
-        •Edit Book: Fix smarten punctuation not working for books with non-ascii characters in internal file names on OS X
-
-      New news sources
-        •Slate Star Codex by Ned Letcher
-        •Hurriyet by Adrian Tennessee
+        •ODT Input: Add support for numbered lists that do not start numbering at 1.
+        Closes tickets: 1475846
 
       Improved news sources
-        •Harvard Business Review
-        •Psychology Today
-        •NRC Handelsblad
-        •Entrepeneur Magazine
-        •20 minutes
-        •Economia
-        •Accountancy Age
-        •Jakarta Post
-        •Foreign Affairs
-        •Spectator Magazine
-        •Daily Express
-        •The Onion AV Club
-        •Metro UK
+        •msnbc.com
+        •Houston Chronicle
     </releaseNotes>
   </metadata>
   <files>
