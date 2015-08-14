@@ -1,5 +1,5 @@
 ﻿$packageName         = 'gpu-z.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://us1-dl.techpowerup.com/SysInfo/GPU-Z/GPU-Z.0.8.4.exe' # download url
+$url                 = 'http://us1-dl.techpowerup.com/SysInfo/GPU-Z/GPU-Z.0.8.5.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'TechPowerUp GPU-Z.lnk'
 $shortcutDescription = 'Provides vital information about your video card and graphics processor'

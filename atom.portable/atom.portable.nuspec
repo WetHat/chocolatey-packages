@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>1.0.3</version>
+    <version>1.0.7</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
@@ -21,9 +21,15 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      •Eliminated a polling loop which caused reduced battery life on laptops when Atom was open in an idle state.
-      •Key binding matches are no longer delayed when longer partially-matching multi-stroke bindings are mapped to  unset! .
-      •When multi-keystroke bindings containing printable characters fail to match, those characters are now inserted into the editor. This will enable bindings like  j j  for exiting insert mode to work correctly in the vim-mode package.
+      •Find and replace ◦The find box highlights regular expressions when the regex option is on (https://github.com/atom/find-and-replace/issues/454)
+        ◦  cmd-d  (select-next) adheres to the current state of the 'whole word' option (https://github.com/atom/find-and-replace/pull/482)
+        ◦Project find results are properly sorted (https://github.com/atom/find-and-replace/pull/485)
+        ◦It ignores 0 length matches (https://github.com/atom/find-and-replace/issues/454)
+        ◦It ignores the 'in current selection' option when there is no selection
+        ◦Other small bug fixes
+
+      •Files and folders can now be dragged and dropped into different folders in the tree view.
+
     </releaseNotes>
   </metadata>
   <files>

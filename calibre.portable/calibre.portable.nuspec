@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.33.0</version>
+    <version>2.35.0</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,25 +24,27 @@
     </dependencies>
     <releaseNotes>
       New Features
-        •Driver for SONY DPT-S1.
-        Closes tickets: 1476093
+        •Kobo driver: Add support for the new firmware version 3.17
+        Closes tickets: 1484516
 
-        •Edit Book: When showing suggestions for mis-spelled words, also show suggestions from user created word lists
-        •Edit Book: Check Book: Add a check for "invalid" ids
+        •E-book viewer: Allow setting the number of pages per screen separately for portrait and landscape modes.
+        Closes tickets: 1483313
 
       Bug Fixes
-        •Conversion: Ignore stylesheets linked via media queries that use device specific features.
-        Closes tickets: 1476089
+        •DOCX Input: Fix a regression in the previous release that broke conversion of some documents that specify vertical alignment in absolute units
+        •Book list: Fix the current row number being partially cutoff on some windows 10 machines.
+        Closes tickets: 1482993
 
-        •Fix covers not being read from some TXTZ files.
-        Closes tickets: 1475984
+        •Fix 'stopping content server' message popping up repeatedly even when it is closed while the content server has not fully stopped
+        •Conversion: Fix error when converting a file that uses media queries with comments in the media selector.
+        Closes tickets: 1482983
 
-        •ODT Input: Add support for numbered lists that do not start numbering at 1.
-        Closes tickets: 1475846
+      New news sources
+        •3D News and iXBT.com by bugmen00t
 
       Improved news sources
-        •msnbc.com
-        •Houston Chronicle
+        •American Spectator
+        •South China Morning Post
     </releaseNotes>
   </metadata>
   <files>

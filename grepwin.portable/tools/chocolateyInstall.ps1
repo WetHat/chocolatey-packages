@@ -1,6 +1,6 @@
 ﻿$packageID           = 'grepwin.portable' # nuget package id
-$url                 = 'http://sourceforge.net/projects/grepwin/files/1.6.8/grepWin-1.6.8_portable.exe/download' # download url
-$url64               = 'http://sourceforge.net/projects/grepwin/files/1.6.8/grepWin64-1.6.8_portable.exe/download' # download url
+$url                 = 'http://sourceforge.net/projects/grepwin/files/1.6.11/grepWin-1.6.11_portable.exe/download' # download url
+$url64               = 'http://sourceforge.net/projects/grepwin/files/1.6.11/grepWin64-1.6.11_portable.exe/download' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'grepWin.lnk'
 $shortcutDescription = 'Regular expression search and replace for Windows'
@@ -25,7 +25,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
@@ -36,7 +36,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-      
+
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -Targetpath $exe.FullName `
                                  -WorkingDirectory $exe.DirectoryName `

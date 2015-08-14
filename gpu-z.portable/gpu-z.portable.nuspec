@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>gpu-z.portable</id>
     <title>TechPowerUp GPU-Z (Portable)</title>
-    <version>0.8.4</version>
+    <version>0.8.5</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
     <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
@@ -31,14 +31,16 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      •Added PowerColor Radeon Fury X Giveaway
-      •Added full AMD Radeon Fury X support
-      •Added support for AMD R7 360
-      •Added support for Broadwell GT3e
-      •Added high-quality DPI aware vendor logos
-      •Whitespace cleanup in Intel VGA BIOS strings
-      •Fixed UEFI checkbox color on ASUS ROG
-      •Fixed UEFI checkbox displayed as checked when unknown
+      •Fixed Windows 10 detection
+      •Fixed CUDA detection in Windows 10
+      •Added GPU voltage monitoring for AMD Fiji
+      •Added memory controller load monitoring for AMD Sea Islands, Volcanic Islands, Pirate Islands
+      •Board Id moved into BIOS version tooltip
+      •Validation Id now displayed in GPU-Z window title
+      •Revision Id of recent AMD GPUs will now be displayed
+      •Added support for NVIDIA GeForce GTX 970M &amp; 980M (GM204-B), GeForce 940M, 930M
+      •Added support for Intel Atom x7-Z8700, Celeron N3150
+      •Added support for AMD R9 370, R9 370X, R9 380, R9 390, R9 390X, R9 Fury, A8-7100
     </releaseNotes>
   </metadata>
   <files>

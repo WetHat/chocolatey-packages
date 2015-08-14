@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>jd-gui.portable</id>
     <title>jD GUI (Portable)</title>
-    <version>1.3.0.0</version>
+    <version>1.4.0.0</version>
     <authors>Emmanuel Dupuy</authors>
     <owners>WetHat</owners>
     <summary>Standalone graphical utility that displays Java source codes of “.class” files</summary>
@@ -25,36 +25,14 @@
       <dependency id="javaruntime-platformspecific" />
     </dependencies>
     <releaseNotes>
-      * Updates Linux packaging*
-      * Updates PreferencesView*
-      * Fixes #56, "Bad init method call from inside of a branch"*
-      * Updates Javadoc*
-      * Updates README.md*
-      * Fixes #55, file "./jd_icon_128.png" missing*
-      * Merge pull request #54 from sschuberth/master …*
-      * On Windows, store the config in the roaming APPDATA directory …*
-      * build.gradle: Convert tabs to spaces*
-      * ConfigurationXmlPersisterProvider: Convert tabs to spaces*
-      * Make the README refer to the recently added Gradle wrapper*
-      * Adds missing import*
-      * Simplify a few boolean expressions*
-      * Remove unnecessary semicolons*
-      * JavaFileIndexerProvider: Remove an unused import*
-      * Add the Gradle wrapper …*
-      * Fixes after renaming the root package*
-      * Fixes a NPE thrown by 'Copy Qualified Name' action*
-      * Changes the root package name from 'jd' to 'org.jd'*
-      * Updates 'Select Location' popup dialog*
-      * Hides static block icon in tree*
-      * Adds 'Select Tab' popup menu entry*
-      * Updates ANTLR Java parser*
-      * Fixes JAVA files parsing &amp; font size change*
-      * Optimizes "Search In Constant Pools" dialog*
-      * Improves #43*
-      * Updates menu*
-      * Closes #43, adds "Copy Qualified Name" contextual menu*
-      * Fixes #48, adds "UI > Main window > Single instance" to preferences*
-      * Fixes bug in META-INF/services/* indexer*
+      * Improves UI on Linux
+      * Removes the warning message during the installation under Ubuntu
+      * Fixes the loading extensions under Linux
+      * Fixes bug in Container.Entry implementations
+      * Updates of service-providers loading
+      * Updates API version
+      * Updates .gitignore
+      * Adds icon on tabs
     </releaseNotes>
   </metadata>
   <files>

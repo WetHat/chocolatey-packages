@@ -1,5 +1,5 @@
 ﻿$packageID           = 'jd-gui.portable' # nuget package id
-$url                 = 'https://github.com/java-decompiler/jd-gui/releases/download/v1.3.0/jd-gui-1.3.0.jar' # download url
+$url                 = 'https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-1.4.0.jar' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'jD GUI.lnk'
 $shortcutDescription = 'Java decompiler'
