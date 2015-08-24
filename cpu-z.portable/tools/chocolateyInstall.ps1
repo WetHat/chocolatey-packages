@@ -1,5 +1,5 @@
 ﻿$packageName         = 'cpu-z.portable' # arbitrary name for the package, used in messages
-$url                 = 'ftp://ftp.cpuid.com/cpu-z/cpu-z_1.72-en.zip' # download url
+$url                 = 'http://download.cpuid.com/cpu-z/cpu-z_1.73-en.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Information on some of the main devices of your system'
 
@@ -15,10 +15,10 @@ $bitness = Get-ProcessorBits
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
-    
+
     [bool]$publish = $false
     [string]$shortcutName=''
-    
+
     if ($exe.BaseName -eq 'cpuz_x64')
     {
       $shortcutName = 'CPU-Z System Information (64bit).lnk'
@@ -31,14 +31,14 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       $shortcutName = 'CPU-Z System Information.lnk'
       $publish = $bitness -eq 32
     }
-    
+
     if ($publish)
     {
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall

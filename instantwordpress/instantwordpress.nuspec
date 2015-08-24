@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>instantwordpress</id>
     <title>Instant WordPress</title>
-    <version>4.4.2</version>
+    <version>4.5.0</version>
     <authors>Corvideon</authors>
     <owners>WetHat</owners>
     <summary>Instant WordPress is a complete standalone, portable WordPress development environment.</summary>
@@ -28,13 +28,10 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      10/01/2015 – Instant WordPress Version 4.4.2
-      Instant WordPress Version 4.4.2 contains the following software:
-      - WordPress 4.1 (Updated)
-      - Apache 2.2.15 (Win32)
-      - PHP 5.4.36 (Updated)
-      -MySQL 5.1.46-community-nt
-      This version also contains an updated version of the Native Dashboard plugin.
+      •WordPress 4.2.4 (Updated)
+      •Apache 2.2.15 (Win32)
+      •PHP 5.4.36
+      •MySQL 5.6.25 (Updated)
     </releaseNotes>
   </metadata>
   <files>

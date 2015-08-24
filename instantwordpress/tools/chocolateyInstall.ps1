@@ -1,5 +1,5 @@
 ﻿$packageName         = 'instantwordpress' # nuget package ID
-$url                 = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.4.2.exe' # download url
+$url                 = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.5.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Instant WordPress.lnk'
 $shortcutDescription = 'Standalone, portable WordPress development environment'
@@ -10,7 +10,7 @@ $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
 Install-ChocolateyPackage $packageName 'EXE' "/S /D=$installlocation" $url -validExitCodes @(0)
- 
+
 # create .gui and .ignore files as appropriate
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
@@ -21,7 +21,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
