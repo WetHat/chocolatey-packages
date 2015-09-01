@@ -1,4 +1,4 @@
-﻿$packageName         = 'diskdefrag.portable.6.0' # includes version as download url is version neutral
+﻿$packageName         = 'diskdefrag.portable.6.1' # includes version as download url is version neutral
 $url                 = 'http://www.auslogics.com/en/downloads/disk-defrag/ausdiskdefragportable.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Compact and fast harddisk defragmenter'

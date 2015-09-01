@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>1.0.7</version>
+    <version>1.0.9</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
@@ -21,15 +21,10 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      •Find and replace ◦The find box highlights regular expressions when the regex option is on (https://github.com/atom/find-and-replace/issues/454)
-        ◦  cmd-d  (select-next) adheres to the current state of the 'whole word' option (https://github.com/atom/find-and-replace/pull/482)
-        ◦Project find results are properly sorted (https://github.com/atom/find-and-replace/pull/485)
-        ◦It ignores 0 length matches (https://github.com/atom/find-and-replace/issues/454)
-        ◦It ignores the 'in current selection' option when there is no selection
-        ◦Other small bug fixes
-
-      •Files and folders can now be dragged and dropped into different folders in the tree view.
-
+      •Fixed an issue on Windows where Atom would fail to launch when executing the  wmic  command failed.
+      •Fixed an issue on Mac where Atom would fail to launch when executing the  defaults  or  locale  command failed.
+      •Improved scrolling behavior when dragging selections with the mouse.
+      •Made the custom gutter API public.
     </releaseNotes>
   </metadata>
   <files>

@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.35.0</version>
+    <version>2.36.0</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,27 +24,47 @@
     </dependencies>
     <releaseNotes>
       New Features
-        •Kobo driver: Add support for the new firmware version 3.17
-        Closes tickets: 1484516
+       •Icon themes: Change the calibre icons easily via icon themes
+       You can now change the icons calibre uses easily via Preferences->Look &amp; Feel->Change icon theme. Several icon themes are already available for calibre
 
-        •E-book viewer: Allow setting the number of pages per screen separately for portrait and landscape modes.
-        Closes tickets: 1483313
+       •When adding empty books to the library also allow creating duplicates of the current book, with all metadata copied. To use right click the Add Books button and select 'Add Empty Books'
+       Closes tickets: 1488398
 
-      Bug Fixes
-        •DOCX Input: Fix a regression in the previous release that broke conversion of some documents that specify vertical alignment in absolute units
-        •Book list: Fix the current row number being partially cutoff on some windows 10 machines.
-        Closes tickets: 1482993
+       •Driver for the Unusual Sapiens V2 and Adlibris Letto readers.
+       Closes tickets: 1486531, 1484585
 
-        •Fix 'stopping content server' message popping up repeatedly even when it is closed while the content server has not fully stopped
-        •Conversion: Fix error when converting a file that uses media queries with comments in the media selector.
-        Closes tickets: 1482983
+       •Kobo driver: Add support for firmware 3.17.3
+       •E-book viewer: Add a command line option to open the previously read book when starting up.
+       Closes tickets: 1483313
 
-      New news sources
-        •3D News and iXBT.com by bugmen00t
+       •Edit Book: Live CSS: Allow copying of CSS rules by right clicking on the Live CSS panel.
+       Closes tickets: 1485237
 
-      Improved news sources
-        •American Spectator
-        •South China Morning Post
+       •Linux installer: Install application and mimetype icons in multiple sizes
+       Closes tickets: 1489654
+
+     Bug Fixes
+       •Amazon metadata download: Support for yet another variant of amazon cover image markup
+       •E-book viewer: Fix --open-at sometimes giving inaccurate results (depends on speed of book loading)
+       •EPUB Metadata: Add workaround for bug in PocketBook firmware which causes it to fail to read series metadata if the series number is declared before the series.
+       Closes tickets: 1488113
+
+       •Fix user defined template functions leaking from one library to another when switching libraries/using copy to library.
+       Closes tickets: 1487949
+
+       •Fix a regression in the previous release that could cause the marked books icon to be incorrectly rendered next to the row number
+       Closes tickets: 1486398
+
+       •Edit Book: Check Book: Fix incorrect links that consist only of an anchor and no filename not being detected.
+       Closes tickets: 1485670
+
+       •AZW3 Output: Fix large tables (with many columns) not rendering correctly on Kindles.
+       Closes tickets: 1489495
+
+     Improved news sources
+       •.tyzden
+       •Forbes
+       •Clarin
     </releaseNotes>
   </metadata>
   <files>
