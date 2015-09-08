@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>1.0.9</version>
+    <version>1.0.11</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
@@ -21,10 +21,10 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      •Fixed an issue on Windows where Atom would fail to launch when executing the  wmic  command failed.
-      •Fixed an issue on Mac where Atom would fail to launch when executing the  defaults  or  locale  command failed.
-      •Improved scrolling behavior when dragging selections with the mouse.
-      •Made the custom gutter API public.
+    •Fixed a regression where undoing after splitting the editor threw an exception.
+    •Fixed an issue on Linux and Mac where Atom would fail to launch when run using  sudo .
+    •Fixed an issue on Windows where Atom would fail to launch from Git Bash.
+    •Fixed an issue that prevented scrolling while clicking and dragging with a maximized window
     </releaseNotes>
   </metadata>
   <files>

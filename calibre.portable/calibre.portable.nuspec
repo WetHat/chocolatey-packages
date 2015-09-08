@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.36.0</version>
+    <version>2.37.0</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,47 +24,23 @@
     </dependencies>
     <releaseNotes>
       New Features
-       •Icon themes: Change the calibre icons easily via icon themes
-       You can now change the icons calibre uses easily via Preferences->Look &amp; Feel->Change icon theme. Several icon themes are already available for calibre
+        •Driver for the Lark Freebook reader device
+        •A redesigned busy spinner -- why should icons get all the love?
+        •When merging book records, show more information about the target book record.
+        Closes tickets: 1490343
 
-       •When adding empty books to the library also allow creating duplicates of the current book, with all metadata copied. To use right click the Add Books button and select 'Add Empty Books'
-       Closes tickets: 1488398
+        •A new icon theme 'Dark Blue' (Preferences->Look &amp; Feel->Change icon theme)
+        •Add a check box to control copying ebook files when duplicating book records via the Add Empty Book dialog
 
-       •Driver for the Unusual Sapiens V2 and Adlibris Letto readers.
-       Closes tickets: 1486531, 1484585
+      Bug Fixes
+        •Edit Book: Check Book: Fix automatic fixing of unsafe ids not working if the file containing the unsafe also needs to be fixed for an unsafe filename.
+        Closes tickets: 1491728
 
-       •Kobo driver: Add support for firmware 3.17.3
-       •E-book viewer: Add a command line option to open the previously read book when starting up.
-       Closes tickets: 1483313
+        •E-book viewer: Informative error message for themes button when no themes have been created
+        •Fix a regression that caused the library switch entries at the bottom of the library menu to not work when there are many libraries.
+        Closes tickets: 1490096
 
-       •Edit Book: Live CSS: Allow copying of CSS rules by right clicking on the Live CSS panel.
-       Closes tickets: 1485237
-
-       •Linux installer: Install application and mimetype icons in multiple sizes
-       Closes tickets: 1489654
-
-     Bug Fixes
-       •Amazon metadata download: Support for yet another variant of amazon cover image markup
-       •E-book viewer: Fix --open-at sometimes giving inaccurate results (depends on speed of book loading)
-       •EPUB Metadata: Add workaround for bug in PocketBook firmware which causes it to fail to read series metadata if the series number is declared before the series.
-       Closes tickets: 1488113
-
-       •Fix user defined template functions leaking from one library to another when switching libraries/using copy to library.
-       Closes tickets: 1487949
-
-       •Fix a regression in the previous release that could cause the marked books icon to be incorrectly rendered next to the row number
-       Closes tickets: 1486398
-
-       •Edit Book: Check Book: Fix incorrect links that consist only of an anchor and no filename not being detected.
-       Closes tickets: 1485670
-
-       •AZW3 Output: Fix large tables (with many columns) not rendering correctly on Kindles.
-       Closes tickets: 1489495
-
-     Improved news sources
-       •.tyzden
-       •Forbes
-       •Clarin
+        •Get Books: Update Amazon EU store plugins for website changes
     </releaseNotes>
   </metadata>
   <files>

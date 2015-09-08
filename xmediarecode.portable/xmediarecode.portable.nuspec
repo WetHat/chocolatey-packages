@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.2.5.5</version>
+    <version>3.2.5.8</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -21,11 +21,11 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      XMedia Recode 3.2.5.5
+      XMedia Recode 3.2.5.8
         •Update of ffmpeg
-        •Updated French language file
-        •Nvidia NVENC: Added "Number of Reference Frames" option
-        •New profiles ( BQ, Huawei, HTC, Sony, Samsung, Wiko )
+        •Update of x264 (2597) Codec
+        •Updated Russian language file
+        •New profiles ( ZTE )
 
       Troubleshooting
         •Fixed minor bugs
