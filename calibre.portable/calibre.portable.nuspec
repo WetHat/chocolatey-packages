@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.37.0</version>
+    <version>2.38.0</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,23 +24,26 @@
     </dependencies>
     <releaseNotes>
       New Features
-        •Driver for the Lark Freebook reader device
-        •A redesigned busy spinner -- why should icons get all the love?
-        •When merging book records, show more information about the target book record.
-        Closes tickets: 1490343
-
-        •A new icon theme 'Dark Blue' (Preferences->Look &amp; Feel->Change icon theme)
-        •Add a check box to control copying ebook files when duplicating book records via the Add Empty Book dialog
+        •Add support for Kobo Touch 2
+        •Edit Book: Add a tool to check external links (links pointing to websites). Can be accessed via Tools->Check external links
+        •Edit Book: Add an option to turn off drag and drop editing of text (Preferences->Editor)
+        •Two new icon themes: Primo+ and Black Edition (Preferences->Look &amp; Feel->Change icon theme)
 
       Bug Fixes
-        •Edit Book: Check Book: Fix automatic fixing of unsafe ids not working if the file containing the unsafe also needs to be fixed for an unsafe filename.
-        Closes tickets: 1491728
+        •Copy to Library: Fix author sort/link values not being copied when copying a book with an author not present in the destination library.
+        Closes tickets: 1492685
 
-        •E-book viewer: Informative error message for themes button when no themes have been created
-        •Fix a regression that caused the library switch entries at the bottom of the library menu to not work when there are many libraries.
-        Closes tickets: 1490096
+        •When inserting metadata jackets do not set media for the stylesheet. This prevented the stylesheet from working with some reader devices.
+        •Copy to library: Fix conversion options not being copied when copying books between libraries
 
-        •Get Books: Update Amazon EU store plugins for website changes
+      New news sources
+        •Karsi Gazete by Voltran
+
+      Improved news sources
+        •Strategy+Business
+        •Ars Technica
+        •National Geographic
+        •New York Times Technology Beat
     </releaseNotes>
   </metadata>
   <files>

@@ -1,8 +1,8 @@
-﻿$packageName    = 'ultraedit.install.22.10'
+﻿$packageName    = 'ultraedit.install.22.20'
 $installerType  = 'MSI' #only one of these: exe, msi, msu
 $url            = 'http://www.ultraedit.com/files/msii/ue_english.msi' # download url
 $silentArgs     = '/qn /norestart'
-$validExitCodes = @(0) 
+$validExitCodes = @(0)
 $installlocation= Split-Path -parent $MyInvocation.MyCommand.Definition
 
 ## Make sure new installer is cached by adding version
