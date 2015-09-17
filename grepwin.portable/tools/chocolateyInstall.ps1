@@ -1,6 +1,6 @@
 ﻿$packageID           = 'grepwin.portable' # nuget package id
 $url                 = 'http://sourceforge.net/projects/grepwin/files/1.6.12/grepWin-1.6.12_portable.exe/download' # download url
-$url64               = 'http://sourceforge.net/projects/grepwin/files/1.6.12/grepWin64-1.6.12_portable.exe/download' # download url
+$url64               = 'http://sourceforge.net/projects/grepwin/files/1.6.12/grepWin-x64-1.6.12_portable.exe/download' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'grepWin.lnk'
 $shortcutDescription = 'Regular expression search and replace for Windows'
