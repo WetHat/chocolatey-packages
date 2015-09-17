@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>grepwin.portable</id>
     <title>grepWin (Portable)</title>
-    <version>1.6.11</version>
+    <version>1.6.12</version>
     <authors>Stefan Küng</authors>
     <owners>WetHat</owners>
     <summary>Regular expression search and replace for Windows</summary>
@@ -20,7 +20,20 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+      * mark grepWin as high-dpi aware.
+      * Add a third column in content mode to show the path of the file.
+        Implements issue #318
+      * Call the NM_DBLCLICK handler of the list control when enter is pressed.
+        Implements issue #367.
+      * Jump to the first matching line in file view.
+      * Use the folder path *and* the full path for the "exclude dirs" regex pattern.
+        Implements issue #419
+      * Introduce a command line parameter /executereplace to start a replace operation immediately.
+        Implements issue #427
+      * Fix sorting by number of matches in descending order.
+      * Update to boost 1.59.0
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

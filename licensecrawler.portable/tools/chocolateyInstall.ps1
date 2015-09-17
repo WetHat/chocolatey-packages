@@ -1,4 +1,4 @@
-﻿$packageName         = 'licensecrawler.portable.1.47.825' # includes version as download url is version neutral
+﻿$packageName         = 'licensecrawler.portable.1.48.868' # includes version as download url is version neutral
 $url                 = 'http://www.klinzmann.name/files/licensecrawler.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'LicenseCrawler.lnk'

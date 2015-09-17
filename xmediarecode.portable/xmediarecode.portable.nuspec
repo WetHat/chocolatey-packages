@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.2.5.8</version>
+    <version>3.2.6.0</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -21,11 +21,14 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      XMedia Recode 3.2.5.8
+      XMedia Recode 3.2.6.0
         •Update of ffmpeg
-        •Update of x264 (2597) Codec
+        •Update of libdvdread 5.0.4
         •Updated Russian language file
-        •New profiles ( ZTE )
+        •Updated French language file
+        •Updated Italian language file
+        •Nvidia NVENC: Added "CABAC" option
+        •New profiles (  Cat, Gigaset, Huawei, Pioneer )
 
       Troubleshooting
         •Fixed minor bugs
