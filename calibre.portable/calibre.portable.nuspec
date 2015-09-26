@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.38.0</version>
+    <version>2.39.0</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,26 +24,39 @@
     </dependencies>
     <releaseNotes>
       New Features
-        •Add support for Kobo Touch 2
-        •Edit Book: Add a tool to check external links (links pointing to websites). Can be accessed via Tools->Check external links
-        •Edit Book: Add an option to turn off drag and drop editing of text (Preferences->Editor)
-        •Two new icon themes: Primo+ and Black Edition (Preferences->Look &amp; Feel->Change icon theme)
+        •Implement tag mapping to automatically filter/transform tags when adding books or downloading metadata
+        Now you can create simple rules that will filter/transform the tags when adding new books or downloading metadata for books. To setup the rules, go to Preferences->Adding books and Preferences->Downloading metadata
+
+        •Kobo driver: Support for newly firmware version 3.18
+        Closes tickets: 1499340
+
+        •Edit Book: Add a setting to control icon size for the toolbars (Preferences->Toolbars)
 
       Bug Fixes
-        •Copy to Library: Fix author sort/link values not being copied when copying a book with an author not present in the destination library.
-        Closes tickets: 1492685
+        •Edit Book: Check Book: Fix automatic correction of missing unique id sometimes not working
+        Closes tickets: 1498207
 
-        •When inserting metadata jackets do not set media for the stylesheet. This prevented the stylesheet from working with some reader devices.
-        •Copy to library: Fix conversion options not being copied when copying books between libraries
+        •Edit Book: Fix (hopefully) View->Browse images in books sometimes not showing changed images
+        •CBZ metadata: Do not fail to read metadata if the volume is not a valid number.
+        Closes tickets: 1495651
+
+        •Content server: Fix error in /mobile page if one of the books has metadata with ascii control codes in it.
+        Closes tickets: 1491082
+
+        •Linux: Workaround for systems with broken xdg-open implementations that do not unquote urls before passing them to applications
+        •Get Books: Update cdp.pl store for website changes
+        •HTMLZ Output: Fix HTML files being created with system encoding instead of UTF-8.
+        Closes tickets: 1499514
 
       New news sources
-        •Karsi Gazete by Voltran
+        •Various Korean news sources by Hoje Lee
+        •Presseportal DE by Volker Heggemann
 
       Improved news sources
-        •Strategy+Business
-        •Ars Technica
-        •National Geographic
-        •New York Times Technology Beat
+        •TIME Magazine
+        •The Atlantic
+        •Instapaper
+        •Trouw
     </releaseNotes>
   </metadata>
   <files>
