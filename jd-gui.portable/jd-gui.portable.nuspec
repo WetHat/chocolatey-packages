@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>jd-gui.portable</id>
     <title>jD GUI (Portable)</title>
-    <version>1.4.0.0</version>
+    <version>1.4.0.1</version>
     <authors>Emmanuel Dupuy</authors>
     <owners>WetHat</owners>
     <summary>Standalone graphical utility that displays Java source codes of “.class” files</summary>
@@ -22,7 +22,7 @@
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/jD-gui128x128.png</iconUrl>
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
-      <dependency id="javaruntime-platformspecific" />
+      <dependency id="javaruntime" />
     </dependencies>
     <releaseNotes>
       * Improves UI on Linux
