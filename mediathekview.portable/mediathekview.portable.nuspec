@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mediathekview.portable</id>
     <title>MediathekView (Portable)</title>
-    <version>9.0</version>
+    <version>10.0</version>
     <authors>W. Xaver</authors>
     <owners>WetHat</owners>
     <summary>Online-Mediathek Viewer deutschprachiger TV Sender</summary>
@@ -19,17 +19,9 @@
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/MediathekView256x256.png</iconUrl>
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
-      <dependency id="javaruntime-platformspecific" />
+      <dependency id="javaruntime" />
     </dependencies>
     <releaseNotes>
-    - Film-Url auch in HD und Klein in die Zwischenablage kopieren
-    - Anzeige der Plattengröße (freier Platz) beim Anlegen eines Downloads
-    - eigene exe (Skripte) fürs Starten vom USB-Stick 
-    - neue Option: "-fastauto", wie "-auto" aber es werden keine Filmbeschreibungen mit geladen, spart Speicher und beschleunigt schwache Hardware 
-    - neue Option: "nur Filme der letzten x Tage laden", (in den Einstellungen) spart Speicher und beschleunigt schwache Hardware, muss in der GUI gesetzt werden und ist dann auch in "-auto" aktiv 
-    - "Downloads um XX:YY Uhr starten", neue Option in den Downloads - neuer Sender: Phoenix, SR
-    - Kontrolle der max. Pfadlänge unter Windows
-    - Umstellung der Kontrolle der Bandbreite, jetzt gilt die Vorgabe für JEDEN Download nicht mehr als Summe für alle
     </releaseNotes>
   </metadata>
   <files>
