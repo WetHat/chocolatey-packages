@@ -1,5 +1,5 @@
 ﻿$packageName         = 'freemind.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://cznic.dl.sourceforge.net/project/freemind/freemind/1.0.1/freemind-bin-max-1.0.1.zip' # download url
+$url                 = 'http://skylink.dl.sourceforge.net/project/freemind/freemind/1.0.1/freemind-bin-max-1.0.1.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Premier free mind-mapping software written in Java'
 
@@ -17,7 +17,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
     [bool]$publish = $false
     [string]$shortcutName=''
-    
+
     if ($exe.BaseName -eq 'FreeMind64')
     {
       $shortcutName = 'Freemind Mind Mapping (64bit).lnk'
@@ -30,14 +30,14 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       $shortcutName = 'Freemind Mind Mapping.lnk'
       $publish = $bitness -eq 32
     }
-    
+
     if ($publish)
     {
       echo '' >"$($exe.FullName).gui"
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs" `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall

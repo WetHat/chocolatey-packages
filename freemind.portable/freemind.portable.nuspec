@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>freemind.portable</id>
     <title>FreeMind Mind Mapping (Portable)</title>
-    <version>1.0.1</version>
+    <version>1.0.1.1</version>
     <authors>Jörg Müller, Daniel Polansky, Christian Foltin, Dimitry Polivaev, et al</authors>
     <owners>WetHat</owners>
     <summary>FreeMind is a premier free mind-mapping software written in Java</summary>
@@ -19,7 +19,7 @@
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/d24b9ddd5ee85b1530cc104aeb17e70652071520/icons/FreeMind256x256.png</iconUrl>
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
-      <dependency id="javaruntime-platformspecific" />
+      <dependency id="javaruntime" />
     </dependencies>
     <releaseNotes>Bug fix release</releaseNotes>
   </metadata>
