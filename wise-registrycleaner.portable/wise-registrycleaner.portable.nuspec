@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>wise-registrycleaner.portable</id>
+    <title>Wise Registry Cleaner (Portable)</title>
+    <version>8.72.559</version>
+    <authors>wisecleaner.com</authors>
+    <owners>WetHat</owners>
+    <summary>Clean registry junks, repair Windows errors</summary>
+    <description>
+      Wise Registry Cleaner scans the Windows registry and finds errors &amp; residual items in the registry and then cleans or defrags them. By fixing these residual and corrupted items in Windows registry, your system will run faster and more stable.
+    </description>
+    <projectUrl>http://www.wisecleaner.com/wise-registry-cleaner.html</projectUrl>
+    <tags>wise registrycleaner portable registry windows</tags>
+    <copyright>Copyright 2006-2015 WiseCleaner.com All Rights Reserved</copyright>
+    <licenseUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/wise-registrycleaner.portable/tools/License.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/WRC225x225.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
+    <releaseNotes>
+      * Improved 'Application paths' cleaning.
+      * Improved localization and language support.
+      * Minor GUI improvements and bug fixes.
+
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

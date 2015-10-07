@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>wise-uninstaller.portable</id>
+    <title>Wise Program Uninstaller (Portable)</title>
+    <version>1.75</version>
+    <authors>wisecleaner.com</authors>
+    <owners>WetHat</owners>
+    <summary>Uninstall programs quickly and completely</summary>
+    <description>Wise Program Uninstaller allows you to uninstall programs quickly and completely using its simple and user-friendly interface. The built-in scan engine will scan and delete all the left associated files, folders and registry items after the de-installation, making sure the software is completely removed from your computer.</description>
+    <projectUrl>http://www.wisecleaner.com/wise-program-uninstaller.html</projectUrl>
+    <tags>wise uninstaller portable</tags>
+    <copyright>Copyright 2006-2015 WiseCleaner.com All Rights Reserved</copyright>
+    <licenseUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/wise-uninstaller.portable/tools/License.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/WPU225x225.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
