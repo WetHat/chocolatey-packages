@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.39.0</version>
+    <version>2.40.0</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -24,39 +24,34 @@
     </dependencies>
     <releaseNotes>
       New Features
-        •Implement tag mapping to automatically filter/transform tags when adding books or downloading metadata
-        Now you can create simple rules that will filter/transform the tags when adding new books or downloading metadata for books. To setup the rules, go to Preferences->Adding books and Preferences->Downloading metadata
+        •A new tool to apply Tag mapper rules to existing books in the library. To use it, go to Preferences->Toolbars and add the tool to the toolbar.
+        •Kindle driver: Detect books in Amazon's new KFX format present on e-ink kindles.
+        Closes tickets: 1496206
 
-        •Kobo driver: Support for newly firmware version 3.18
-        Closes tickets: 1499340
-
-        •Edit Book: Add a setting to control icon size for the toolbars (Preferences->Toolbars)
+        Note that this only detects KFX books and allows you to delete them. You cannot copy them to your calibre library. Doing so would be pointless anyway, as KFX books are specialised for individual devices. Instead go to your 'Manage my content' page an amazon.com and download them from there -- this will give you a regular azw3 file you can add to calibre.
 
       Bug Fixes
-        •Edit Book: Check Book: Fix automatic correction of missing unique id sometimes not working
-        Closes tickets: 1498207
+        •TXT Output: Do not fail when input contains HTML comments with double hyphens in the comment text.
+        •E-book polishing: Show a confirmation if the user selects both the add and remove jacket actions.
+        •Edit Book: Fix order of checkboxes in filter style information tool is random
+        •PDB Input: Ingore malformed metadata records.
+        Closes tickets: 1499878
 
-        •Edit Book: Fix (hopefully) View->Browse images in books sometimes not showing changed images
-        •CBZ metadata: Do not fail to read metadata if the volume is not a valid number.
-        Closes tickets: 1495651
+        •Revert change in previous release to workaround broken xdg-open on linux. Apparently xdg-open is so badly broken that working around it is not possible.
+        Closes tickets: 1500226
 
-        •Content server: Fix error in /mobile page if one of the books has metadata with ascii control codes in it.
-        Closes tickets: 1491082
-
-        •Linux: Workaround for systems with broken xdg-open implementations that do not unquote urls before passing them to applications
-        •Get Books: Update cdp.pl store for website changes
-        •HTMLZ Output: Fix HTML files being created with system encoding instead of UTF-8.
+        •ZIP Output: Fix system encoding being used instead of UTF-8 for html files.
         Closes tickets: 1499514
 
-      New news sources
-        •Various Korean news sources by Hoje Lee
-        •Presseportal DE by Volker Heggemann
-
       Improved news sources
-        •TIME Magazine
-        •The Atlantic
-        •Instapaper
-        •Trouw
+        •The Philosopher's Magazine
+        •Harper's Magazine
+        •Ambito
+        •Perfil
+        •Telam
+        •Infobae.com
+        •La Nacion
+        •Clarin
     </releaseNotes>
   </metadata>
   <files>
