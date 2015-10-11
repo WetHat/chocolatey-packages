@@ -13,12 +13,12 @@
       Resource Hacker™ has been designed to be the complete resource editing tool: compiling, viewing, decompiling and recompiling resources for both 32bit and 64bit Windows executables. Resource Hacker™ can open any type of Windows executable (*.exe; *.dll; *.scr; *.mui etc) so that individual resources can be added modified or deleted within these files. Resource Hacker™ can create and compile resource script files (*.rc), and edit resource files (*.res) too.
     </description>
     <projectUrl>http://www.angusj.com/resourcehacker/</projectUrl>
-    <tags>reshack.portable</tags>
+    <tags>resourceeditor programresource executable program resource icon portable</tags>
     <copyright>Copyright © 1999-2015 Angus Johnson</copyright>
     <licenseUrl>http://www.angusj.com/resourcehacker</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/reshack256x256.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/reshacker256x256.png</iconUrl>
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
