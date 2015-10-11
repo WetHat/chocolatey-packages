@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>wise-uninstaller.portable</id>
     <title>Wise Program Uninstaller (Portable)</title>
-    <version>1.75</version>
+    <version>1.81</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
     <summary>Uninstall programs quickly and completely</summary>
@@ -20,7 +20,10 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+      * Improved the loading speed of installation info.
+      * Auto-calculate the used disk space of programs.
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

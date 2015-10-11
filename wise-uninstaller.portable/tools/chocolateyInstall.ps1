@@ -1,4 +1,4 @@
-﻿$packageID           = 'wise-uninstaller.portable.1.75' # nuget package id includes version because URL does not
+﻿$packageID           = 'wise-uninstaller.portable.1.81' # nuget package id includes version because URL does not
 $url                 = 'http://wisecleaner.com/soft/WPU.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Wise Program Uninstaller.lnk'
@@ -14,7 +14,7 @@ Install-ChocolateyZipPackage $packageID $url $installlocation
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
-    if ($exe.BaseName -eq '__REPLACE__')
+    if ($exe.BaseName -eq 'WiseProgramUninstaller')
     {
       echo '' >"$($exe.FullName).gui"
 
