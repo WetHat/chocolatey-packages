@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.2.6.2</version>
+    <version>3.2.6.3</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -20,16 +20,7 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes>
-      •Update of ffmpeg
-      •Updated French language file
-      •New profiles ( Google, LG, Sony )
-
-      Troubleshooting
-
-      •Fixed minor bugs
-
-    </releaseNotes>
+    <releaseNotes>http://www.xmedia-recode.de/en/index.html</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

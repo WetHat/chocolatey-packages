@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>calibre.portable</id>
     <title>Calibre Ebook Manager(Portable)</title>
-    <version>2.40.0</version>
+    <version>2.41.0</version>
     <authors>Kovid Goyal</authors>
     <owners>WetHat</owners>
     <summary>Calibre is a free and open source e-book library management application.</summary>
@@ -22,37 +22,7 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes>
-      New Features
-        •A new tool to apply Tag mapper rules to existing books in the library. To use it, go to Preferences->Toolbars and add the tool to the toolbar.
-        •Kindle driver: Detect books in Amazon's new KFX format present on e-ink kindles.
-        Closes tickets: 1496206
-
-        Note that this only detects KFX books and allows you to delete them. You cannot copy them to your calibre library. Doing so would be pointless anyway, as KFX books are specialised for individual devices. Instead go to your 'Manage my content' page an amazon.com and download them from there -- this will give you a regular azw3 file you can add to calibre.
-
-      Bug Fixes
-        •TXT Output: Do not fail when input contains HTML comments with double hyphens in the comment text.
-        •E-book polishing: Show a confirmation if the user selects both the add and remove jacket actions.
-        •Edit Book: Fix order of checkboxes in filter style information tool is random
-        •PDB Input: Ingore malformed metadata records.
-        Closes tickets: 1499878
-
-        •Revert change in previous release to workaround broken xdg-open on linux. Apparently xdg-open is so badly broken that working around it is not possible.
-        Closes tickets: 1500226
-
-        •ZIP Output: Fix system encoding being used instead of UTF-8 for html files.
-        Closes tickets: 1499514
-
-      Improved news sources
-        •The Philosopher's Magazine
-        •Harper's Magazine
-        •Ambito
-        •Perfil
-        •Telam
-        •Infobae.com
-        •La Nacion
-        •Clarin
-    </releaseNotes>
+    <releaseNotes>http://calibre-ebook.com/whats-new</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
