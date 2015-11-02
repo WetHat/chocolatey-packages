@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>wise-registrycleaner.portable</id>
     <title>Wise Registry Cleaner (Portable)</title>
-    <version>8.72.559</version>
+    <version>8.81.561</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
     <summary>Clean registry junks, repair Windows errors</summary>
@@ -22,12 +22,7 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes>
-      * Improved 'Application paths' cleaning.
-      * Improved localization and language support.
-      * Minor GUI improvements and bug fixes.
-
-    </releaseNotes>
+    <releaseNotes>http://www.wisecleaner.com/blog_sort_6.html</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

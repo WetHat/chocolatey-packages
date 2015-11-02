@@ -1,4 +1,4 @@
-﻿$packageName         = 'autoruns.portable.13.4' # includes version as download url is version neutral
+﻿$packageName         = 'autoruns.portable.13.5' # includes version as download url is version neutral
 $url                 = 'http://download.sysinternals.com/files/Autoruns.zip'
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Autoruns (Sysinternals).lnk'

@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>1.0.19</version>
+    <version>1.1.0</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
@@ -20,16 +20,7 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes>
-    Notable Changes
-      •Fixed another error that prevented the modified indicators on tabs from displaying.
-      •Fixed an error that prevented the modified indicators on tabs from displaying, and prevented autosave from working properly.
-      •Fixed an issue on Windows where file handles were leaking causing  ENOENT  and  EMFILE  errors to occur.
-      •Fixed an issue on Windows where taskbar icons were being duplicated.
-      •Fixed an issue where rebuilding native modules from the  incompatible-packages  view did not work unless Atom was started from the command-line.
-      •Fixed the accidental removal of the  .originalEvent  property on command events, which was breaking vim-mode.
-      •Improved the performance of detecting incompatible native modules upon upgrading to a new Electron version.
-    </releaseNotes>
+    <releaseNotes>https://atom.io/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
