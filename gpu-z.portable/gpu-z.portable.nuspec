@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>gpu-z.portable</id>
     <title>TechPowerUp GPU-Z (Portable)</title>
-    <version>0.8.5</version>
+    <version>0.8.6</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
     <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
@@ -31,16 +31,29 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      •Fixed Windows 10 detection
-      •Fixed CUDA detection in Windows 10
-      •Added GPU voltage monitoring for AMD Fiji
-      •Added memory controller load monitoring for AMD Sea Islands, Volcanic Islands, Pirate Islands
-      •Board Id moved into BIOS version tooltip
-      •Validation Id now displayed in GPU-Z window title
-      •Revision Id of recent AMD GPUs will now be displayed
-      •Added support for NVIDIA GeForce GTX 970M &amp; 980M (GM204-B), GeForce 940M, 930M
-      •Added support for Intel Atom x7-Z8700, Celeron N3150
-      •Added support for AMD R9 370, R9 370X, R9 380, R9 390, R9 390X, R9 Fury, A8-7100
+      •Added support for DirectX 12
+      •Removed shader model readout
+      •Wake up sleeping AMD GPUs in laptops during GPU-Z startup
+      •Fixed BIOS reading on AMD Fury Series
+      •Fixed incorrect fan speed reading on AMD Fury Series
+      •Fixed Intel Skylake / Braswell / Cherry Lake support
+      •Fixed several instabilities on Intel GPUs
+      •Fixed rare bluescreen on AMD Fury Series
+      •Fixed 3D clocks on AMD not getting read properly when no driver installed
+      •Fixed sensor misreadings when AMD GPU is in deep sleep
+      •Fixed rare care of wrong BIOS getting accessed on multi-GPU systems
+      •Fixed random BIOS version characters when BIOS couldn't be read
+      •Fixed voltage monitoring on some Sapphire graphics cards
+      •Memory usage of Intel GPUs is now combined into a single value
+      •Shortened Biostar vendor name to just "Biostar"
+      •Improved AMD Radeon memory size detection
+      •Reduced memory consumption of monitoring sample history
+      •Removed NVIDIA logo when GPU vendor is unsupported
+      •Added command line usage with /help
+      •Added support for NVIDIA GeForce GTX 950, 920M, 845M, GT 710 (GK208), Microsoft Surface Book GPU, Quadro K610M, Quadro M5000M, M4000, M3000M
+      •Added support for AMD R9 Nano, Carrizo, Kabini
+      •Added support for Intel Iris Pro P6300, HD Graphics 5600, HD Graphics 520
+
     </releaseNotes>
   </metadata>
   <files>
