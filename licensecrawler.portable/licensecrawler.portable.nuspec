@@ -4,7 +4,7 @@
   <metadata>
     <id>licensecrawler.portable</id>
     <title>LicenseCrawler (Portable)</title>
-    <version>1.48.868</version>
+    <version>1.52.930</version>
     <authors>Martin Klinzmann</authors>
     <owners>WetHat</owners>
     <summary>LicenseCrawler can discover application product keys, serial numbers, or licensess</summary>
@@ -30,7 +30,7 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>http://www.klinzmann.name/licensecrawler.htm</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

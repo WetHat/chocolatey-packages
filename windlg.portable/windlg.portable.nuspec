@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>windlg.portable</id>
     <title>Windows Data Lifeguard Diagnostics (Portable)</title>
-    <version>1.28</version>
+    <version>1.29</version>
     <authors>Western Digital</authors>
     <owners>WetHat</owners>
     <summary>Data Lifeguard Diagnostic for Windows</summary>
@@ -20,12 +20,7 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes>
-    Resolved Issues:
-    • Fixed a problem that caused tests on Windows 8 to fail while testing a TRS drive on an AMD PC.
-    • Fixed a problem that caused a drive’s volumes to be locked and inaccessible after Quick Test or Extended Test is run.
-    • Modified the drive discovery method to determine the capacity of USB drives.
-    </releaseNotes>
+    <releaseNotes>http://support.wdc.com/download/notes/WinDLG_v1_29_Release_Notes.pdf?v=699?v=699</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
