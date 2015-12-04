@@ -4,17 +4,17 @@
   <metadata>
     <id>speccy.portable</id>
     <title>Speccy (Portable)</title>
-    <version>1.28.709</version>
+    <version>1.29.714</version>
     <authors>Piriform</authors>
     <owners>WetHat</owners>
     <summary>Speccy Advanced System Information Tool</summary>
     <description>
       Speccy was designed as a free electronic "what's inside" sticker for your PC.
-      
+
       If you need to add more memory to your system, for example, you can check how many memory slots your computer has and what memory's already installed. Then you can go out and buy the right type of memory to add on or replace what you've already got.
-      
+
       If you're going to be selling your PC, you can use Speccy to quickly list out the components. Or, if you're buying a PC, you can use Speccy to check that the computer has what the label says it has.
-      
+
       Also, Speccy comes in handy for support. If you're on the phone with technical support and they want to know what video card you have installed, there's no need to hunt around Windows. Speccy has all the information on one easy-to-understand screen.
     </description>
     <projectUrl>http://www.piriform.com/speccy</projectUrl>
@@ -26,7 +26,15 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+      - Improved support for latest Intel Skylake and Broadwell processors.
+      - Improved Windows 10 compatibility.
+      - Improved Peripheral and Network Adaptor detection.
+      - Updated hardware detection algorithm.
+      - Improved localization and language support.
+      - Minor GUI improvements.
+      - Minor bug fixes.
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

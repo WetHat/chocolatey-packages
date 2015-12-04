@@ -1,4 +1,4 @@
-﻿$packageName         = 'speccy.portable.1.28.709' # includes version as download url is version neutral
+﻿$packageName         = 'speccy.portable.1.29.714' # includes version as download url is version neutral
 $url                 = 'http://www.piriform.com/speccy/download/portable/downloadfile' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Advanced System Information Tool'
