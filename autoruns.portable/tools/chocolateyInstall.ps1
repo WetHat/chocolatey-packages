@@ -1,5 +1,5 @@
-﻿$packageName         = 'autoruns.portable.13.5' # includes version as download url is version neutral
-$url                 = 'http://download.sysinternals.com/files/Autoruns.zip'
+﻿$packageName         = 'autoruns.portable.13.51' # includes version as download url is version neutral
+$url                 = 'http://download.sysinternals.com/files/autoruns.zip'
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Autoruns (Sysinternals).lnk'
 $shortcutDescription = 'Shows what programs are configured to run during system bootup or login'

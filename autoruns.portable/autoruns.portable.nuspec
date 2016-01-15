@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>autoruns.portable</id>
     <title>Autoruns (Portable)</title>
-    <version>13.5</version>
+    <version>13.51</version>
     <authors>Mark Russinovich</authors>
     <owners>WetHat</owners>
     <summary>Shows what programs are configured to run during system bootup or login</summary>

@@ -1,4 +1,4 @@
-﻿$packageName         = 'procexp.portable.16.05' # includes version as download url is version neutral
+﻿$packageName         = 'procexp.portable.16.1' # includes version as download url is version neutral
 $url                 = 'http://download.sysinternals.com/files/ProcessExplorer.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Process Explorer (Sysinternals).lnk'
