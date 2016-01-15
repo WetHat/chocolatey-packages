@@ -1,5 +1,5 @@
 ﻿$packageName         = 'procexp.portable.16.1' # includes version as download url is version neutral
-$url                 = 'http://download.sysinternals.com/files/ProcessExplorer.zip' # download url
+$url                 = 'https://download.sysinternals.com/files/processexplorer.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Process Explorer (Sysinternals).lnk'
 $shortcutDescription = 'Shows information about which handles and DLLs processes have opened or loaded'
