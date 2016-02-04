@@ -1,4 +1,4 @@
-﻿$packageID           = 'wise-registrycleaner.portable.8.82' # nuget package id includes version because URL does not
+﻿$packageID           = 'wise-registrycleaner.portable.9.03' # nuget package id includes version because URL does not
 $url                 = 'http://wisecleaner.com/soft/WRCFree.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Wise Registry Cleaner.lnk'
