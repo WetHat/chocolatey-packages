@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>registryloader.portable</id>
+    <title>Registry Loader PE (Portable)</title>
+    <version>1.0.19</version>
+    <authors>Emiel Wieldraaijer</authors>
+    <owners>WetHat</owners>
+    <summary>Load registry files from offline systems</summary>
+    <description>Load registry files from offline systems, very useful if you are trying to recover a system that is prevented from booting by a bad driver or some other problem that requires the registry to be edited. RegistryLoaderPE only works for Windows NT/2000/XP/2003/2008/7 registry hives.</description>
+    <projectUrl>http://www.wieldraaijer.nl/others.html</projectUrl>
+    <tags>registry recovery windows registryloader portable</tags>
+    <copyright>Copyright © 2007 - 2014 | Emiel Wieldraaijer</copyright>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/RegistryLoaderPE75x75.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.1" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
