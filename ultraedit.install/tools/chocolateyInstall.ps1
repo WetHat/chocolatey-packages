@@ -1,4 +1,4 @@
-﻿$packageName    = 'ultraedit.install.22.20'
+﻿$packageName    = 'ultraedit.install.23.00'
 $installerType  = 'MSI' #only one of these: exe, msi, msu
 $url            = 'http://www.ultraedit.com/files/msii/ue_english.msi' # download url
 $silentArgs     = '/qn /norestart'
