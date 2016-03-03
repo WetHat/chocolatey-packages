@@ -1,4 +1,4 @@
-﻿$packageID           = 'wise-uninstaller.portable.1.91' # nuget package id includes version because URL does not
+﻿$packageID           = 'wise-uninstaller.portable.1.92' # nuget package id includes version because URL does not
 $url                 = 'http://wisecleaner.com/soft/WPU.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Wise Program Uninstaller.lnk'
