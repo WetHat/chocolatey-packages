@@ -1,5 +1,5 @@
-﻿$packageID           = 'mediathekview.portable.9.060' # includes version as download url is version neutral
-$url                 = 'http://skylink.dl.sourceforge.net/project/zdfmediathk/Mediathek/Mediathek%2010/MediathekView_10.zip' # download url
+﻿$packageID           = 'mediathekview.portable.11' # includes version as download url is version neutral
+$url                 = 'http://netix.dl.sourceforge.net/project/zdfmediathk/Mediathek/Mediathek%2011/MediathekView_11.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Mediathek View.lnk'
 $shortcutDescription = 'Online-Mediathek Viewer deutschprachiger TV Sender'
