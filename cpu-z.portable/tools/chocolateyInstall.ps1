@@ -1,5 +1,5 @@
 ﻿$packageName         = 'cpu-z.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.cpuid.com/cpu-z/cpu-z_1.75-en.zip' # download url
+$url                 = 'http://download.cpuid.com/cpu-z/cpu-z_1.76-en.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Information on some of the main devices of your system'
 
