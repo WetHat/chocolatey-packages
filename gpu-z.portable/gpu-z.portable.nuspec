@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>gpu-z.portable</id>
     <title>TechPowerUp GPU-Z (Portable)</title>
-    <version>0.8.6</version>
+    <version>0.8.8</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
     <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
@@ -31,29 +31,17 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      •Added support for DirectX 12
-      •Removed shader model readout
-      •Wake up sleeping AMD GPUs in laptops during GPU-Z startup
-      •Fixed BIOS reading on AMD Fury Series
-      •Fixed incorrect fan speed reading on AMD Fury Series
-      •Fixed Intel Skylake / Braswell / Cherry Lake support
-      •Fixed several instabilities on Intel GPUs
-      •Fixed rare bluescreen on AMD Fury Series
-      •Fixed 3D clocks on AMD not getting read properly when no driver installed
-      •Fixed sensor misreadings when AMD GPU is in deep sleep
-      •Fixed rare care of wrong BIOS getting accessed on multi-GPU systems
-      •Fixed random BIOS version characters when BIOS couldn't be read
-      •Fixed voltage monitoring on some Sapphire graphics cards
-      •Memory usage of Intel GPUs is now combined into a single value
-      •Shortened Biostar vendor name to just "Biostar"
-      •Improved AMD Radeon memory size detection
-      •Reduced memory consumption of monitoring sample history
-      •Removed NVIDIA logo when GPU vendor is unsupported
-      •Added command line usage with /help
-      •Added support for NVIDIA GeForce GTX 950, 920M, 845M, GT 710 (GK208), Microsoft Surface Book GPU, Quadro K610M, Quadro M5000M, M4000, M3000M
-      •Added support for AMD R9 Nano, Carrizo, Kabini
-      •Added support for Intel Iris Pro P6300, HD Graphics 5600, HD Graphics 520
-
+      •Added a settings dialog that can be accessed via the icon in the top right of the window
+      •Added ASIC quality reading for Fiji and Tonga
+      •ASIC quality readout now compares your GPU against online data from GPU-Z validations
+      •Added support for NVIDIA GeForce GTX 1080, GTX 980 in laptop, GTX 965M, 940M, 910M, GT 755M, Quadro M6000 24 GB, M4000M, K3100M, M500M, Tesla M40, M60
+      •Added support for Intel Iris Graphics 540
+      •Fixed -card parameter not working correctly
+      •Fixed bluescren on Cedarview, during temperature reading
+      •Fixed Intel Iris Graphics 540 GPU name to correctly show GT3e
+      •Fixed NVIDIA BIOS reading on systems with PLX PCIe bridge
+      •Fixed hang on systems with disabled/broken HPET implementation
+      •Slighty improved wording in BIOS Upload Dialog
     </releaseNotes>
   </metadata>
   <files>
