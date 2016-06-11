@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>wise-registrycleaner.portable</id>
     <title>Wise Registry Cleaner (Portable)</title>
-    <version>9.17</version>
+    <version>9.18</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
     <summary>Clean registry junks, repair Windows errors</summary>

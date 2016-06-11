@@ -26,15 +26,7 @@
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes>
-      - Improved support for latest Intel Skylake and Broadwell processors.
-      - Improved Windows 10 compatibility.
-      - Improved Peripheral and Network Adaptor detection.
-      - Updated hardware detection algorithm.
-      - Improved localization and language support.
-      - Minor GUI improvements.
-      - Minor bug fixes.
-    </releaseNotes>
+    <releaseNotes>https://www.piriform.com/speccy/version-history</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

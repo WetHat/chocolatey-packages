@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>recuva.portable</id>
     <title>Recuva File Recovery (Portable)</title>
-    <version>1.52.1086</version>
+    <version>1.53.1087</version>
     <authors>Piriform</authors>
     <owners>WetHat</owners>
     <summary>Recuva File Recovery. Portable and adware free</summary>
@@ -13,14 +13,14 @@
 
     <projectUrl>http://www.piriform.com/recuva</projectUrl>
     <tags>portable recuva undelete recover files</tags>
-    <copyright>© Copyright 2005-2015 Piriform Ltd - All rights reserved</copyright>
+    <copyright>© Copyright 2005-2016 Piriform Ltd - All rights reserved</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Recuva256x256.png</iconUrl>
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://www.piriform.com/recuva/version-history</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

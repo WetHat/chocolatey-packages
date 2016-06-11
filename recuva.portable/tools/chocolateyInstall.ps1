@@ -1,4 +1,4 @@
-﻿$packageName      = 'recuva.portable.1.52.1086' # includes version as download url is version neutral
+﻿$packageName      = 'recuva.portable.1.53.1087' # includes version as download url is version neutral
 $url              = 'http://www.piriform.com/recuva/download/portable/downloadfile' # download url
 $shortcutLocation = 'Chocolatey'
 $shortcutDescription = 'Recuva File Recovery'

@@ -1,4 +1,4 @@
-﻿$packageName    = 'ultracompare.install.15.20'
+﻿$packageName    = 'ultracompare.install.16.00'
 $installerType  = 'MSI' #only one of these: exe, msi, msu
 $url            = 'http://www.ultraedit.com/files/msii/uc_english.msi' # download url
 $silentArgs     = '/qn /norestart'

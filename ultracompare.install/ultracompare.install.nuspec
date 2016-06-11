@@ -4,53 +4,21 @@
   <metadata>
    <id>ultracompare.install</id>
     <title>UltraCompare Professional</title>
-    <version>15.20</version>
+    <version>16.00</version>
     <authors>IDM Computer Solutions</authors>
     <owners>WetHat</owners>
     <summary>Compare files. Compare folders. Merge Differences</summary>
     <description>30 days trial of the UltraCompare is a folder compare and file compare application loaded with features to enable you to compare text files and folders, word documents, and even zip files and jar archives. UltraCompare includes text compare, binary file compare with the capability to merge differences between compared files. Got folders? UltraCompare also supports Folder compare - including local/network directory compare, zip file compare , and FTP Compare. UltraCompare supports automatic, easy folder synchronization, and a duplicate file finder as well. - See more at: http://www.ultraedit.com/products/ultracompare.html#sthash.TOlJptwL.dpuf</description>
     <projectUrl>http://www.ultraedit.com/products/ultracompare.html</projectUrl>
     <tags>admin ultracompare compare merge diff synchronize</tags>
-    <copyright>Copyright (c) 1994-2014, IDM Computer Solutions Inc</copyright>
+    <copyright>Copyright (c) 1994-2016, IDM Computer Solutions Inc</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Ultracompare128x128.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
-    <releaseNotes>
-    Folder mode file filter added to toolbar for quicker access
-    Automatic detection and correction of mixed line terminators
-    Folder mode improvements:
-    * Improvements for marking/hiding files in folder compare
-    * Improvements for folder compares including PDFs and Word documents
-    * Enhancements and improvements for remote/FTP folder compare
-    * Added support for "Ignore timestamp differences" in full folder compare mode
-    * Improved folder sync between SATA and USB drives
-    * Addressed sort issue with orphan files in folder compare
-    * Addressed issue where folder root can't be expanded after collapsing
-    * Addressed context menu issues
-    * Addressed other minor issues
-    Text mode improvements:
-    * Performance boost: much faster text compares
-    * Improved handling of very large files
-    * Improved alignment of text in 3-way text compare
-    * Support for line terminator conversion on merge/save
-    * Added "On merge convert line endings to destination type" session property
-    * "Ignore line terminators" is now a default text compare session property
-    * Improvements to saving merged changes
-    * Improvements to difference map
-    * Addressed issue with saving merge changes to .docx file
-    * Other minor text compare improvements
-    Other miscellaneous improvements:
-    * Improved virtual memory handling for binary compares
-    * Added support for CTRL and SHIFT key mappings with TAB
-    * Improvements for "Save Active Session" from Session pane
-    * Addressed issue where settings modified in active session are not saved with "Save Active Session"
-    * Addressed issue where new session cannot be saved anymore with command "Save Active Session"
-    * Addressed issue with fast binary compare invoked via shell integration not showing summary information in status bar
-    * Other minor issues addressed
-    </releaseNotes>
+    <releaseNotes>http://www.ultraedit.com/products/ultracompare/latest-changes</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

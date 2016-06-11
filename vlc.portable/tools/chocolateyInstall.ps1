@@ -1,5 +1,5 @@
 ﻿$packageName         = 'vlc.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://mirror.de.leaseweb.net/videolan/vlc/2.2.3/win32/vlc-2.2.3-win32.zip' # download url
+$url                 = 'http://mirror.de.leaseweb.net/videolan/vlc/2.2.4/win32/vlc-2.2.4-win32.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'VLC Media Player.lnk'
 $shortcutDescription = 'Free and open source cross-platform multimedia player.'
