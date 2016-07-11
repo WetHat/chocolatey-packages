@@ -1,5 +1,5 @@
 ﻿$packageName         = 'ssd-z.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://www.techpowerup.com/forums/attachments/ssd-z_16-01-18wip-zip.71179/' # download url
+$url                 = 'https://www.techpowerup.com/forums/attachments/ssd-z_16-07-01wip-zip.75920/' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'SSD-Z.lnk'
 $shortcutDescription = 'Detailed info about your solid-state disks and harddriveschoco pack'

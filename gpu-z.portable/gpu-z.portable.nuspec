@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>gpu-z.portable</id>
     <title>TechPowerUp GPU-Z (Portable)</title>
-    <version>0.8.8</version>
+    <version>0.8.9</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
     <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
@@ -31,17 +31,17 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-      •Added a settings dialog that can be accessed via the icon in the top right of the window
-      •Added ASIC quality reading for Fiji and Tonga
-      •ASIC quality readout now compares your GPU against online data from GPU-Z validations
-      •Added support for NVIDIA GeForce GTX 1080, GTX 980 in laptop, GTX 965M, 940M, 910M, GT 755M, Quadro M6000 24 GB, M4000M, K3100M, M500M, Tesla M40, M60
-      •Added support for Intel Iris Graphics 540
-      •Fixed -card parameter not working correctly
-      •Fixed bluescren on Cedarview, during temperature reading
-      •Fixed Intel Iris Graphics 540 GPU name to correctly show GT3e
-      •Fixed NVIDIA BIOS reading on systems with PLX PCIe bridge
-      •Fixed hang on systems with disabled/broken HPET implementation
-      •Slighty improved wording in BIOS Upload Dialog
+      •Added AMD Polaris support
+      •Added support for GeForce GTX 1070
+      •Added support for reading overclock on GeForce GTX 1070/1080
+      •Added BIOS reading for GeForce GTX 1070/1080
+      •Added support for NVIDIA Quadro M2000
+      •Added support for AMD E8860
+      •Fixed memory monitoring sometimes resetting beyond 4 GB usage
+      •Fixed double default memory clock on GT220/240
+      •Fixed double memory clock on GTxxx cards with GDDR5X
+      •Fixed typo in BIOS saving dialog
+      •Fixed no GPU selected in dropdown in some rare cases
     </releaseNotes>
   </metadata>
   <files>
