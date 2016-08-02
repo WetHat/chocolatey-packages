@@ -1,6 +1,6 @@
 ﻿$packageName         = 'httrack.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://download.httrack.com/httrack-noinst-3.48.22.zip' # download url
-$url64               = 'http://download.httrack.com/httrack_x64-noinst-3.48.21.zip' # 64bit URL here or remove - if installer decides, then use $url
+$url64               = 'http://download.httrack.com/httrack_x64-noinst-3.48.22.zip' # 64bit URL here or remove - if installer decides, then use $url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'HTTrack Website Copier.lnk'
 $shortcutDescription = 'Free and easy-to-use offline browser utility'
