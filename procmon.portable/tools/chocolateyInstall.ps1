@@ -1,4 +1,4 @@
-﻿$packageID           = 'procmon.portable' # nuget package id
+﻿$packageID           = 'procmon.portable.3.3' # nuget package id
 $url                 = 'https://download.sysinternals.com/files/ProcessMonitor.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Process Monitor (Sysinternals).lnk'
@@ -20,7 +20,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
@@ -31,7 +31,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-      
+
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -Targetpath $exe.FullName `
                                  -WorkingDirectory $exe.DirectoryName `
