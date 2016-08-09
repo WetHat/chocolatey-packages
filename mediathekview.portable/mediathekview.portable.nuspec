@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mediathekview.portable</id>
     <title>MediathekView (Portable)</title>
-    <version>11.0</version>
+    <version>12.0</version>
     <authors>W. Xaver</authors>
     <owners>WetHat</owners>
     <summary>Online-Mediathek Viewer deutschprachiger TV Sender</summary>
