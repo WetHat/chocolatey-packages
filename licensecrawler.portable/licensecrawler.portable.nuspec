@@ -7,6 +7,7 @@
     <version>1.79.1457</version>
     <authors>Martin Klinzmann</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/licensecrawler.portable</packageSourceUrl>
     <summary>LicenseCrawler can discover application product keys, serial numbers, or licensess</summary>
     <description>If you want to setup your computer system again you need to have the licenses and serial numbers at hand for all the software programs that you have purchased and registered. This does include the Windows product key but also other serial numbers for applications like Nero, Office, VMWare and pretty much every other application.
 

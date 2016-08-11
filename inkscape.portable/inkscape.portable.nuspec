@@ -7,6 +7,7 @@
     <version>0.91</version>
     <authors>inkscape.org</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/inkscape.portable</packageSourceUrl>
     <summary>Powerful, free vector graphics (svg) design tool</summary>
     <description>
     Inkscape is a drawing and painting tool similar to Illustrator, CorelDraw, and Xara X, but with features, new tools, and interface style of its own. It emphasizes the W3C standard Scalable Vector Graphics (SVG) file format, but reads and writes a wealth of other formats including PDF, so it is an easy complement to your other graphics and desktop tools. Best of all, Inkscape is created *by* the community *for* the community: Inkscape is 100% Open Source and freely available to everyone in the world.
@@ -22,7 +23,7 @@
       <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
-    This release marks the culmination of a multi-year effort to switch to a new internal graphics rendering engine, Cairo. This brings performance enhancements and more accurate rendering of drawings. Thanks go especially to Google for sponsoring much of this work. 
+    This release marks the culmination of a multi-year effort to switch to a new internal graphics rendering engine, Cairo. This brings performance enhancements and more accurate rendering of drawings. Thanks go especially to Google for sponsoring much of this work.
     </releaseNotes>
   </metadata>
   <files>

@@ -8,9 +8,10 @@
     <version>1.55</version>
     <authors>Nir Sofer</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/bluescreenview.portable</packageSourceUrl>
     <summary>View crash information stored in the MiniDump files created on blue screen of Windows</summary>
     <description>BlueScreenView scans all your minidump files created during 'blue screen of death' crashes, and displays the information about all crashes in one table. For each crash, BlueScreenView displays the minidump filename, the date/time of the crash, the basic crash information displayed in the blue screen (Bug Check Code and 4 parameters), and the details of the driver or module that possibly caused the crash (filename, product name, file description, and file version).
-    
+
     For each crash displayed in the upper pane, you can view the details of the device drivers loaded during the crash in the lower pane. BlueScreenView also mark the drivers that their addresses found in the crash stack, so you can easily locate the suspected drivers that possibly caused the crash. </description>
     <projectUrl>http://www.nirsoft.net/utils/blue_screen_view.html</projectUrl>
     <tags>bluescreenview portable bluescreen</tags>

@@ -8,11 +8,12 @@
     <version>2014.0.0</version>
     <authors>Pablo d'Angelo and others</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/hugin.portable</packageSourceUrl>
     <summary>Panorama Photo Stitcher</summary>
     <description>
-     An easy to use cross-platform panoramic imaging toolchain based on Panorama Tools. 
+     An easy to use cross-platform panoramic imaging toolchain based on Panorama Tools.
 
-     With Hugin you can assemble a mosaic of photographs into a complete immersive panorama, stitch any series of overlapping pictures and much more. 
+     With Hugin you can assemble a mosaic of photographs into a complete immersive panorama, stitch any series of overlapping pictures and much more.
    </description>
     <projectUrl>http://hugin.sourceforge.net/</projectUrl>
     <tags>hugin portable panoramastitching panorama stitching photostitching hdr</tags>
@@ -35,13 +36,13 @@
 		•initialize the colour balance values during loading with EXIF values (this information is only stored and decoded by some cameras (mainly models by Panasonic, Pentax, Olympus, Nikon))
 		•improved the assistant
 		•allow customization of exiftool command used to copy metadata to output images
-	
+
 		New command line tools for CLI processing:
 		•pto_mask: manipulate mask in project file
 		•pto_template: apply template to project file
 		•pto_move: move or copy project files with all associated images
-	
-	
+
+
 		Other Improvements
 		•Many more improvements and bug fixes.
     </releaseNotes>

@@ -7,10 +7,11 @@
     <version>2.14.0</version>
     <authors>Dean P. Grimm</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/winmerge.portable</packageSourceUrl>
     <summary>WinMerge is an Open Source differencing and merging tool for Windows.</summary>
     <description>
     WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle.
-    
+
     WinMerge is highly useful for determining what has changed between project versions, and then merging changes between versions. WinMerge can be used as an external differencing/merging tool or as a standalone application.
     </description>
     <projectUrl>http://winmerge.org/</projectUrl>
@@ -25,12 +26,12 @@
     </dependencies>
     <releaseNotes>
     WinMerge 2.14 is an important update to WinMerge. There are lots of improvements and bug fixes since 2.12.4 stable release.
-    
+
     Improvements
     • Improve startup time
     • Improve editing of linefilter regular expressions
     • Improve color options organization
-    
+
     Other changes
     • Update PCRE to version 8.10
     • Update SCEW to version 1.1.2
@@ -43,7 +44,7 @@
     • Add new options dialog panel for folder compare options
     • Add options GUI for quick compare limit
     • Write config log as UTF-8 file
-    
+
     Bugs fixed
     • Untranslated string ("Merge.rc:nnnn") was displayed in status bar
     • Pane headers not updated after language change

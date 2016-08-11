@@ -8,6 +8,7 @@
     <version>0.8.9</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/gpu-z.portable</packageSourceUrl>
     <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
     <description>
     Main Features

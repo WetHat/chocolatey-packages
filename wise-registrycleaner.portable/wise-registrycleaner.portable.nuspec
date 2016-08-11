@@ -8,6 +8,7 @@
     <version>9.23</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/wise-registrycleaner.portable</packageSourceUrl>
     <summary>Clean registry junks, repair Windows errors</summary>
     <description>
       Wise Registry Cleaner scans the Windows registry and finds errors &amp; residual items in the registry and then cleans or defrags them. By fixing these residual and corrupted items in Windows registry, your system will run faster and more stable.

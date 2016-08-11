@@ -7,6 +7,7 @@
     <version>1.0.19</version>
     <authors>Emiel Wieldraaijer</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/registryloader.portable</packageSourceUrl>
     <summary>Load registry files from offline systems</summary>
     <description>Load registry files from offline systems, very useful if you are trying to recover a system that is prevented from booting by a bad driver or some other problem that requires the registry to be edited. RegistryLoaderPE only works for Windows NT/2000/XP/2003/2008/7 registry hives.</description>
     <projectUrl>http://www.wieldraaijer.nl/others.html</projectUrl>

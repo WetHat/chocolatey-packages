@@ -8,6 +8,7 @@
     <version>4.5.0</version>
     <authors>Corvideon</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/instantwordpress</packageSourceUrl>
     <summary>Instant WordPress is a complete standalone, portable WordPress development environment.</summary>
     <description>
       Instant WordPress turns any Windows machine into a WordPress development server. It will even run from a USB stick.

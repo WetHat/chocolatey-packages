@@ -7,6 +7,7 @@
     <version>23.20</version>
     <authors>IDM Computer Solutions</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/ultraedit.install</packageSourceUrl>
     <summary>UltraEdit Programmer's Editor</summary>
     <description>30 days trial of the UltraEdit text, HTML and hex editor, and advanced PHP, Perl, Java and JavaScript editor for programmers. UltraEdit is also an XML editor including a tree-style XML parser. UltraEdit supports disk-based 64-bit file handling (standard) on both 32- and 64-bit Windows platforms.</description>
     <projectUrl>http://www.ultraedit.com/products/ultraedit.html</projectUrl>

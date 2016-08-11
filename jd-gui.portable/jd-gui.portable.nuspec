@@ -8,6 +8,7 @@
     <version>1.4.0.1</version>
     <authors>Emmanuel Dupuy</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/jd-gui.portable</packageSourceUrl>
     <summary>Standalone graphical utility that displays Java source codes of “.class” files</summary>
     <description>
       The “Java Decompiler project” aims to develop tools in order to decompile and analyze Java 5 “byte code” and the later versions.
