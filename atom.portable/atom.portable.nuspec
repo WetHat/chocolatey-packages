@@ -8,18 +8,19 @@
     <version>1.9.6</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/atom.portable</packageSourceUrl>
     <summary>Hackable text editor for the 21st Century</summary>
     <description>A tool you can customize to do anything, but also use productively on the first day without ever touching a config file. Atom is modern, approachable, and hackable to the core.</description>
     <projectUrl>https://atom.io/</projectUrl>
+    <docsUrl>https://atom.io/docs</docsUrl>
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>atom portable texteditor text editor</tags>
     <!-- <copyright></copyright> -->
     <licenseUrl>https://github.com/atom/atom/blob/master/LICENSE.md</licenseUrl>
+    <projectSourceUrl>https://github.com/atom/atom</projectSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/atom256x256.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.9.1" />
-    </dependencies>
     <releaseNotes>https://atom.io/releases</releaseNotes>
   </metadata>
   <files>
