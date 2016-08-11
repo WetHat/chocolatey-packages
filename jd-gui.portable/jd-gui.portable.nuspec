@@ -15,6 +15,8 @@
       JD-GUI is a standalone graphical utility that displays Java source codes of “.class” files. You can browse the reconstructed source code with the JD-GUI for instant access to methods and fields.
     </description>
     <projectUrl>http://jd.benow.ca/</projectUrl>
+    <projectSourceUrl>https://github.com/java-decompiler/jd-gui</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/java-decompiler/jd-gui/issues</bugTrackerUrl>
     <tags>jd portable java decompiler utility tool portable</tags>
     <copyright>Copyright(c) 2008-2015 Emmanuel Dupuy</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>

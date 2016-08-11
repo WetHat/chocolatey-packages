@@ -18,6 +18,9 @@
       * Full compatibility with built-in OneNote tagging system, even if add-in is not installed.
       * Automatic tracking of tags and notes related to the OneNote page currently being viewed</description>
     <projectUrl>http://onenotetaggingkit.codeplex.com/</projectUrl>
+    <projectSourceUrl>http://onenotetaggingkit.codeplex.com/SourceControl/latest</projectSourceUrl>
+    <docsUrl>http://onenotetaggingkit.codeplex.com/documentation</docsUrl>
+    <bugTrackerUrl>http://onenotetaggingkit.codeplex.com/workitem/list/basic</bugTrackerUrl>
     <tags>admin onenote tagging addin onenote2010 onenote2013 taxonomy categorization</tags>
     <copyright>WetHat Lab</copyright>
     <licenseUrl>http://onenotetaggingkit.codeplex.com/license</licenseUrl>
