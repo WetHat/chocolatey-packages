@@ -1,4 +1,4 @@
-﻿$packageID           = 'mediathekview.portable.11' # includes version as download url is version neutral
+﻿$packageID           = 'mediathekview.portable' # includes version as download url is version neutral
 $url                 = 'http://netix.dl.sourceforge.net/project/zdfmediathk/Mediathek/Mediathek%2012/MediathekView_12.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Mediathek View.lnk'
