@@ -6,20 +6,20 @@
     <id>recuva.portable</id>
     <title>Recuva File Recovery (Portable)</title>
     <version>1.53.1087</version>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/recuva.portable</packageSourceUrl>
     <authors>Piriform</authors>
     <owners>WetHat</owners>
     <summary>Recuva File Recovery. Portable and adware free</summary>
     <description>Recuva (portable) recovers files deleted from your Windows computer, Recycle Bin, digital camera card, or MP3 player.</description>
-
     <projectUrl>http://www.piriform.com/recuva</projectUrl>
     <tags>portable recuva undelete recover files</tags>
     <copyright>© Copyright 2005-2016 Piriform Ltd - All rights reserved</copyright>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://www.piriform.com/docs/recuva</docsUrl>
+    <bugTrackerUrl>https://forum.piriform.com/index.php?showforum=17</bugTrackerUrl>
+    <licenseUrl>http://www.piriform.com/legal/software-license/recuva</licenseUrl>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Recuva256x256.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.9.1" />
-    </dependencies>
     <releaseNotes>https://www.piriform.com/recuva/version-history</releaseNotes>
   </metadata>
   <files>

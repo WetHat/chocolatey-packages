@@ -9,9 +9,3 @@ Get-Content -LiteralPath $shortcutRegistry -ErrorAction:SilentlyContinue `
     Write-Host "Removing Shortcut: $_"
     Remove-Item -LiteralPath $_ -ErrorAction:SilentlyContinue
   }
-  
-Write-Host "Cleaning up $appBase ..."
-Remove-Item -Force `
-            -Recurse `
-            -Exclude '*.nupkg','*install.ps1' `
-            -LiteralPath $appBase
