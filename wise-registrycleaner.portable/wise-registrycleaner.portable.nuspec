@@ -21,7 +21,6 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/WRC225x225.png</iconUrl>
     <dependencies>
-      <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>http://www.wisecleaner.com/blog_sort_6.html</releaseNotes>
   </metadata>

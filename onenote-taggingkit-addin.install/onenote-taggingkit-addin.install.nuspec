@@ -29,7 +29,6 @@
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/onenotetaggingkit_256x256.png</iconUrl>
     <dependencies>
       <dependency id="dotnet4.5" />
-      <dependency id="chocolatey" version="0.9.9.1" />
     </dependencies>
     <releaseNotes>
       Bugfixes
