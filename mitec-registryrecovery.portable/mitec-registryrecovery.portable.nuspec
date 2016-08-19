@@ -27,6 +27,7 @@
       * username and machine name detection enhanced
       * interface enhancements.
     </releaseNotes>
+    <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />
     </dependencies>
