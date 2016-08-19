@@ -19,11 +19,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/bluescreenview256x256.png</iconUrl>
-    <dependencies>
-    </dependencies>
     <releaseNotes>Drag &amp; Drop support:
     You can now drag a single MiniDump file from Explorer into the main window of BlueScreenView.
     Fixed bug: BlueScreenView failed to remember the last size/position of the main window if it was not located in the primary monitor.</releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

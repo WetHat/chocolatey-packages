@@ -23,9 +23,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/jD-gui128x128.png</iconUrl>
-    <dependencies>
-      <dependency id="javaruntime" />
-    </dependencies>
     <releaseNotes>
       * Improves UI on Linux
       * Removes the warning message during the installation under Ubuntu
@@ -36,6 +33,11 @@
       * Updates .gitignore
       * Adds icon on tabs
     </releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.0" />
+      <dependency id="javaruntime" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

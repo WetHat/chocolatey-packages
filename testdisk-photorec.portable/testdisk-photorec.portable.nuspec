@@ -23,8 +23,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/testdisk128x128.png</iconUrl>
-    <dependencies>
-    </dependencies>
     <releaseNotes>
       TestDisk
 
@@ -68,6 +66,10 @@
        .vbm: Veeam Backup Metadata
        .woff: Web Open Font Format
     </releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

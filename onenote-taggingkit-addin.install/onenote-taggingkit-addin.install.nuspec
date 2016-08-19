@@ -27,15 +27,17 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/onenotetaggingkit_256x256.png</iconUrl>
-    <dependencies>
-      <dependency id="dotnet4.5" />
-    </dependencies>
     <releaseNotes>
       Bugfixes
         Fixed Issue: I can't copy my tags on Manage Settings dialog
         Fixed Issue: Sharing tag suggestions - unable to copy tags.
         Fixed more occurences of issue: Kit keeps deaktivating itself.
     </releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.0" />
+      <dependency id="dotnet4.5" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

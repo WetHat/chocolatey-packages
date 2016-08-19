@@ -15,14 +15,16 @@
     Autoruns' Hide Signed Microsoft Entries option helps you to zoom in on third-party auto-starting images that have been added to your system and it has support for looking at the auto-starting images configured for other accounts configured on a system. Also included in the download package is a command-line equivalent that can output in CSV format, Autorunsc.</description>
     <projectUrl>https://technet.microsoft.com/en-us/sysinternals/bb963902</projectUrl>
     <tags>autoruns portable autostart sysinternals</tags>
-    <copyright>(c) 2002-2015 Mark Russinovich</copyright>
+    <copyright>(c) 2002-2016 Mark Russinovich</copyright>
     <!-- <licenseUrl></licenseUrl>  license is part of the application-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Autoruns128x128.png</iconUrl>
-    <dependencies>
-    </dependencies>
     <releaseNotes></releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

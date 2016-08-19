@@ -18,9 +18,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/procmon48x48.png</iconUrl>
-    <dependencies>
-    </dependencies>
     <releaseNotes></releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

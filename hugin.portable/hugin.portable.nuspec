@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>hugin.portable</id>
     <title>Hugin (Portable)</title>
-    <version>2014.0.0</version>
+    <version>2015 .0.0</version>
     <authors>Pablo d'Angelo and others</authors>
     <owners>WetHat</owners>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/hugin.portable</packageSourceUrl>
@@ -16,15 +16,16 @@
      With Hugin you can assemble a mosaic of photographs into a complete immersive panorama, stitch any series of overlapping pictures and much more.
    </description>
     <projectUrl>http://hugin.sourceforge.net/</projectUrl>
+    <projectSourceUrl>https://sourceforge.net/p/hugin/hugin/ci/default/tree/</projectSourceUrl>
+    <docsUrl>http://hugin.sourceforge.net/docs/</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/hugin-ptx</mailingListUrl>
+    <bugTrackerUrl>https://bugs.launchpad.net/hugin</bugTrackerUrl>
     <tags>hugin portable panoramastitching panorama stitching photostitching hdr</tags>
     <copyright></copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/hugin128x128.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.9.1" />
-    </dependencies>
     <releaseNotes>
 		Changes Since 2013.0.0
 		•inherit many of the libpano improvements (of version 2.9.19)
@@ -46,6 +47,10 @@
 		Other Improvements
 		•Many more improvements and bug fixes.
     </releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

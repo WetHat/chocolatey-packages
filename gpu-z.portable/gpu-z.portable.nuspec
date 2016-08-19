@@ -28,8 +28,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/gpu-z256x256.png</iconUrl>
-    <dependencies>
-    </dependencies>
     <releaseNotes>
       •Added AMD Polaris support
       •Added support for GeForce GTX 1070
@@ -43,6 +41,10 @@
       •Fixed typo in BIOS saving dialog
       •Fixed no GPU selected in dropdown in some rare cases
     </releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

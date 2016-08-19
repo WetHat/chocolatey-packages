@@ -1,6 +1,6 @@
 ﻿$packageID           = 'hugin.portable' # nuget package id
-$url                 = 'http://sourceforge.net/projects/hugin/files/hugin/hugin-2014.0/Hugin_2014.0.0_32bit_Windows.7z/download' # download url
-$url64               = 'http://sourceforge.net/projects/hugin/files/hugin/hugin-2014.0/Hugin_2014.0.0_64bit_Windows.7z/download' # 64bit URL here or remove - if installer decides, then use $url
+$url                 = 'http://sourceforge.net/projects/hugin/files/hugin/hugin-2015.0/Hugin_2015.0.0_32bit_Windows.7z/download' # download url
+$url64               = 'https://sourceforge.net/projects/hugin/files/hugin/hugin-2015.0/Hugin_2015.0.0_64bit.7z/download' # 64bit URL here or remove - if installer decides, then use $url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Hugin.lnk'
 $shortcutDescription = 'Panorama Photo Stitcher'
@@ -21,7 +21,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
@@ -32,7 +32,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-      
+
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -Targetpath $exe.FullName `
                                  -WorkingDirectory $exe.DirectoryName `
