@@ -1,5 +1,5 @@
 ﻿$packageName         = 'calibre.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.calibre-ebook.com/2.63.0/calibre-portable-installer-2.63.0.exe' # download url
+$url                 = 'http://download.calibre-ebook.com/2.64.0/calibre-portable-installer-2.64.0.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Calibre E-Book Manager.lnk'
 $shortcutDescription = 'Calibre e-book library manager'
@@ -14,7 +14,14 @@ $launcher            = Join-Path -Path $installlocation -ChildPath 'calibre-port
 
 ## We install to a staging folder first so that calibre does not complain
 ## about the path being too long
-Install-ChocolateyPackage $packageName 'EXE' $choco $url -validExitCodes $validExitCodes
+
+Install-ChocolateyPackage -packageName   $packageName `
+                          -FileType      'EXE'         `
+                          -SilentArgs     $choco `
+                          -Url            $url `
+                          -Checksum       '094E5535FFDD8CCFAFCB7DD16304D6CFAFF69297F96779A9FFA194B34B3EF27F' `
+                          -ChecksumType   'sha256' `
+                          -validExitCodes $validExitCodes
 
 Write-Host "Moving calibre into place ..."
 Remove-Item -Path $installlocation `
