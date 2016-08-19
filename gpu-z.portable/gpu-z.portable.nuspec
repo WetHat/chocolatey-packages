@@ -22,24 +22,25 @@
     • Support for Windows XP / Vista / Windows 7 / Windows 8 (both 32 and 64 bit versions are supported)
     • .. and yes, the author of CPU-Z has granted us permission to use a name similar to his product. Thanks Franck.
     </description>
-    <projectUrl>http://www.techpowerup.com/downloads/SysInfo/GPU-Z/</projectUrl>
+    <projectUrl>https://www.techpowerup.com/downloads/2764/techpowerup-gpu-z-v1-10-0</projectUrl>
     <tags>gpu-z portable graphicscard systeminformation</tags>
-    <copyright>Copyright © 2004-2015 www.techpowerup.com. All rights reserved</copyright>
+    <copyright>Copyright © 2004-2016 www.techpowerup.com. All rights reserved</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/gpu-z256x256.png</iconUrl>
     <releaseNotes>
-      •Added AMD Polaris support
-      •Added support for GeForce GTX 1070
-      •Added support for reading overclock on GeForce GTX 1070/1080
-      •Added BIOS reading for GeForce GTX 1070/1080
-      •Added support for NVIDIA Quadro M2000
-      •Added support for AMD E8860
-      •Fixed memory monitoring sometimes resetting beyond 4 GB usage
-      •Fixed double default memory clock on GT220/240
-      •Fixed double memory clock on GTxxx cards with GDDR5X
-      •Fixed typo in BIOS saving dialog
-      •Fixed no GPU selected in dropdown in some rare cases
+      •Added support for Radeon RX 470, RX 460
+      •Added support for NVIDIA GTX Titan X Pascal, GTX 1060 3 GB, GT 740 (GK106), 930M (GM108), 930 MX
+      •Added support for Intel HD Graphics 510, Iris Graphics 550
+      •Fixed fan-stop on AMD not getting detected correctly
+      •Fixed NVIDIA driver version not being read on drivers from Windows Update
+      •Fixed BIOS saving on AMD RX 470/460
+      •Fixed crash when lookup button clicked when no card detected
+      •Name for unknown GPUs on ATI/AMD is now displayed correctly
+      •Fixed incorrect shader count on Polaris GPUs in ULPS mode
+      •Fixed GTX 1070/1080 release dates
+      •Clarified sensor name of Polaris to "GPU 'only' power draw"
+      •Improved power draw monitoring performance on Polaris
     </releaseNotes>
     <!-- =============================== -->
     <dependencies>

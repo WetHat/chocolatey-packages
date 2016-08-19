@@ -10,7 +10,11 @@ $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 $app                 = Join-Path -Path $installlocation -ChildPath 'GPU-Z.exe'
 
-Get-ChocolateyWebFile $packageName $app $url
+Get-ChocolateyWebFile -PackageName   $packageName `
+                      -FileFullPath $app          `
+                     -Url          $url           `
+                     -Checksum     'ECEDC38B1377C540DD20206CEBE0733B44B371D62B954F4CB3CC875E953776F7' `
+                     -ChecksumType 'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
