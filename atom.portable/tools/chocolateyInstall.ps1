@@ -1,5 +1,5 @@
 ﻿$packageID           = 'atom.portable'
-$url                 = 'https://github.com/atom/atom/releases/download/v1.9.9/atom-windows.zip' # download url
+$url                 = 'https://github.com/atom/atom/releases/download/v1.10.0/atom-windows.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Atom Text Editor.lnk'
 $shortcutDescription = 'Hackable text editor for the 21st Century'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      '77C929B19A0A9126DAC6B23B5DF73D475183587FDA4EABEAE4E5DF6BD1BA10F4' `
+                             -Checksum      '5259555D4F8214A60E8179891B16360FDAEFF1FB5AF0A007A20FDFA15F77C4E5' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
