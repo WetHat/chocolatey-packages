@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>wise-registrycleaner.portable</id>
     <title>Wise Registry Cleaner (Portable)</title>
-    <version>9.23</version>
+    <version>9.24</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/wise-registrycleaner.portable</packageSourceUrl>

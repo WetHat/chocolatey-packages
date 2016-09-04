@@ -1,5 +1,5 @@
-﻿$packageName         = 'procexp.portable.16.12' # includes version as download url is version neutral
-$url                 = 'https://download.sysinternals.com/files/processexplorer.zip' # download url
+﻿$packageName         = 'procexp.portable.16.31' # includes version as download url is version neutral
+$url                 = 'https://download.sysinternals.com/files/ProcessExplorer.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Process Explorer (Sysinternals).lnk'
 $shortcutDescription = 'Shows information about which handles and DLLs processes have opened or loaded'
@@ -9,7 +9,11 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageName $url $installlocation
+Install-ChocolateyZipPackage -packageName   $packageName `
+                             -Url           $url         `
+                             -UnzipLocation $installlocation `
+                             -Checksum      'F08C4BD6A1372E9A22315D6C917544F523080F2C445377EFE559AB0C20928805' `
+                             -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
