@@ -1,5 +1,5 @@
 ﻿$packageName         = 'gpu-z.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://us1-dl.techpowerup.com/SysInfo/GPU-Z/GPU-Z.1.10.0.exe' # download url
+$url                 = 'http://us1-dl.techpowerup.com/SysInfo/GPU-Z/GPU-Z.1.11.0.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'TechPowerUp GPU-Z.lnk'
 $shortcutDescription = 'Provides vital information about your video card and graphics processor'
@@ -13,7 +13,7 @@ $app                 = Join-Path -Path $installlocation -ChildPath 'GPU-Z.exe'
 Get-ChocolateyWebFile -PackageName   $packageName `
                       -FileFullPath $app          `
                      -Url          $url           `
-                     -Checksum     'ECEDC38B1377C540DD20206CEBE0733B44B371D62B954F4CB3CC875E953776F7' `
+                     -Checksum     'F2A07453EE9BC74A5B703609CCB22E27E4AE4F28489902AB40B532F6F0196F55' `
                      -ChecksumType 'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `

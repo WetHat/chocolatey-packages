@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>gpu-z.portable</id>
     <title>TechPowerUp GPU-Z (Portable)</title>
-    <version>1.10.0</version>
+    <version>1.11.0</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/gpu-z.portable</packageSourceUrl>
