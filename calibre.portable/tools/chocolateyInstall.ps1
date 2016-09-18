@@ -19,7 +19,7 @@ Install-ChocolateyPackage -packageName   $packageName `
                           -FileType      'EXE'         `
                           -SilentArgs     $choco `
                           -Url            $url `
-                          -Checksum       '02CCC31FA4B12E75489E728FD30A44A13771FBB82A21E4BEDD8E32A921F5F2C6' `
+                          -Checksum       '5E9CC1464E83ABA836DA4732E77E0A3FF4EF9EDA7E2E31DB14953B04E19DB3F2' `
                           -ChecksumType   'sha256' `
                           -validExitCodes $validExitCodes
 
