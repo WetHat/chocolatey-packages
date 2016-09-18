@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>grepwin.portable</id>
     <title>grepWin (Portable)</title>
-    <version>1.6.14</version>
+    <version>1.6.15</version>
     <authors>Stefan Küng</authors>
     <owners>WetHat</owners>
     <summary>Regular expression search and replace for Windows</summary>
@@ -15,7 +15,7 @@
     <docsUrl>http://stefanstools.sourceforge.net/grepWin.html</docsUrl>
     <bugTrackerUrl>https://sourceforge.net/p/grepwin/tickets/</bugTrackerUrl>
     <tags>grepwin.portable</tags>
-    <copyright>2015 © Stefan Küng</copyright>
+    <copyright>2016 © Stefan Küng</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
