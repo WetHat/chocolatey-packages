@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>reshack.portable</id>
     <title>Resource Hacker (Portable)</title>
-    <version>4.2.5</version>
+    <version>4.3.20</version>
     <authors>Angus Johnson</authors>
     <owners>WetHat</owners>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/reshack.portable</packageSourceUrl>
@@ -14,6 +14,7 @@
       Resource Hacker™ has been designed to be the complete resource editing tool: compiling, viewing, decompiling and recompiling resources for both 32bit and 64bit Windows executables. Resource Hacker™ can open any type of Windows executable (*.exe; *.dll; *.scr; *.mui etc) so that individual resources can be added modified or deleted within these files. Resource Hacker™ can create and compile resource script files (*.rc), and edit resource files (*.res) too.
     </description>
     <projectUrl>http://www.angusj.com/resourcehacker/</projectUrl>
+    <docsUrl>http://www.angusj.com/resourcehacker/</docsUrl>
     <tags>resourceeditor programresource executable program resource icon portable</tags>
     <copyright>Copyright © 1999-2015 Angus Johnson</copyright>
     <licenseUrl>http://www.angusj.com/resourcehacker</licenseUrl>
@@ -23,11 +24,8 @@
     <dependencies>
     </dependencies>
     <releaseNotes>
-      •Bugfix: Adding a resource to a file without any resources was broken
-      •New: Can now change a text resource's format (unicode, UTF-8, ANSI)
-      •Bugfix: Some Delphi forms were not being decompiled or recompiled correctly
-      •Bugfix: An occasional PNG image was not being displayed
-      •Bugfix: Shrinking the main window very small caused a divide-by-zero error
+      •Bugfixes: Numerous fixes to commandline processing
+      •Bugfixes: Other minor fixes
     </releaseNotes>
   </metadata>
   <files>

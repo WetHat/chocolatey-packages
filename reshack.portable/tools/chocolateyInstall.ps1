@@ -1,4 +1,4 @@
-﻿$packageID           = 'reshack.portable.4.2.5' # nuget package id includes version because URL does not
+﻿$packageID           = 'reshack.portable.4.3.20' # nuget package id includes version because URL does not
 $url                 = 'http://www.angusj.com/resourcehacker/resource_hacker.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Resource Hacker.lnk'
@@ -9,7 +9,11 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageID $url $installlocation
+Install-ChocolateyZipPackage -PackageName   $packageID `
+                             -Url           $url       `
+                             -UnzipLocation $installlocation `
+                             -Checksum      '63B402F90E9499E0714603F2B79179FFD7E77B85B2019611F5FA92B9125B9C33' `
+                             -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
