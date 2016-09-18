@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>ssd-z.portable</id>
     <title>SSD-Z (Portable)</title>
-    <version>16.07.01</version>
+    <version>16.09.09</version>
     <authors>Anders Jakobsen</authors>
     <owners>WetHat</owners>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/ssd-z.portable</packageSourceUrl>
