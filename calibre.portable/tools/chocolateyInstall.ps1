@@ -24,6 +24,10 @@ Install-ChocolateyPackage -packageName   $packageName `
                           -validExitCodes $validExitCodes
 
 Write-Host "Moving calibre into place ..."
+Remove-Item -Path $installlocation `
+            -Force `
+            -Recurse `
+            -ErrorAction:SilentlyContinue
 New-Item -Path $installlocation `
          -ItemType Directory `
          -ErrorAction:SilentlyContinue
