@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>reshack.portable</id>
     <title>Resource Hacker (Portable)</title>
-    <version>4.3.20</version>
+    <version>4.3.26</version>
     <authors>Angus Johnson</authors>
     <owners>WetHat</owners>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/reshack.portable</packageSourceUrl>
@@ -24,8 +24,8 @@
     <dependencies>
     </dependencies>
     <releaseNotes>
-      •Bugfixes: Numerous fixes to commandline processing
-      •Bugfixes: Other minor fixes
+      * Bugfix: The toolbar state wasn't being preserved between sessions
+      * Bugfix: Minor bug decompiling some version info resources 
     </releaseNotes>
   </metadata>
   <files>

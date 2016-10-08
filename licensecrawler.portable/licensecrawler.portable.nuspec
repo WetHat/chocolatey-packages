@@ -4,7 +4,7 @@
   <metadata>
     <id>licensecrawler.portable</id>
     <title>LicenseCrawler (Portable)</title>
-    <version>1.79.1457</version>
+    <version>1.81.1502</version>
     <authors>Martin Klinzmann</authors>
     <owners>WetHat</owners>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/licensecrawler.portable</packageSourceUrl>
@@ -23,8 +23,9 @@
     Commercial User: If the LicenseCrawle for or in a company, you have to order a license.
     </description>
     <projectUrl>http://www.klinzmann.name/licensecrawler.htm</projectUrl>
+    <docsUrl>http://www.klinzmann.name/licensecrawler_support.htm</docsUrl>
     <tags>licensecrawler portable recovery forensic license serialnumber</tags>
-    <copyright>License Crawler Copyright © 2010</copyright>
+    <copyright>License Crawler Copyright © 2016</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/licensecrawler128x128.png</iconUrl>

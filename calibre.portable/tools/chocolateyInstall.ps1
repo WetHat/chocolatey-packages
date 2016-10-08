@@ -1,5 +1,5 @@
 ﻿$packageName         = 'calibre.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.calibre-ebook.com/2.68.0/calibre-portable-installer-2.68.0.exe' # download url
+$url                 = 'http://download.calibre-ebook.com/2.69.0/calibre-portable-installer-2.69.0.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Calibre E-Book Manager.lnk'
 $shortcutDescription = 'Calibre e-book library manager'
@@ -19,15 +19,11 @@ Install-ChocolateyPackage -packageName   $packageName `
                           -FileType      'EXE'         `
                           -SilentArgs     $choco `
                           -Url            $url `
-                          -Checksum       '5E9CC1464E83ABA836DA4732E77E0A3FF4EF9EDA7E2E31DB14953B04E19DB3F2' `
+                          -Checksum       '79AC485EBF6FB26560017D00F614D9CB95CB9D7E5751ABD254EDF7844C7EDEB1' `
                           -ChecksumType   'sha256' `
                           -validExitCodes $validExitCodes
 
 Write-Host "Moving calibre into place ..."
-Remove-Item -Path $installlocation `
-            -Force `
-            -Recurse `
-            -ErrorAction:SilentlyContinue
 New-Item -Path $installlocation `
          -ItemType Directory `
          -ErrorAction:SilentlyContinue
@@ -52,7 +48,7 @@ Set CALIBRE_TEMP_DIR=%TEMP%
 cd Calibre
 set PATH=%cd%
 
-START /belownormal Calibre.exe
+START Calibre.exe
 "@ | Out-File -FilePath $launcher -Encoding ASCII
 
 ## install a shortcut to the start menu to make this app discoverable

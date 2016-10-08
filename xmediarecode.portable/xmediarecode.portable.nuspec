@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.3.4.0</version>
+    <version>3.3.4.8</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/xmediarecode.portable</packageSourceUrl>
