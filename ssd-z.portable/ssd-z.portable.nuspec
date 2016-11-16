@@ -8,7 +8,6 @@
     <version>16.09.09</version>
     <authors>Anders Jakobsen</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/ssd-z.portable</packageSourceUrl>
     <summary>Detailed info about your solid-state disks and harddrives</summary>
     <description>SSD-Z is a lightweight portable program for Windows that reveals a bunch of information about each connected disk device.While the name hints at it being optimized for Solid State Drives in particular, it displays information about platter-based hard drives, removable devices and even optical drives as well.</description>
     <projectUrl>http://www.techpowerup.com/forums/threads/ssd-z-information-tool-for-solid-state-drives-and-other-disk-devices.210209/</projectUrl>
@@ -21,6 +20,12 @@
     <releaseNotes>
       http://www.techpowerup.com/forums/threads/ssd-z-download-changelog.210208/
     </releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/ssd-z.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

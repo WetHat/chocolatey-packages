@@ -8,7 +8,6 @@
     <version>1.29</version>
     <authors>Western Digital</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/windlg.portable</packageSourceUrl>
     <summary>Data Lifeguard Diagnostic for Windows</summary>
     <description>Windows Data Lifeguard Diagnostic is a tool to test WD internal and external drives. In additional, it can provide you with the model and serial of WD drives attached to the system.</description>
     <projectUrl>http://support.wdc.com/product/download.asp?groupid=608&amp;sid=3&amp;lang=en</projectUrl>
@@ -16,11 +15,18 @@
     <!--<copyright></copyright>-->
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>http://support.wdc.com/download/notes/WinDLG_v1_29_Release_Notes.pdf?v=699?v=699</releaseNotes>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/windlg128x128.png</iconUrl>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/windlg.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <!-- =============================== -->
     <dependencies>
     </dependencies>
-    <releaseNotes>http://support.wdc.com/download/notes/WinDLG_v1_29_Release_Notes.pdf?v=699?v=699</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

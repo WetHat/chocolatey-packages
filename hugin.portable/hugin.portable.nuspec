@@ -8,7 +8,6 @@
     <version>2015 .0.0</version>
     <authors>Pablo d'Angelo and others</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/hugin.portable</packageSourceUrl>
     <summary>Panorama Photo Stitcher</summary>
     <description>
      An easy to use cross-platform panoramic imaging toolchain based on Panorama Tools.
@@ -16,10 +15,6 @@
      With Hugin you can assemble a mosaic of photographs into a complete immersive panorama, stitch any series of overlapping pictures and much more.
    </description>
     <projectUrl>http://hugin.sourceforge.net/</projectUrl>
-    <projectSourceUrl>https://sourceforge.net/p/hugin/hugin/ci/default/tree/</projectSourceUrl>
-    <docsUrl>http://hugin.sourceforge.net/docs/</docsUrl>
-    <mailingListUrl>https://groups.google.com/forum/#!forum/hugin-ptx</mailingListUrl>
-    <bugTrackerUrl>https://bugs.launchpad.net/hugin</bugTrackerUrl>
     <tags>hugin portable panoramastitching panorama stitching photostitching hdr</tags>
     <copyright></copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
@@ -47,6 +42,12 @@
 		Other Improvements
 		•Many more improvements and bug fixes.
     </releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/hugin.portable</packageSourceUrl>
+    <projectSourceUrl>https://sourceforge.net/p/hugin/hugin/ci/default/tree/</projectSourceUrl>
+    <docsUrl>http://hugin.sourceforge.net/docs/</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/hugin-ptx</mailingListUrl>
+    <bugTrackerUrl>https://bugs.launchpad.net/hugin</bugTrackerUrl>
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

@@ -7,7 +7,6 @@
     <version>2.14.0</version>
     <authors>Dean P. Grimm</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/winmerge.portable</packageSourceUrl>
     <summary>WinMerge is an Open Source differencing and merging tool for Windows.</summary>
     <description>
     WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle.
@@ -59,6 +58,13 @@
     • "+" and "-" from the number block don't work in the editor
     • Date format did not respect Regional Settings
     </releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/winmerge.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <!-- =============================== -->
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

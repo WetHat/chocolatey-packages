@@ -8,7 +8,6 @@
     <version>7.0</version>
     <authors>CGSecurity</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/testdisk-photorec.portable</packageSourceUrl>
     <summary>Data recovery software</summary>
     <description>
     TestDisk is powerful free data recovery software! It was primarily designed to help recover lost partitions and/or make non-booting disks bootable again when these symptoms are caused by faulty software: certain types of viruses or human error (such as accidentally deleting a Partition Table).
@@ -66,6 +65,12 @@
        .vbm: Veeam Backup Metadata
        .woff: Web Open Font Format
     </releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/testdisk-photorec.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

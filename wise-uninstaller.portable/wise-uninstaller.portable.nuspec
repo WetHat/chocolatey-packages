@@ -8,7 +8,6 @@
     <version>1.96</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/wise-uninstaller.portable</packageSourceUrl>
     <summary>Uninstall programs quickly and completely</summary>
     <description>Wise Program Uninstaller allows you to uninstall programs quickly and completely using its simple and user-friendly interface. The built-in scan engine will scan and delete all the left associated files, folders and registry items after the de-installation, making sure the software is completely removed from your computer.</description>
     <projectUrl>http://www.wisecleaner.com/wise-program-uninstaller.html</projectUrl>
@@ -19,6 +18,12 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/WPU225x225.png</iconUrl>
     <releaseNotes>http://www.wisecleaner.com/blog_sort_11.html</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/wise-uninstaller.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

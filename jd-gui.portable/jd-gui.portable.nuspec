@@ -8,31 +8,25 @@
     <version>1.4.0.1</version>
     <authors>Emmanuel Dupuy</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/jd-gui.portable</packageSourceUrl>
     <summary>Standalone graphical utility that displays Java source codes of “.class” files</summary>
     <description>
       The “Java Decompiler project” aims to develop tools in order to decompile and analyze Java 5 “byte code” and the later versions.
       JD-GUI is a standalone graphical utility that displays Java source codes of “.class” files. You can browse the reconstructed source code with the JD-GUI for instant access to methods and fields.
     </description>
     <projectUrl>http://jd.benow.ca/</projectUrl>
-    <projectSourceUrl>https://github.com/java-decompiler/jd-gui</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/java-decompiler/jd-gui/issues</bugTrackerUrl>
     <tags>jd portable java decompiler utility tool portable</tags>
     <copyright>Copyright(c) 2008-2015 Emmanuel Dupuy</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/jD-gui128x128.png</iconUrl>
-    <releaseNotes>
-      * Improves UI on Linux
-      * Removes the warning message during the installation under Ubuntu
-      * Fixes the loading extensions under Linux
-      * Fixes bug in Container.Entry implementations
-      * Updates of service-providers loading
-      * Updates API version
-      * Updates .gitignore
-      * Adds icon on tabs
-    </releaseNotes>
+    <releaseNotes>http://jd.benow.ca/#jd-gui-changes</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/jd-gui.portable</packageSourceUrl>
+    <projectSourceUrl>https://github.com/java-decompiler/jd-gui</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/java-decompiler/jd-gui/issues</bugTrackerUrl>
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

@@ -7,7 +7,6 @@
     <version>1.0.19</version>
     <authors>Emiel Wieldraaijer</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/registryloader.portable</packageSourceUrl>
     <summary>Load registry files from offline systems</summary>
     <description>Load registry files from offline systems, very useful if you are trying to recover a system that is prevented from booting by a bad driver or some other problem that requires the registry to be edited. RegistryLoaderPE only works for Windows NT/2000/XP/2003/2008/7 registry hives.</description>
     <projectUrl>http://www.wieldraaijer.nl/others.html</projectUrl>
@@ -18,6 +17,12 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/RegistryLoader128x128.png</iconUrl>
     <releaseNotes></releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/registryloader.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

@@ -7,7 +7,6 @@
     <version>2.7.5682.13541</version>
     <authors>WetHat</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/onenote-taggingkit-addin.install</packageSourceUrl>
     <summary>A free to-use add-in to add social tagging to OneNote for the desktop</summary>
     <description>This add-in for OneNote 2010 and 2013 (desktop) is based on the built-in OneNote tagging system but takes tagging of notes to the next level.
 
@@ -18,9 +17,6 @@
       * Full compatibility with built-in OneNote tagging system, even if add-in is not installed.
       * Automatic tracking of tags and notes related to the OneNote page currently being viewed</description>
     <projectUrl>http://onenotetaggingkit.codeplex.com/</projectUrl>
-    <projectSourceUrl>http://onenotetaggingkit.codeplex.com/SourceControl/latest</projectSourceUrl>
-    <docsUrl>http://onenotetaggingkit.codeplex.com/documentation</docsUrl>
-    <bugTrackerUrl>http://onenotetaggingkit.codeplex.com/workitem/list/basic</bugTrackerUrl>
     <tags>admin onenote tagging addin onenote2010 onenote2013 taxonomy categorization</tags>
     <copyright>WetHat Lab</copyright>
     <licenseUrl>http://onenotetaggingkit.codeplex.com/license</licenseUrl>
@@ -33,6 +29,11 @@
         Fixed Issue: Sharing tag suggestions - unable to copy tags.
         Fixed more occurences of issue: Kit keeps deaktivating itself.
     </releaseNotes>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/onenote-taggingkit-addin.install</packageSourceUrl>
+    <projectSourceUrl>http://onenotetaggingkit.codeplex.com/SourceControl/latest</projectSourceUrl>
+    <docsUrl>http://onenotetaggingkit.codeplex.com/documentation</docsUrl>
+    <bugTrackerUrl>http://onenotetaggingkit.codeplex.com/workitem/list/basic</bugTrackerUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

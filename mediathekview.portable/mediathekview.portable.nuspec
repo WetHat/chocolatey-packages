@@ -8,7 +8,6 @@
     <version>12.0</version>
     <authors>W. Xaver</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/mediathekview.portable</packageSourceUrl>
     <summary>Online-Mediathek Viewer deutschprachiger TV Sender</summary>
     <description>Das Programm MediathekView durchsucht die Online-Mediatheken verschiedener Sender (ARD, ZDF, Arte, 3Sat, SWR, BR, MDR, NDR, WDR, HR, RBB, ORF, SF) und listet die gefundenen Sendungen auf. Die Liste kann mit verschiedenen Filtern nach Beiträgen durchsucht werden. Mit einem Programm eigener Wahl können die Filme angesehen und aufgezeichnet werden. Es lassen sich Abos anlegen und neue Beiträge automatisch herunterladen.</description>
     <projectUrl>http://zdfmediathk.sourceforge.net/index.html</projectUrl>
@@ -20,6 +19,12 @@
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/MediathekView256x256.png</iconUrl>
     <releaseNotes>
     </releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/mediathekview.portable</packageSourceUrl>
+    <projectSourceUrl>https://github.com/xaverW</projectSourceUrl>
+    <docsUrlhttp://zdfmediathk.sourceforge.net/anleitung.html</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

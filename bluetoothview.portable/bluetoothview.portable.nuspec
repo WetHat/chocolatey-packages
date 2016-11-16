@@ -8,7 +8,6 @@
     <version>1.66</version>
     <authors>Nir Sofer</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/bluetoothview.portable</packageSourceUrl>
     <summary>Monitor the activity of Bluetooth devices around you</summary>
     <description>
      BluetoothView is a small utility that runs in the background, and monitor the activity of Bluetooth devices around you. For each detected Bluetooth device, it displays the following information: Device Name, Bluetooth Address, Major Device Type, Minor Device Type, First Detection Time, Last Detection Time, and more.
@@ -25,6 +24,12 @@
       * Added 'Mark Odd/Even Rows' option, under the View menu. When it's turned on, the odd and even rows are displayed in different color, to make it easier to read a single line.
       * Added 'Auto Size Columns+Headers' option, which allows you to automatically resize the columns according to the row values and column headers.
     </releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/bluetoothview.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

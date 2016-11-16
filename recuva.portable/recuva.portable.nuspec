@@ -21,7 +21,7 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Recuva256x256.png</iconUrl>
     <releaseNotes>https://www.piriform.com/recuva/version-history</releaseNotes>
-    <!-- =============================== -->
+    <!-- ==== Chocolatey Extensions ==== -->\n<!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />
     </dependencies>

@@ -11,9 +11,6 @@
     <summary>Regular expression search and replace for Windows</summary>
     <description>grepWin is a simple search and replace tool which can use regular expressions to do its job. This allows to do much more powerful searches and replaces.</description>
     <projectUrl>http://stefanstools.sourceforge.net/grepWin.html</projectUrl>
-    <projectSourceUrl>https://sourceforge.net/p/grepwin/code/HEAD/tree/</projectSourceUrl>
-    <docsUrl>http://stefanstools.sourceforge.net/grepWin.html</docsUrl>
-    <bugTrackerUrl>https://sourceforge.net/p/grepwin/tickets/</bugTrackerUrl>
     <tags>grepwin.portable</tags>
     <copyright>2016 © Stefan Küng</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
@@ -21,6 +18,11 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/grepWin128x128.png</iconUrl>
     <releaseNotes>http://sourceforge.net/p/grepwin/code/647/log/?path=/trunk</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <projectSourceUrl>https://sourceforge.net/p/grepwin/code/HEAD/tree/</projectSourceUrl>
+    <docsUrl>http://stefanstools.sourceforge.net/grepWin.html</docsUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/grepwin/tickets/</bugTrackerUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

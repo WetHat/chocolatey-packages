@@ -8,7 +8,6 @@
     <version>7.0.0.0</version>
     <authors>Auslogics Software</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/diskdefrag.portable</packageSourceUrl>
     <summary>Compact and fast defragmenter with over 11,000,000 users worldwide. Improves your PC's performance by defragmenting and re-arranging files on your disk. </summary>
     <description>
       At a click of a button Auslogics Disk Defrag Free will quickly defragment files on your hard drive, optimize file placement and consolidate free space to ensure the highest data access speed possible.
@@ -33,6 +32,12 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/diskdefrag256x256.png</iconUrl>
     <releaseNotes>http://www.auslogics.com/en/software/disk-defrag/popup/history/</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/diskdefrag.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

@@ -8,7 +8,6 @@
     <version>9.31</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/wise-registrycleaner.portable</packageSourceUrl>
     <summary>Clean registry junks, repair Windows errors</summary>
     <description>
       Wise Registry Cleaner scans the Windows registry and finds errors &amp; residual items in the registry and then cleans or defrags them. By fixing these residual and corrupted items in Windows registry, your system will run faster and more stable.
@@ -21,6 +20,12 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/WRC225x225.png</iconUrl>
     <releaseNotes>http://www.wisecleaner.com/blog_sort_6.html</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/wise-registrycleaner.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

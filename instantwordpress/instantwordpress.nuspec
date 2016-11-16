@@ -8,7 +8,6 @@
     <version>4.5.0</version>
     <authors>Corvideon</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/instantwordpress</packageSourceUrl>
     <summary>Instant WordPress is a complete standalone, portable WordPress development environment.</summary>
     <description>
       Instant WordPress turns any Windows machine into a WordPress development server. It will even run from a USB stick.
@@ -31,6 +30,12 @@
       •PHP 5.4.36
       •MySQL 5.6.25 (Updated)
     </releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/instantwordpress</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>http://www.instantwp.com/documentation/</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

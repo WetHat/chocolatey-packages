@@ -7,7 +7,6 @@
     <version>1.81.1502</version>
     <authors>Martin Klinzmann</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/licensecrawler.portable</packageSourceUrl>
     <summary>LicenseCrawler can discover application product keys, serial numbers, or licensess</summary>
     <description>If you want to setup your computer system again you need to have the licenses and serial numbers at hand for all the software programs that you have purchased and registered. This does include the Windows product key but also other serial numbers for applications like Nero, Office, VMWare and pretty much every other application.
 
@@ -23,13 +22,18 @@
     Commercial User: If the LicenseCrawle for or in a company, you have to order a license.
     </description>
     <projectUrl>http://www.klinzmann.name/licensecrawler.htm</projectUrl>
-    <docsUrl>http://www.klinzmann.name/licensecrawler_support.htm</docsUrl>
     <tags>licensecrawler portable recovery forensic license serialnumber</tags>
     <copyright>License Crawler Copyright © 2016</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/licensecrawler128x128.png</iconUrl>
     <releaseNotes>http://www.klinzmann.name/licensecrawler.htm</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/licensecrawler.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>http://www.klinzmann.name/licensecrawler_support.htm</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

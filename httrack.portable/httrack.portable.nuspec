@@ -7,12 +7,9 @@
     <version>3.48.22</version>
     <authors>Xavier Roche</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/httrack.portable</packageSourceUrl>
     <summary>HTTrack is a free (GPL, libre/free software) and easy-to-use offline browser utility</summary>
     <description>HTTrack allows you to download a World Wide Web site from the Internet to a local directory, building recursively all directories, getting HTML, images, and other files from the server to your computer. HTTrack arranges the original site's relative link-structure. Simply open a page of the "mirrored" website in your browser, and you can browse the site from link to link, as if you were viewing it online. HTTrack can also update an existing mirrored site, and resume interrupted downloads. HTTrack is fully configurable, and has an integrated help system. </description>
     <projectUrl>http://www.httrack.com/page/1/en/index.html</projectUrl>
-    <projectSourceUrl>https://github.com/xroche/httrack/tree/master</projectSourceUrl>
-    <docsUrl>http://www.httrack.com/html/index.html</docsUrl>
     <tags>httrack portable websitecopy offline</tags>
     <copyright>© 2016 Xavier Roche and other contributors </copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
@@ -20,6 +17,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/httrack128x128.png</iconUrl>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/httrack.portable</packageSourceUrl>
+    <projectSourceUrl>https://github.com/xroche/httrack/tree/master</projectSourceUrl>
+    <docsUrl>http://www.httrack.com/html/index.html</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <!-- =============================== -->
     <dependencies>
     </dependencies>
   </metadata>

@@ -8,7 +8,6 @@
     <version>1.11.0</version>
     <authors>TechPowerUp</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/gpu-z.portable</packageSourceUrl>
     <summary>Lightweight system utility designed to provide vital information about your video card and graphics processor.</summary>
     <description>
     Main Features
@@ -42,6 +41,12 @@
       •Clarified sensor name of Polaris to "GPU 'only' power draw"
       •Improved power draw monitoring performance on Polaris
     </releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/gpu-z.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

@@ -7,7 +7,6 @@
     <version>16.00</version>
     <authors>IDM Computer Solutions</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/ultracompare.install</packageSourceUrl>
     <summary>Compare files. Compare folders. Merge Differences</summary>
     <description>30 days trial of the UltraCompare is a folder compare and file compare application loaded with features to enable you to compare text files and folders, word documents, and even zip files and jar archives. UltraCompare includes text compare, binary file compare with the capability to merge differences between compared files. Got folders? UltraCompare also supports Folder compare - including local/network directory compare, zip file compare , and FTP Compare. UltraCompare supports automatic, easy folder synchronization, and a duplicate file finder as well. - See more at: http://www.ultraedit.com/products/ultracompare.html#sthash.TOlJptwL.dpuf</description>
     <projectUrl>http://www.ultraedit.com/products/ultracompare.html</projectUrl>
@@ -17,6 +16,12 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Ultracompare128x128.png</iconUrl>
     <releaseNotes>http://www.ultraedit.com/products/ultracompare/latest-changes</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/ultracompare.install</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />

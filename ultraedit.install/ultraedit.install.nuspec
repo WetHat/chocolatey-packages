@@ -7,7 +7,6 @@
     <version>23.20</version>
     <authors>IDM Computer Solutions</authors>
     <owners>WetHat</owners>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/ultraedit.install</packageSourceUrl>
     <summary>UltraEdit Programmer's Editor</summary>
     <description>30 days trial of the UltraEdit text, HTML and hex editor, and advanced PHP, Perl, Java and JavaScript editor for programmers. UltraEdit is also an XML editor including a tree-style XML parser. UltraEdit supports disk-based 64-bit file handling (standard) on both 32- and 64-bit Windows platforms.</description>
     <projectUrl>http://www.ultraedit.com/products/ultraedit.html</projectUrl>
@@ -17,6 +16,12 @@
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Ultraedit256x256.png</iconUrl>
     <releaseNotes>http://www.ultraedit.com/products/ultraedit/new_feature_tour.html</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/ultraedit.install</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.9.0" />
