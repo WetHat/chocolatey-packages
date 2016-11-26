@@ -1,5 +1,5 @@
 ﻿$packageName         = 'calibre.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.calibre-ebook.com/2.71.0/calibre-portable-installer-2.71.0.exe' # download url
+$url                 = 'http://download.calibre-ebook.com/2.73.0/calibre-portable-installer-2.73.0.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Calibre E-Book Manager.lnk'
 $shortcutDescription = 'Calibre e-book library manager'
@@ -19,7 +19,7 @@ Install-ChocolateyPackage -packageName   $packageName `
                           -FileType      'EXE'         `
                           -SilentArgs     $choco `
                           -Url            $url `
-                          -Checksum       'AFF550547BF586FD4D6BC5D597CA0214679D2F989C21FF4CFE3495FDEC63F7F0' `
+                          -Checksum       '6498A41E3593A0BFD57EE14FBC352DED4810E4C772748B1BB4057FF8C6AC697E' `
                           -ChecksumType   'sha256' `
                           -validExitCodes $validExitCodes
 
