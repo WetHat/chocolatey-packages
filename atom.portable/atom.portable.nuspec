@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>atom.portable</id>
     <title>Atom Text Editor (Portable)</title>
-    <version>1.12.5</version>
+    <version>1.12.7</version>
     <authors>https://github.com/orgs/atom/people</authors>
     <owners>WetHat</owners>
     <summary>Hackable text editor for the 21st Century</summary>
