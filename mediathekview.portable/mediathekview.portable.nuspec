@@ -22,7 +22,7 @@
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/mediathekview.portable</packageSourceUrl>
     <projectSourceUrl>https://github.com/xaverW</projectSourceUrl>
-    <docsUrlhttp://zdfmediathk.sourceforge.net/anleitung.html</docsUrl>
+    <docsUrl>http://zdfmediathk.sourceforge.net/anleitung.html</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
