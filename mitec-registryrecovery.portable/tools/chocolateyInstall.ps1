@@ -1,4 +1,4 @@
-﻿$packageID           = 'mitec-registryrecovery.portable.1.5.3' # nuget package id includes version because download url does not
+﻿$packageID           = 'mitec-registryrecovery.portable.1.5.5' # nuget package id includes version because download url does not
 $url                 = 'http://www.mitec.cz/Downloads/WRR.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'MiTec Registry Recovery.lnk'
@@ -9,7 +9,11 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageID $url $installlocation
+Install-ChocolateyZipPackage -PackageName  $packageID `
+                             -Url           $url `
+                             -UnzipLocation $installlocation `
+                             -Checksum      '281125724E2690216A02CC36E26AA006D9F3A64DFAA454625B7584CB6E053329' `
+                             -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
@@ -20,7 +24,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
       ## install a shortcut to the start menu to make this app discoverable
       [string]$shortcutFolder = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) `
-                                          -ChildPath $shortcutLocation 
+                                          -ChildPath $shortcutLocation
       [string]$shortcut       = Join-Path -Path $shortcutFolder `
                                           -ChildPath $shortcutName
       # register shortcut for removal on uninstall
@@ -31,7 +35,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       {
         [System.IO.Directory]::CreateDirectory($shortcutFolder) >$null
       }
-      
+
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -Targetpath $exe.FullName `
                                  -WorkingDirectory $exe.DirectoryName `

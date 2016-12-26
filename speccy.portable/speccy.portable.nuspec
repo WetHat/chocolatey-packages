@@ -4,7 +4,7 @@
   <metadata>
     <id>speccy.portable</id>
     <title>Speccy (Portable)</title>
-    <version>1.29.714</version>
+    <version>1.30.730</version>
     <authors>Piriform</authors>
     <owners>WetHat</owners>
     <summary>Speccy Advanced System Information Tool</summary>
@@ -27,7 +27,7 @@
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/speccy.portable</packageSourceUrl>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <docsUrl>http://www.piriform.com/docs/speccy</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->

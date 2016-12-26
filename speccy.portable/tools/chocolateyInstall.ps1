@@ -1,4 +1,4 @@
-﻿$packageName         = 'speccy.portable.1.29.714' # includes version as download url is version neutral
+﻿$packageName         = 'speccy.portable.1.30.730' # includes version as download url is version neutral
 $url                 = 'http://www.piriform.com/speccy/download/portable/downloadfile' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Advanced System Information Tool'
@@ -8,7 +8,11 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageName $url $installlocation
+Install-ChocolateyZipPackage -PackageName   $packageName `
+                             -Url           $url       `
+                             -UnzipLocation $installlocation `
+                             -Checksum      '0548389AA922FE1E740294E3E7C63341D4B32980ADEC9CB31B4EEBA8F487D67F' `
+                             -ChecksumType  'sha256'
 
 $bitness = Get-ProcessorBits
 

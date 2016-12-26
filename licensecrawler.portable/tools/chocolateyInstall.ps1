@@ -1,4 +1,4 @@
-﻿$packageName         = 'licensecrawler.portable.1.81.1502' # includes version as download url is version neutral
+﻿$packageName         = 'licensecrawler.portable.1.82.1523' # includes version as download url is version neutral
 $url                 = 'http://www.klinzmann.name/files/licensecrawler.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'LicenseCrawler.lnk'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -PackageName  $packageName `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      'A16F54C2AD1E57C43CA9F0ECDBE0EEBC64832EDC8B21132CF8F2D22C87CF805A' `
+                             -Checksum      'C7786F9B32879335C0F897DB660EC0CDF1796C78957926F7A43F3EA393DDE8D8' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `

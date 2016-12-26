@@ -1,4 +1,4 @@
-﻿$packageID           = 'wise-registrycleaner.portable.9.31' # nuget package id includes version because URL does not
+﻿$packageID           = 'wise-registrycleaner.portable.9.35' # nuget package id includes version because URL does not
 $url                 = 'http://wisecleaner.com/soft/WRCFree.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Wise Registry Cleaner.lnk'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      '814755EB9CDF7952732E06D0A3B4E5DF2D86A7291354517ADB0D6C369DBF9C0A' `
+                             -Checksum      '32A24CAA29E7E382E5567EC3E6746615987AD36D2FE809BC66E3D7B60DF7D909' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
