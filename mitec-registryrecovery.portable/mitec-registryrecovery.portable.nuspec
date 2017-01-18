@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mitec-registryrecovery.portable</id>
     <title>MiTec Windows Registry Recovery (Portable)</title>
-    <version>1.5.5</version>
+    <version>1.5.6</version>
     <authors>Michal Mutl</authors>
     <owners>WetHat</owners>
     <summary>Load offline registry hives and dig out information</summary>
@@ -14,22 +14,20 @@
       Registry hive can be exported into REGEDIT4 format.
       Every topic data can be saved to CSV.
     </description>
-    <projectUrl>https://www.techpowerup.com/gpuz/</projectUrl>
+    <projectUrl>http://www.mitec.cz/wrr.html</projectUrl>
     <tags>windowsregistry registry recovery portable</tags>
-    <copyright>© 2002-2016 Michal Mutl</copyright>
+    <copyright>© 2002-2017 Michal Mutl</copyright>
     <licenseUrl>http://www.mitec.cz/wrr.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/wrr128x128.png</iconUrl>
     <releaseNotes>
-      * Last boot and shutdown detection added
-      * username and machine name detection enhanced
-      * interface enhancements.
+      * Drag and drop file support.
     </releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/mitec-registryrecovery.portable</packageSourceUrl>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <docsUrl>http://www.mitec.cz/wrr.html</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->

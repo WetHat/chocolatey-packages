@@ -4,7 +4,7 @@
   <metadata>
     <id>inkscape.portable</id>
     <title>Inkscape (Portable)</title>
-    <version>0.91</version>
+    <version>0.92</version>
     <authors>inkscape.org</authors>
     <owners>WetHat</owners>
     <summary>Powerful, free vector graphics (svg) design tool</summary>
@@ -18,13 +18,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/inkscape256x256.png</iconUrl>
-    <releaseNotes>
-    This release marks the culmination of a multi-year effort to switch to a new internal graphics rendering engine, Cairo. This brings performance enhancements and more accurate rendering of drawings. Thanks go especially to Google for sponsoring much of this work.
-    </releaseNotes>
+    <releaseNotes>http://wiki.inkscape.org/wiki/index.php/Release_notes</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/inkscape.portable</packageSourceUrl>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <docsUrl>https://inkscape.org/en/learn/books/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->

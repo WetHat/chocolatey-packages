@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>diskdefrag.portable</id>
     <title>Auslogics Disk Defrag (Portable)</title>
-    <version>7.0.0.0</version>
+    <version>7.1.1.0</version>
     <authors>Auslogics Software</authors>
     <owners>WetHat</owners>
     <summary>Compact and fast defragmenter with over 11,000,000 users worldwide. Improves your PC's performance by defragmenting and re-arranging files on your disk. </summary>
@@ -26,7 +26,7 @@
     </description>
     <projectUrl>http://www.auslogics.com/en/software/disk-defrag</projectUrl>
     <tags>diskdefrag portable system defrag defragment diskdefrag</tags>
-    <copyright>Copyright (c) 2008-2015 Auslogics Lab Pty Ltd</copyright>
+    <copyright>Copyright (c) 2008-2017 Auslogics Lab Pty Ltd</copyright>
     <licenseUrl>http://www.auslogics.com/en/legal/?source=disk-defrag&amp;reason=Help_About_License_agreement</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
@@ -35,7 +35,7 @@
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/diskdefrag.portable</packageSourceUrl>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <docsUrl>https://www.auslogics.com/en/software/disk-defrag/popup/manual/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
