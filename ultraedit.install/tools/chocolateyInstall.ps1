@@ -1,9 +1,12 @@
-﻿$packageName    = 'ultraedit.install.23.20'
-$installerType  = 'MSI' #only one of these: exe, msi, msu
+﻿$packageName    = 'ultraedit.install.24.00'
 $url            = 'http://www.ultraedit.com/files/msii/ue_english.msi' # download url
 $silentArgs     = '/qn /norestart'
 $validExitCodes = @(0)
-$installlocation= Split-Path -parent $MyInvocation.MyCommand.Definition
 
-## Make sure new installer is cached by adding version
-Install-ChocolateyPackage $packageName $installerType $silentArgs $url  -validExitCodes $validExitCodes
+Install-ChocolateyPackage -packageName   $packageName `
+                          -FileType      'MSI'        `
+                          -SilentArgs     $silentArgs `
+                          -Url            $url `
+                          -Checksum       '957CBC24854C359FA0A41E00064DA41E0EAB25E0A8D5DD67C6D4B310D2A89ADD' `
+                          -ChecksumType   'sha256' `
+                          -validExitCodes $validExitCodes
