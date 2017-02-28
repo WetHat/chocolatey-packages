@@ -1,4 +1,4 @@
-﻿$packageID           = 'procmon.portable.3.3' # nuget package id
+﻿$packageID           = 'procmon.portable'
 $url                 = 'https://download.sysinternals.com/files/ProcessMonitor.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Process Monitor (Sysinternals).lnk'
@@ -9,7 +9,11 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageID $url $installlocation
+Install-ChocolateyZipPackage -packageName   $packageID `
+                             -Url           $url `
+                             -UnzipLocation $installlocation `
+                             -Checksum      '89C2B65142A81BA0B46A3672B5645A0039BBA0D6F2ADF994D231B8B283E6825C' `
+                             -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {

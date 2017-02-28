@@ -1,6 +1,6 @@
 ﻿$packageName         = 'inkscape.portable' # arbitrary name for the package, used in messages
-$url                 = 'https://inkscape.org/gallery/item/10554/Inkscape-0.92.0.7z' # download url
-$url64               = 'https://inkscape.org/gallery/item/10555/Inkscape-0.92.0-x64.7z' # 64bit URL
+$url                 = 'https://inkscape.org/gallery/item/10686/Inkscape-0.92.1.7z' # download url
+$url64               = 'https://inkscape.org/gallery/item/10687/Inkscape-0.92.1-x64.7z' # 64bit URL
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Powerful, free vector graphics (svg) design tool'
 
@@ -13,9 +13,9 @@ Install-ChocolateyZipPackage -packageName    $packageName `
                              -Url            $url `
                              -Url64          $url64 `
                              -UnzipLocation  $installlocation `
-                             -Checksum       'F8D8162A5B2E471B437F77F18761E7AF04DD1C008101E0B449C5D6041BD34394' `
+                             -Checksum       '78E524F584C63D062FCA525E0AE4D689B2CF5F1CAD355BA0FFB42E5E328C94A3' `
                              -ChecksumType   'sha256' `
-                             -Checksum64     'C04F9056A615803004F6060145920A3C7D5AB4A8E37C232D7DDB6FA675965D9C' `
+                             -Checksum64     '480A4B6BD03C5BB15B91059B4CE40BAA1C2908A21C955722FD26285F64096729' `
                              -ChecksumType64 'sha256'
 
 $bitness = Get-ProcessorBits

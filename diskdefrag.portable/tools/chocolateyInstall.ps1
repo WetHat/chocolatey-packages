@@ -1,4 +1,4 @@
-﻿$packageName         = 'diskdefrag.portable.7.1.1' # includes version as download url is version neutral
+﻿$packageName         = 'diskdefrag.portable'
 $url                 = 'http://www.auslogics.com/en/downloads/disk-defrag/ausdiskdefragportable.exe' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Compact and fast harddisk defragmenter'
@@ -13,7 +13,7 @@ $app                 = Join-Path -Path $installlocation -ChildPath 'AuslogicsDis
 Get-ChocolateyWebFile -PackageName   $packageName `
                       -FileFullPath $app          `
                       -Url          $url           `
-                      -Checksum     'C415C0F60344C8099FB05F9CCD0AD7C97B073D9970DC6EC654357A2925F6B828' `
+                      -Checksum     'A59A29078E5459A325F38D04126EAA4C5F3EA6F7A1112725C3DECE5969D749A9' `
                       -ChecksumType 'sha256'
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {

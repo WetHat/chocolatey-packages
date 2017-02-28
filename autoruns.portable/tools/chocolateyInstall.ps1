@@ -1,4 +1,4 @@
-﻿$packageName         = 'autoruns.portable.13.62' # includes version as download url is version neutral
+﻿$packageName         = 'autoruns.portable'
 $url                 = 'http://download.sysinternals.com/files/Autoruns.zip'
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Autoruns (Sysinternals).lnk'
@@ -9,8 +9,12 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageName $url $installlocation
-
+Install-ChocolateyZipPackage -packageName   $packageName `
+                             -Url           $url `
+                             -UnzipLocation $installlocation `
+                             -Checksum      '515C07221FC5743A8810988B4D54FDEE1A262EE7A587D19E7754462918B3E0B6' `
+                             -ChecksumType  'sha256'
+                             
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_

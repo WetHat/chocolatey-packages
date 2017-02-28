@@ -1,4 +1,4 @@
-﻿$packageID           = 'wise-uninstaller.portable.1.96' # nuget package id includes version because URL does not
+﻿$packageID           = 'wise-uninstaller.portable'
 $url                 = 'http://wisecleaner.com/soft/WPU.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Wise Program Uninstaller.lnk'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      'C551EF90EBCF8BEC48D71F6EEB2EFC84E501B251DEFF03209D01F0238F098F15' `
+                             -Checksum      'DEAD7EB327D0561BB7C3263C25F297583F179044C055CD11279CE978B28924A1' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `

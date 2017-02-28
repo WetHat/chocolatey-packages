@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>procexp.portable</id>
     <title>Process Explorer (Portable)</title>
-    <version>16.31</version>
+    <version>16.32</version>
     <authors>Mark Russinovich</authors>
     <owners>WetHat</owners>
     <summary>Process Explorer (Sysinternals) shows you information about which handles and DLLs processes have opened or loaded</summary>

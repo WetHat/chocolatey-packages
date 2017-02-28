@@ -1,4 +1,4 @@
-﻿$packageName         = 'procexp.portable.16.31' # includes version as download url is version neutral
+﻿$packageName         = 'procexp.portable'
 $url                 = 'https://download.sysinternals.com/files/ProcessExplorer.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Process Explorer (Sysinternals).lnk'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageName `
                              -Url           $url         `
                              -UnzipLocation $installlocation `
-                             -Checksum      'F08C4BD6A1372E9A22315D6C917544F523080F2C445377EFE559AB0C20928805' `
+                             -Checksum      '7C3DA162469FD9E95A2A0BD914EE41B443601CD776B53B8DB9D9556FBE38C2EF' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `

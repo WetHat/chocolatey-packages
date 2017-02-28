@@ -1,5 +1,5 @@
-﻿$packageName         = 'cpu-z.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.cpuid.com/cpu-z/cpu-z_1.77-en.zip' # download url
+﻿$packageName         = 'cpu-z.portable'
+$url                 = 'http://download.cpuid.com/cpu-z/cpu-z_1.78-en.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutDescription = 'Information on some of the main devices of your system'
 
@@ -11,7 +11,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageName `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      '28821A4F004DB507F197476B308B76D8272D076D9A0CAB7AE2A92E9A30D332A4' `
+                             -Checksum      'C564D37F017FD7B58DB72B0A56607943FAE3887A21DDBED46DBBC7CB507E4FB7' `
                              -ChecksumType  'sha256'
 
 $bitness = Get-ProcessorBits
