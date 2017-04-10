@@ -1,6 +1,6 @@
 ﻿$packageName         = 'httrack.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.httrack.com/httrack-noinst-3.48.22.zip' # download url
-$url64               = 'http://download.httrack.com/httrack_x64-noinst-3.48.22.zip' # 64bit URL here or remove - if installer decides, then use $url
+$url                 = 'http://download.httrack.com/httrack-noinst-3.49.1.zip' # download url
+$url64               = 'http://download.httrack.com/httrack_x64-noinst-3.49.1.zip' # 64bit URL here or remove - if installer decides, then use $url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'HTTrack Website Copier.lnk'
 $shortcutDescription = 'Free and easy-to-use offline browser utility'
@@ -10,7 +10,13 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageName $url $installlocation $url64
+Install-ChocolateyZipPackage -packageName   $packageName `
+                             -Url           $url `
+                             -Url64bit      $url64 `
+                             -UnzipLocation $installlocation `
+                             -Checksum      '4C1A4DC8D2628BFCF0CF5B2FD688895539DDCB871A48B633FB66FBD667D7B957' `
+                             -Checksum64    '33830FD1C84E1BE9F0552417B73294D564799EAB4447671DEE481F256B43C54C' `
+                             -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {

@@ -5,14 +5,14 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>grepwin.portable</id>
     <title>grepWin (Portable)</title>
-    <version>1.6.16</version>
+    <version>1.6.17</version>
     <authors>Stefan Küng</authors>
     <owners>WetHat</owners>
     <summary>Regular expression search and replace for Windows</summary>
     <description>grepWin is a simple search and replace tool which can use regular expressions to do its job. This allows to do much more powerful searches and replaces.</description>
     <projectUrl>http://stefanstools.sourceforge.net/grepWin.html</projectUrl>
     <tags>grepwin.portable</tags>
-    <copyright>2016 © Stefan Küng</copyright>
+    <copyright>2017 © Stefan Küng</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
