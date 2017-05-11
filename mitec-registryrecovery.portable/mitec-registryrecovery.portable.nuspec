@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mitec-registryrecovery.portable</id>
     <title>MiTec Windows Registry Recovery (Portable)</title>
-    <version>1.5.6</version>
+    <version>1.6.1</version>
     <authors>Michal Mutl</authors>
     <owners>WetHat</owners>
     <summary>Load offline registry hives and dig out information</summary>
