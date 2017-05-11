@@ -1,12 +1,12 @@
 $packageName   = 'onenote-taggingkit-addin.install'
-$url           = 'http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=onenotetaggingkit&DownloadId=1638246&FileTime=131317915738630000'
+$installVersion='3.0.6257.15479'
 $silentArgs    = '/qn /norestart'
 $validExitCodes = @(0)
+$tools=Split-Path -Parent $MyInvocation.MyCommand.Definition
+$installer='SetupTaggingKitWiX.3.0.6257.15479.msi'
 
-Install-ChocolateyPackage -packageName   $packageName `
-                          -FileType      'MSI'         `
-                          -SilentArgs     $silentArgs `
-                          -Url            $url `
-                          -Checksum       '97242E82194BB5E2A2690CBDAC9D50B8B97884151D1A016FD60FAD5F1587120C' `
-                          -ChecksumType   'sha256' `
+Install-ChocolateyInstallPackage -packageName   $packageName `
+                          -FileType      'MSI'               `
+                          -File           (Join-Path $tools "SetupTaggingKitWiX.$installVersion.msi") `
+                          -SilentArgs     $silentArgs  `
                           -validExitCodes $validExitCodes
