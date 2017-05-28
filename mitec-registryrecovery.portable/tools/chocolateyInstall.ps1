@@ -1,4 +1,4 @@
-﻿$packageID           = 'mitec-registryrecovery.portable.1.5.6' # nuget package id includes version because download url does not
+﻿$packageID           = 'mitec-registryrecovery.portable' # nuget package id
 $url                 = 'http://www.mitec.cz/Downloads/WRR.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'MiTec Registry Recovery.lnk'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -PackageName  $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      'DA2C4466A4BF3E2E9978FA2C5544E15F89F101DA7505EAD4F4300D50E06E42E8' `
+                             -Checksum      'D19D3AE2F7A5CBA6359C3D20BC7F7049C1C1088CB5DC2B8C0568641D21675D21' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
