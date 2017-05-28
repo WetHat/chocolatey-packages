@@ -1,6 +1,6 @@
 ﻿$packageName         = 'httrack.portable' # arbitrary name for the package, used in messages
-$url                 = 'http://download.httrack.com/httrack-noinst-3.49.1.zip' # download url
-$url64               = 'http://download.httrack.com/httrack_x64-noinst-3.49.1.zip' # 64bit URL here or remove - if installer decides, then use $url
+$url                 = 'http://download.httrack.com/httrack-noinst-3.49.2.zip' # download url
+$url64               = 'http://download.httrack.com/httrack_x64-noinst-3.49.2.zip' # 64bit URL here or remove - if installer decides, then use $url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'HTTrack Website Copier.lnk'
 $shortcutDescription = 'Free and easy-to-use offline browser utility'
@@ -14,8 +14,8 @@ Install-ChocolateyZipPackage -packageName   $packageName `
                              -Url           $url `
                              -Url64bit      $url64 `
                              -UnzipLocation $installlocation `
-                             -Checksum      '4C1A4DC8D2628BFCF0CF5B2FD688895539DDCB871A48B633FB66FBD667D7B957' `
-                             -Checksum64    '33830FD1C84E1BE9F0552417B73294D564799EAB4447671DEE481F256B43C54C' `
+                             -Checksum      '5124A9AD6C48A4BE956598E99F988F41DB5ACD40010AD94B24E2B477D5CCA17C' `
+                             -Checksum64    '67E706F0A70370A65ED254D3B20A0643469AC3DBB8A927ADC3D097CB1A08D8AA' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
