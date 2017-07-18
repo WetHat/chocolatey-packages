@@ -1,6 +1,6 @@
 ﻿$packageID           = 'grepwin.portable' # nuget package id
-$url                 = 'http://sourceforge.net/projects/grepwin/files/1.6.17/grepWin-1.6.17_portable.exe/download' # download url
-$url64               = 'http://sourceforge.net/projects/grepwin/files/1.6.17/grepWin-x64-1.6.17_portable.exe/download' # download url
+$url                 = 'https://sourceforge.net/projects/grepwin/files/1.7.0/grepWin-1.7.0_portable.exe/download' # download url
+$url64               = 'https://sourceforge.net/projects/grepwin/files/1.7.0/grepWin-x64-1.7.0_portable.exe/download' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'grepWin.lnk'
 $shortcutDescription = 'Regular expression search and replace for Windows'
@@ -15,8 +15,8 @@ Get-ChocolateyWebFile  -packageName  $packageName `
                        -fileFullPath $app `
                        -url $url `
                        -url64bit $url64 `
-                       -Checksum       '506DB84F8D4D023BB943C1798264B12EDF9CFAAAA6FFAB6CD4463AEC0C49471C' `
-                       -Checksum64     '9BE3E07084C0B0CEA01EE0E43234DBDCC451590D20E25CEC95CC4C0AB91DE4D4' `
+                       -Checksum       '2F6DA8F4BF50EF889600A67291CD1EC1750753DC4E4F5C1FEEA368ED4D65E41A' `
+                       -Checksum64     '6976F640CE6B70EE74FF4111CC884D17BA553A3CD2BE8227B8A2452CCB0546A8' `
                        -ChecksumType   'sha256' `
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
