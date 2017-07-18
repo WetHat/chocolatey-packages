@@ -1,12 +1,16 @@
 $packageName   = 'onenote-taggingkit-addin.install'
-$installVersion='3.0.6257.15479'
-$silentArgs    = '/qn /norestart'
-$validExitCodes = @(0)
-$tools=Split-Path -Parent $MyInvocation.MyCommand.Definition
-$installer='SetupTaggingKitWiX.3.0.6257.15479.msi'
+$url           = 'https://github.com/WetHat/OnenoteTaggingKit/releases/download/v3.2/SetupTaggingKitWiX.3.2.6401.32978.msi'
+$silentArgs    = '/qn' 
+$validExitCodes = @(0) 
 
-Install-ChocolateyInstallPackage -packageName   $packageName `
-                          -FileType      'MSI'               `
-                          -File           (Join-Path $tools "SetupTaggingKitWiX.$installVersion.msi") `
-                          -SilentArgs     $silentArgs  `
+# main helpers - these have error handling tucked into them already
+# installer, will assert administrative rights
+
+# if removing $url64, please remove from here
+Install-ChocolateyPackage -packageName   $packageName `
+                          -FileType      'MSI'        `
+                          -SilentArgs     $silentArgs `
+                          -Url            $url `
+                          -Checksum       '902311369FADED39AF475CC881DA38F7A1C30F9EF1B6159815979DAE61E13D96' `
+                          -ChecksumType   'sha256' `
                           -validExitCodes $validExitCodes
