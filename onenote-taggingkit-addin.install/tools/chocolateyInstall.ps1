@@ -3,10 +3,6 @@ $url           = 'https://github.com/WetHat/OnenoteTaggingKit/releases/download/
 $silentArgs    = '/qn' 
 $validExitCodes = @(0) 
 
-# main helpers - these have error handling tucked into them already
-# installer, will assert administrative rights
-
-# if removing $url64, please remove from here
 Install-ChocolateyPackage -packageName   $packageName `
                           -FileType      'MSI'        `
                           -SilentArgs     $silentArgs `

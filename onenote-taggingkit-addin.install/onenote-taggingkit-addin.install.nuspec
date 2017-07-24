@@ -34,8 +34,7 @@ This add-in for OneNote 2010, 2013, or 2016 (desktop) is based on the built-in O
     <!--<mailingListUrl></mailingListUrl>-->
     <!-- =============================== -->
     <dependencies>
-      <dependency id="chocolatey" version="0.9.9.0" />
-      <dependency id="dotnet4.5" />
+      <dependency id="dotnet4.5" version="4.5.0.0" />
     </dependencies>
   </metadata>
   <files>
