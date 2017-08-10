@@ -1,5 +1,5 @@
-﻿$packageID           = 'mediathekview.portable' # includes version as download url is version neutral
-$url                 = 'http://netix.dl.sourceforge.net/project/zdfmediathk/Mediathek/Mediathek%2012/MediathekView_12.zip' # download url
+﻿$packageID           = 'mediathekview.portable'
+$url                 = 'https://github.com/mediathekview/MediathekView/releases/download/13.0.2/MediathekView-13.0.2.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Mediathek View.lnk'
 $shortcutDescription = 'Online-Mediathek Viewer deutschprachiger TV Sender'
@@ -9,12 +9,16 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageID $url $installlocation
+Install-ChocolateyZipPackage -packageName   $packageID `
+                             -Url           $url `
+                             -UnzipLocation $installlocation `
+                             -Checksum      '1E4EE0FA685A3D44DD0BBFBD48922F883210CBBB0C6E027F3459F7F0F992C2A0' `
+                             -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
-    if ($exe.BaseName -eq 'MediathekView__Start')
+    if ($exe.BaseName -eq 'MediathekView_Portable')
     {
       echo '' >"$($exe.FullName).gui"
 
