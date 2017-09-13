@@ -1,6 +1,6 @@
 [Project ID]
 Signature=UE Proj: v.1
-Unicode=1
+Unicode=2
 [Project Information]
 Use Relative Directory=1
 Relative to Project File=1
@@ -339,3 +339,5 @@ Replace Type24=0
 Capture24=1
 Capture Unicode24=0
 Save Active File24=1
+[FilesU]
+0=.+AFw-
