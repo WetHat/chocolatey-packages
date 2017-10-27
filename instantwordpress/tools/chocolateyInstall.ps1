@@ -1,5 +1,5 @@
 ﻿$packageName         = 'instantwordpress' # nuget package ID
-$url                 = 'https://s3-eu-west-1.amazonaws.com/instantwp/downloads/InstantWP_4.5.exe' # download url
+$url                 = 'https://github.com/corvideon/InstantWP/releases/download/v5.3.0/IWP-v5.3.0-Win.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Instant WordPress.lnk'
 $shortcutDescription = 'Standalone, portable WordPress development environment'
@@ -7,15 +7,21 @@ $shortcutDescription = 'Standalone, portable WordPress development environment'
 $appBase             = Split-Path -Parent `
                                   -Path (Split-Path -Parent $MyInvocation.MyCommand.Definition)
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
+$toolslocation     = Join-Path -Path $appBase -ChildPath 'tools'
+
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyPackage $packageName 'EXE' "/S /D=$installlocation" $url -validExitCodes @(0)
-
+Install-ChocolateyZipPackage -packageName   $packageName `
+                             -Url           $url `
+                             -UnzipLocation $installlocation `
+                             -Checksum      '3879DA984BB63F488D4454E159C7CC565213D17B9B10F4EBB9010139A9C3656C' `
+                             -ChecksumType  'sha256'
+                             
 # create .gui and .ignore files as appropriate
-Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
+Get-ChildItem -Name $installlocation -include '*.bat','*.exe' -Recurse `
 | ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
-    if ($exe.BaseName -eq 'InstantWP')
+    if ($exe.BaseName -eq 'Start-InstantWP')
     {
       echo '' >"$($exe.FullName).gui"
 
@@ -35,7 +41,8 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -Targetpath $exe.FullName `
                                  -WorkingDirectory $exe.DirectoryName `
-                                 -Description $shortcutDescription
+                                 -Description $shortcutDescription `
+                                 -IconLocation (Join-Path -Path $toolslocation IWP.ico)
     }
     else
     {
