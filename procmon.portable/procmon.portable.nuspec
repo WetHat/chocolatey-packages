@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>procmon.portable</id>
     <title>Process Monitor (Portable)</title>
-    <version>3.32</version>
+    <version>3.40</version>
     <authors>Mark Russinovich</authors>
     <owners>WetHat</owners>
     <summary>Advanced monitoring tool for Windows that shows real-time file system, Registry and process/thread activity</summary>

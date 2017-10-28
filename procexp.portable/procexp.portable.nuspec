@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>procexp.portable</id>
     <title>Process Explorer (Portable)</title>
-    <version>16.32</version>
+    <version>16.21</version>
     <authors>Mark Russinovich</authors>
     <owners>WetHat</owners>
     <summary>Process Explorer (Sysinternals) shows you information about which handles and DLLs processes have opened or loaded</summary>
@@ -16,7 +16,7 @@
     </description>
     <projectUrl>https://technet.microsoft.com/en-us/sysinternals/bb896653</projectUrl>
     <tags>procexp portable system processes handle dll sysinternals</tags>
-    <copyright>(c) 2008-2014 Mark Russinovich</copyright>
+    <copyright>(c) 2008-2017 Mark Russinovich</copyright>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb896653</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
