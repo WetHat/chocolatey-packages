@@ -1,5 +1,5 @@
 ﻿$packageName         = 'instantwordpress' # nuget package ID
-$url                 = 'https://github.com/corvideon/InstantWP/releases/download/v5.3.0/IWP-v5.3.0-Win.zip' # download url
+$url                 = 'https://github.com/corvideon/InstantWP/releases/download/v5.3.3/IWP-v5.3.3-Win.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Instant WordPress.lnk'
 $shortcutDescription = 'Standalone, portable WordPress development environment'
@@ -14,7 +14,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageName `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      '3879DA984BB63F488D4454E159C7CC565213D17B9B10F4EBB9010139A9C3656C' `
+                             -Checksum      'A1752064D1E6D31413E9F99F9090461170256D829E064C537106B838B760EB53' `
                              -ChecksumType  'sha256'
                              
 # create .gui and .ignore files as appropriate

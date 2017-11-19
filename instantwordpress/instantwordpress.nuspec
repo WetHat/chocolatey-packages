@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>instantwordpress</id>
     <title>Instant WordPress</title>
-    <version>5.3.0</version>
+    <version>5.3.3</version>
     <authors>Corvideon</authors>
     <owners>WetHat</owners>
     <summary>Instant WordPress is a complete standalone, portable WordPress development environment.</summary>
