@@ -4,7 +4,7 @@
   <metadata>
     <id>xmediarecode.portable</id>
     <title>XMedia Recode (Portable)</title>
-    <version>3.3.7.9</version>
+    <version>3.4.2.8</version>
     <authors>Sebastian Dörfler</authors>
     <owners>WetHat</owners>
     <summary>XMedia Recode converts almost all known audio and video formats</summary>
@@ -13,7 +13,7 @@
     XMedia Recode converts: 3GP to AVI, 3GP to FLV, AC3 to MP3, AC3 to WAV, ASF to 3GP, ASF to FLV, ASF to MP4, AVI to FLV, AVI to 3GP, FLAC to MP3, FLAC to WMA, FLV to 3GP, FLV to Mp3, DVD to 3GP, DVD to AC3, DVD to AVI, DVD to MP3, DVD to MP4, DVD to MOV, DVD to SVCD, DVD to VCD, DVD to WMV, OGG to MP3, OGG to WMA, MPEG to AVI, MP2 to MP3, MP4 to FLV, MP4 to AVI, M4P to MP3, MOV to 3GP, MOV to AVI, MOV to FLV, WMA to MP3, WMV to FLV, WAV to MP3</description>
     <projectUrl>http://www.xmedia-recode.de/en/index.html</projectUrl>
     <tags>xmediarecode portable conversion videoconversion audioconversion transcoding</tags>
-    <copyright>Copyright © 2007-2016 Sebastian Dörfler</copyright>
+    <copyright>Copyright © 2007-2018 Sebastian Dörfler</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/xmediarecode128x128.png</iconUrl>

@@ -5,14 +5,14 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>wise-uninstaller.portable</id>
     <title>Wise Program Uninstaller (Portable)</title>
-    <version>2.01</version>
+    <version>2.2.13</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
     <summary>Uninstall programs quickly and completely</summary>
     <description>Wise Program Uninstaller allows you to uninstall programs quickly and completely using its simple and user-friendly interface. The built-in scan engine will scan and delete all the left associated files, folders and registry items after the de-installation, making sure the software is completely removed from your computer.</description>
     <projectUrl>http://www.wisecleaner.com/wise-program-uninstaller.html</projectUrl>
     <tags>wise uninstaller portable</tags>
-    <copyright>Copyright 2006-2016 WiseCleaner.com All Rights Reserved</copyright>
+    <copyright>Copyright 2006-2018 WiseCleaner.com All Rights Reserved</copyright>
     <licenseUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/wise-uninstaller.portable/tools/License.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->

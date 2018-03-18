@@ -4,14 +4,14 @@
   <metadata>
     <id>ultraedit.install</id>
     <title>UltraEdit - Text Editor</title>
-    <version>24.20</version>
+    <version>25.0</version>
     <authors>IDM Computer Solutions</authors>
     <owners>WetHat</owners>
     <summary>UltraEdit Programmer's Editor</summary>
     <description>30 days trial of the UltraEdit text, HTML and hex editor, and advanced PHP, Perl, Java and JavaScript editor for programmers. UltraEdit is also an XML editor including a tree-style XML parser. UltraEdit supports disk-based 64-bit file handling (standard) on both 32- and 64-bit Windows platforms.</description>
     <projectUrl>http://www.ultraedit.com/products/ultraedit.html</projectUrl>
     <tags>admin ultraedit editor programming development</tags>
-    <copyright>Copyright (c) 1994-2017, IDM Computer Solutions Inc</copyright>
+    <copyright>Copyright (c) 1994-2018, IDM Computer Solutions Inc</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Ultraedit256x256.png</iconUrl>

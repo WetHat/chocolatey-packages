@@ -1,5 +1,5 @@
 $packageName   = 'onenote-taggingkit-addin.install'
-$url           = 'https://github.com/WetHat/OnenoteTaggingKit/releases/download/v3.2/SetupTaggingKitWiX.3.2.6401.32978.msi'
+$url           = 'https://github.com/WetHat/OnenoteTaggingKit/releases/download/v3.3/SetupTaggingKitWiX.3.3.6631.38362.msi'
 $silentArgs    = '/qn' 
 $validExitCodes = @(0) 
 
@@ -7,6 +7,6 @@ Install-ChocolateyPackage -packageName   $packageName `
                           -FileType      'MSI'        `
                           -SilentArgs     $silentArgs `
                           -Url            $url `
-                          -Checksum       '902311369FADED39AF475CC881DA38F7A1C30F9EF1B6159815979DAE61E13D96' `
+                          -Checksum       'DFA08400711D6857982B0F0C397D340705E4232CCE75A2C7E8CEE7D268C34CA0' `
                           -ChecksumType   'sha256' `
                           -validExitCodes $validExitCodes

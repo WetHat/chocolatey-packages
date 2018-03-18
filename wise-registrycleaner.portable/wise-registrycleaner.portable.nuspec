@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>wise-registrycleaner.portable</id>
     <title>Wise Registry Cleaner (Portable)</title>
-    <version>9.45</version>
+    <version>9.55</version>
     <authors>wisecleaner.com</authors>
     <owners>WetHat</owners>
     <summary>Clean registry junks, repair Windows errors</summary>
@@ -14,7 +14,7 @@
     </description>
     <projectUrl>http://www.wisecleaner.com/wise-registry-cleaner.html</projectUrl>
     <tags>wise registrycleaner portable registry windows</tags>
-    <copyright>Copyright 2006-2015 WiseCleaner.com All Rights Reserved</copyright>
+    <copyright>Copyright 2006-2018 WiseCleaner.com All Rights Reserved</copyright>
     <licenseUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/wise-registrycleaner.portable/tools/License.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->

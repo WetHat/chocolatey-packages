@@ -13,7 +13,7 @@ $app                 = Join-Path -Path $installlocation -ChildPath 'AuslogicsDis
 Get-ChocolateyWebFile -PackageName   $packageName `
                       -FileFullPath $app          `
                       -Url          $url           `
-                      -Checksum     '2E6C06E5EFC329E4F140F249E6B2ECCFD43289AD71E35FF1595EA0EDF79BCFDE' `
+                      -Checksum     '79CFF8E247D4B367BF6D366D0ADCE56D120313781B17B3493BD379AC42D098E9' `
                       -ChecksumType 'sha256'
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
