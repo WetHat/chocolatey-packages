@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>instantwordpress</id>
     <title>Instant WordPress</title>
-    <version>5.3.5</version>
+    <version>5.3.6</version>
     <authors>Corvideon</authors>
     <owners>WetHat</owners>
     <summary>Instant WordPress is a complete standalone, portable WordPress development environment.</summary>
@@ -19,7 +19,7 @@
     </description>
     <projectUrl>http://www.instantwp.com</projectUrl>
     <tags>admin instantwp instantwordpress development wordpress portable</tags>
-    <copyright>InstantWP © 2015-2017 Corvideon</copyright>
+    <copyright>InstantWP © 2015-2018 Corvideon</copyright>
     <licenseUrl>https://github.com/corvideon/InstantWP/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
