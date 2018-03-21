@@ -12,7 +12,7 @@ Install-ChocolateyPackage -packageName   $packageName `
                           -Url            $url `
                           -Url64          $url64 `
                           -Checksum       'B96EDC4DA9140C4EEE6D761085CDC8DA64A962CA08581594A8FB4AC8F13CDF79' `
-                          -Checksum64     'A6852713ED9FF62E46D1113622B5A6B8BA58BD689E37DEFC9EA2A67886C937C7' `
+                          -Checksum64     '9A7F76140F5DC608E2F3C6D779542B757B1C0ABF011A19379182EA81BA51723B' `
                           -ChecksumType   'sha256' `
                           -ChecksumType64 'sha256' `
                           -validExitCodes $validExitCodes
