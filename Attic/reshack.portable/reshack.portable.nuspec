@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>reshack.portable</id>
     <title>Resource Hacker (Portable)</title>
-    <version>4.5.30</version>
+    <version>4.7.34</version>
     <authors>Angus Johnson</authors>
     <owners>WetHat</owners>
     <summary>Can open any type of Windows executable (*.exe; *.dll; *.scr; *.mui etc) so that individual resources can be added modified or deleted within these files.</summary>
@@ -18,16 +18,21 @@
     <licenseUrl>http://www.angusj.com/resourcehacker</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
+    	Changes since version 3.6: 
+			* Update: The dialog editor has been improved significantly. 
+			* Update; The menu editor has had a minor update too. 
+			* Bugfix: Saving RC files was saving the compiled script instead. 
+			* Other: A number of other minor updates and fixes too. 
       4.5.30
-      •Update: Very minor cosmetic improvements
-      •4.5.28
-      •Update: Major changes (and improvements) to the commandline syntax (see above)
-      •4.4.26
-      •Bugfix: The toolbar state wasn't being preserved between sessions
-      •Bugfix: Minor bug decompiling some version info resources
-      •4.3.20
-      •Bugfixes: Numerous fixes to commandline processing
-      •Bugfixes: Other minor fixes 
+      * Update: Very minor cosmetic improvements
+      * 4.5.28
+      * Update: Major changes (and improvements) to the commandline syntax (see above)
+      * 4.4.26
+      * Bugfix: The toolbar state wasn't being preserved between sessions
+      * Bugfix: Minor bug decompiling some version info resources
+      * 4.3.20
+      * Bugfixes: Numerous fixes to commandline processing
+      * Bugfixes: Other minor fixes 
     </releaseNotes>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/reshacker256x256.png</iconUrl>
