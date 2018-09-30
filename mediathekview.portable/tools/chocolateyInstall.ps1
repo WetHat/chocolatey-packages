@@ -1,5 +1,5 @@
 ﻿$packageID           = 'mediathekview.portable'
-$url                 = 'https://github.com/mediathekview/MediathekView/releases/download/13.0.3/MediathekView-13.0.3.zip' # download url
+$url                 = 'https://github.com/mediathekview/MediathekView/releases/download/13.2.1/MediathekView-13.2.1.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Mediathek View.lnk'
 $shortcutDescription = 'Online-Mediathek Viewer deutschprachiger TV Sender'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      '98A192BFCCE8C5508A8AE1D8C9DBC9A95A6C8AB290743EF744355F3185DE107C' `
+                             -Checksum      'C7489CBBD0687D2B3057BAE82EDCDC8153DC552C2DFEE4B9ED8E4E9FBF0F1EDF' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `

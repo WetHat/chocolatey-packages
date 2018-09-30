@@ -5,14 +5,14 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mediathekview.portable</id>
     <title>MediathekView (Portable)</title>
-    <version>13.0.3</version>
+    <version>13.2.1</version>
     <authors>W. Xaver, Fabian Patzke, Nicklas Wiegandt, chπ, Alexander</authors>
     <owners>WetHat</owners>
     <summary>Online-Mediathek Viewer deutschprachiger TV Sender</summary>
     <description>Das Programm MediathekView durchsucht die Online-Mediatheken verschiedener Sender (ARD, ZDF, Arte, 3Sat, SWR, BR, MDR, NDR, WDR, HR, RBB, ORF, SF) und listet die gefundenen Sendungen auf. Die Liste kann mit verschiedenen Filtern nach Beiträgen durchsucht werden. Mit einem Programm eigener Wahl können die Filme angesehen und aufgezeichnet werden. Es lassen sich Abos anlegen und neue Beiträge automatisch herunterladen.</description>
     <projectUrl>https://mediathekview.de/</projectUrl>
     <tags>mediathekview portable tv mediathek</tags>
-    <copyright>2016-2017 Copyright by MediathekView Team</copyright>
+    <copyright>2016-2018 Copyright by MediathekView Team</copyright>
     <licenseUrl>https://github.com/mediathekview/MediathekView/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
