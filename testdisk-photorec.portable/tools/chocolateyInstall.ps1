@@ -1,5 +1,5 @@
 ﻿$packageID           = 'testdisk-photorec.portable' # nuget package id
-$url                 = 'http://www.cgsecurity.org/testdisk-7.0.win.zip' # download url
+$url                 = 'http://www.cgsecurity.org/testdisk-7.1.WIP.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 
 $appBase             = Split-Path -Parent `
