@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>netbeans.portable</id>
+    <version>9.0</version>
+    <owners>WetHat</owners>
+    <title>Apache Netbeans (Portable)</title>
+    <authors>Apache Netbeans Team</authors>
+    <projectUrl>https://netbeans.apache.org</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Apache%20NetBeans%20Logo.png</iconUrl>
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <licenseUrl>https://github.com/apache/incubator-netbeans/blob/9.0-vc3/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>netbeans.portable portable</tags>
+    <summary>NetBeans is an open source development environment, tooling platform, and application framework.</summary>
+    <description>
+      NetBeans is an integrated development environment for Java. NetBeans allows applications to be developed
+      from a set of modular software components called modules. NetBeans runs on Microsoft Windows, macOS,
+      Linux and Solaris. In addition to Java development, it has extensions for other languages like
+      PHP, C, C++, HTML5, and Javascript. Applications based on NetBeans, including the NetBeans IDE,
+      can be extended by third party developers.
+    </description>
+    <releaseNotes>https://netbeans.apache.org/download/nb90/</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/netbeans.portable</packageSourceUrl>
+    <projectSourceUrl>https://github.com/apache/incubator-netbeans</projectSourceUrl>
+    <docsUrl>https://netbeans.apache.org/help/index.html#documentation</docsUrl>
+    <mailingListUrl>https://netbeans.apache.org/community/mailing-lists.html</mailingListUrl>
+    <bugTrackerUrl>https://netbeans.apache.org/participate/report-issue.html</bugTrackerUrl>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.10.0" />
+      <dependency id="jdk8" version="8.0.152" />
+    </dependencies>
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+    </dependencies>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
