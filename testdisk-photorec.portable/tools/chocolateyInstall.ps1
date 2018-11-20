@@ -1,5 +1,5 @@
 ﻿$packageID           = 'testdisk-photorec.portable' # nuget package id
-$url                 = 'http://www.cgsecurity.org/testdisk-7.1.WIP.zip' # download url
+$url                 = 'https://www.cgsecurity.org/testdisk-7.1-WIP.win.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 
 $appBase             = Split-Path -Parent `
@@ -7,8 +7,12 @@ $appBase             = Split-Path -Parent `
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
 $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
-Install-ChocolateyZipPackage $packageID $url $installlocation
-
+Install-ChocolateyZipPackage -packageName  $packageName `
+                             -Url          $url         `
+                             -UnzipLocation $installlocation `
+                             -Checksum      'FD030D572E1D5CD662A0C8DD5CBFC2A15F6A63E3D941133A6E6173F462AE8CB5' `
+                             -ChecksumType  'sha256'
+                             
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
