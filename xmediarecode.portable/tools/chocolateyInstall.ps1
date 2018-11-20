@@ -1,5 +1,5 @@
 ﻿$packageName         = 'xmediarecode.portable'
-$url                 = 'http://www.xmedia-recode.de/download/XMediaRecode3446.zip' # download url
+$url                 = 'http://www.xmedia-recode.de/download/XMediaRecode3448.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Xmedia Recode.lnk'
 $shortcutDescription = 'Video / Audio Transcoder'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageName `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      'E015CB0D685BC7CB13E612728B5ED79A8FADD424EF7B023AC242750942C61BE5' `
+                             -Checksum      '8D4CBFDAA0FCB3DA0CAB9C99DCC30E967ECFC33F36E6E34A9EFC58015E4E5EB1' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
