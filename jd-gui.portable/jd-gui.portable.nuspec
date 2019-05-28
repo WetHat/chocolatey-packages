@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>jd-gui.portable</id>
     <title>jD GUI (Portable)</title>
-    <version>1.4.0.1</version>
+    <version>1.5.1.0</version>
     <authors>Emmanuel Dupuy</authors>
     <owners>WetHat</owners>
     <summary>Standalone graphical utility that displays Java source codes of “.class” files</summary>
@@ -15,7 +15,7 @@
     </description>
     <projectUrl>http://jd.benow.ca/</projectUrl>
     <tags>jd portable java decompiler utility tool portable</tags>
-    <copyright>Copyright(c) 2008-2015 Emmanuel Dupuy</copyright>
+    <copyright>Copyright(c) 2008-2019 Emmanuel Dupuy</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
