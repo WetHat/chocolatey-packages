@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>jd-gui.portable</id>
     <title>jD GUI (Portable)</title>
-    <version>1.6.3.0</version>
+    <version>1.6.3</version>
     <authors>Emmanuel Dupuy</authors>
     <owners>WetHat</owners>
     <summary>Standalone graphical utility that displays Java source codes of “.class” files</summary>
@@ -18,8 +18,8 @@
     <copyright>Copyright(c) 2008-2019 Emmanuel Dupuy</copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/jD-gui128x128.png</iconUrl>
+    <!-- Important note about https://rawcdn.githack.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>https://rawcdn.githack.com/WetHat/chocolatey-packages/82b124b840ecb8f71c13af1bdb599fc8e6242afa/jd-gui.portable/jD-gui128x128.png</iconUrl>
     <releaseNotes>http://jd.benow.ca/#jd-gui-changes</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/jd-gui.portable</packageSourceUrl>
