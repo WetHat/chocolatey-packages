@@ -38,7 +38,7 @@ function global:au_GetLatest {
     # the url looks like: '/download/nb111/nb111.html'
     $downloadPage = Invoke-WebRequest -Uri "http://netbeans.apache.org${downloadPageurl}" -UseBasicParsing
     
-    # Find link to a page listing the mirrors that can be sused to download that version 
+    # Find link to a page listing the mirrors that can be used to download that version 
     $mirrorPageUrl = $downloadPage.links `
     | ForEach-Object { $_.href } `
     | Where-Object { $_ -match 'http.*-bin\.zip$' } `
@@ -47,7 +47,7 @@ function global:au_GetLatest {
     ## the url looks like: https://www.apache.org/dyn/closer.cgi/netbeans/netbeans/11.1/netbeans-11.1-bin.zip
     $mirrorsPage =  Invoke-WebRequest -Uri $mirrorPageUrl -UseBasicParsing 
 
-    # Get the first live url from the list of mirrors.
+    # Get the first life url from the list of mirrors.
     $url32 = $mirrorsPage.links `
     | ForEach-Object { $_.href } `
     | Where-Object { $_ -match 'http.*-bin\.zip$' -and (Test-Url $_) } `
@@ -55,8 +55,8 @@ function global:au_GetLatest {
     
     # The url looks like: http://mirror.netcologne.de/apache.org/netbeans/netbeans/11.1/netbeans-11.1-bin.zip
 
-    $parts = $url32 -split '/'
-    $version = $parts[6]
+    $file = $url32 -split '/' | Select-Object -Last 1
+    $version = [regex]::Match($file,'[\d.]+').value.trim('.')
    
     @{ URL32 = $url32; Version = $version ; ChecksumType32 = 'sha256' }
 }
