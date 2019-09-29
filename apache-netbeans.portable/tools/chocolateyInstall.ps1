@@ -1,5 +1,5 @@
 ﻿$packageID           = 'apache-netbeans.portable'
-$url                 = 'http://ftp.halifax.rwth-aachen.de/apache/netbeans/netbeans/11.1/netbeans-11.1-bin.zip'
+$url                 = 'http://apache.mirror.iphh.net/netbeans/netbeans/11.1/netbeans-11.1-bin.zip'
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Apache Netbeans.lnk'
 $shortcutDescription = 'Apache NetBeans development environment, tooling platform, and application framework.'

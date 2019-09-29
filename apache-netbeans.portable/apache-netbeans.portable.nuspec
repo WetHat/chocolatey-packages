@@ -8,11 +8,11 @@
     <title>Apache Netbeans (Portable)</title>
     <authors>Apache Netbeans Team</authors>
     <projectUrl>https://netbeans.apache.org</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Apache%20NetBeans%20Logo.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/WetHat/chocolatey-packages/843e59f3/apache-netbeans.portable/ApacheNetBeans444x512.png</iconUrl>
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://github.com/apache/incubator-netbeans/blob/9.0-vc3/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <tags>netbeans.portable portable</tags>
+    <tags>netbeans.portable netbeans portable Java IDE JavaScript PHP HTML5 CSS HTML Development</tags>
     <summary>NetBeans is an open source development environment, tooling platform, and application framework.</summary>
     <description>
       NetBeans is an integrated development environment for Java. NetBeans allows applications to be developed
