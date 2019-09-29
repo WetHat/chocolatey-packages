@@ -1,5 +1,5 @@
 ﻿$packageID           = 'netbeans.portable' # nuget package id
-$url                 = 'http://mirror.funkfreundelandshut.de/apache/incubator/netbeans/incubating-netbeans/incubating-11.0/incubating-netbeans-11.0-bin.zip ' # download url
+$url                 = 'http://ftp.fau.de/apache/netbeans/netbeans/11.1/netbeans-11.1-bin.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'Apache Netbeans.lnk'
 $shortcutDescription = 'Apache NetBeans development environment, tooling platform, and application framework.'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      'D0A9C8BFE8F22E5A4504573AB57A09580BE6EDA24268330C6AA8FF67ECD7B0FE' `
+                             -Checksum      'c21d31bafdb1b01688300891de27db9bb9df55fa568875603255107d96483c17' `
                              -ChecksumType  'sha256'
 $targetBasename = 'netbeans'
 if (Get-OSArchitectureWidth -compare 64)
