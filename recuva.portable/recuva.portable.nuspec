@@ -4,19 +4,21 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>recuva.portable</id>
-    <title>Recuva File Recovery (Portable)</title>
+    <title>[Deprecated] Recuva File Recovery (Portable)</title>
     <version>1.53.1087</version>
     <authors>Piriform</authors>
     <owners>WetHat</owners>
     <summary>Recuva File Recovery. Portable and adware free</summary>
-    <description>Recuva (portable) recovers files deleted from your Windows computer, Recycle Bin, digital camera card, or MP3 player.</description>
+    <description>
+        Please use the installed version instead. The portable packages for all versions of Recuva tend to fail with
+        a checksum error with every new release and remain broken beyond repair.
+    </description>
     <projectUrl>http://www.piriform.com/recuva</projectUrl>
     <tags>portable recuva undelete recover</tags>
     <copyright>© Copyright 2005-2016 Piriform Ltd - All rights reserved</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>http://www.piriform.com/legal/software-license/recuva</licenseUrl>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>http://cdn.rawgit.com/WetHat/chocolatey-packages/master/icons/Recuva256x256.png</iconUrl>
     <releaseNotes>https://www.piriform.com/recuva/version-history</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/recuva.portable</packageSourceUrl>
@@ -24,10 +26,8 @@
     <bugTrackerUrl>https://forum.piriform.com/index.php?showforum=17</bugTrackerUrl>
     <!-- =============================== -->
     <dependencies>
-      <dependency id="chocolatey" version="0.9.9.0" />
+      <dependency id="recuva" version="1.53.1087" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files/>
 </package>
