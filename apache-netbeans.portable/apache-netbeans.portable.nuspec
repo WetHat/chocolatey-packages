@@ -21,12 +21,23 @@
       In addition to Java development, it has extensions for other languages like
       PHP, C, C++, HTML5, and Javascript. Applications based on NetBeans, including the NetBeans IDE,
       can be extended by third party developers. Apache Netbeans is the successor of Oracle Netbeans whose
-      product line ended with version is 8.2. In September 2016, Oracle submitted a proposal to donate
+      product line ended with version 8.2. In September 2016, Oracle submitted a proposal to donate
       the NetBeans project to the Apache Software Foundation, stating that it was "opening up the
       NetBeans governance model to give NetBeans constituents a greater voice in the project's
       direction and future success through the upcoming release of Java 9 and NetBeans 9 and beyond".
       There is no direct upgrade path between Oracle Netbeans and Apache Netbean hence a new
       chocolatey package had to be created.
+      
+      **Note**: This package does not depend on a particular jdk since there are so many of them now.
+      In order to use Apache Netbeans it is required to also have one of the following jdks
+      (Chocolatey package IDs) installed:
+      
+      * jdk8, jdk11
+      * openjdk.portable
+      * openjdk, openjdk11, openjdk12, openjdk13
+      * adoptopenjdk, adoptopenjdk8, adoptopenjdk11, adoptopenjdk12, adoptopenjdk13
+      * zulu, zulu8, zulu9, zulu10, zulu12, zulu13
+      
     </description>
     <releaseNotes>https://netbeans.apache.org/download/nb90/</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
@@ -38,7 +49,6 @@
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.10.0" />
-      <dependency id="jdk8" version="8.0.152" />
     </dependencies>
   </metadata>
   <files>
