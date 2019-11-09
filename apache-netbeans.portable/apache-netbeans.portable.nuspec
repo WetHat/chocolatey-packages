@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>apache-netbeans.portable</id>
-    <version>11.1</version>
+    <version>11.2</version>
     <owners>WetHat</owners>
     <title>Apache Netbeans (Portable)</title>
     <authors>Apache Netbeans Team</authors>
@@ -27,17 +27,17 @@
       direction and future success through the upcoming release of Java 9 and NetBeans 9 and beyond".
       There is no direct upgrade path between Oracle Netbeans and Apache Netbean hence a new
       chocolatey package had to be created.
-      
+
       **Note**: This package does not depend on a particular jdk since there are so many of them now.
       In order to use Apache Netbeans it is required to also have one of the following jdks
       (Chocolatey package IDs) installed:
-      
+
       * jdk8, jdk11
       * openjdk.portable
       * openjdk, openjdk11, openjdk12, openjdk13
       * adoptopenjdk, adoptopenjdk8, adoptopenjdk11, adoptopenjdk12, adoptopenjdk13
       * zulu, zulu8, zulu9, zulu10, zulu12, zulu13
-      
+
     </description>
     <releaseNotes>https://netbeans.apache.org/download/nb90/</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
