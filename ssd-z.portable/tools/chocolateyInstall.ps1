@@ -1,5 +1,5 @@
 ﻿$packageName         = 'ssd-z.portable' # arbitrary name for the package, used in messages
-$url                 = 'https://www.techpowerup.com/forums/attachments/ssd-z_16-09-09wip-rar.78637/' # download url
+$url                 = 'http://www.aezay.dk/aezay/ssdz/SSD-Z_16.09.09wip.zip' # download url
 $shortcutLocation    = 'Chocolatey'
 $shortcutName        = 'SSD-Z.lnk'
 $shortcutDescription = 'Detailed info about your solid-state disks and harddriveschoco pack'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName  $packageName `
                              -Url          $url         `
                              -UnzipLocation $installlocation `
-                             -Checksum      '96DB95387CA0F37206A5DF7AC9E8F8AFEDDFB6D0997643926479A8155BA64C50' `
+                             -Checksum      '16c047a85c7aea25b7793cf7e36314396604cda92573b862476ad31e5c574109' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
