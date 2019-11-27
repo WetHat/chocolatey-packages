@@ -13,7 +13,7 @@ Install-ChocolateyZipPackage -packageName  $packageName `
                              -Url64        $url64       `
                              -UnzipLocation $installlocation `
                              -Checksum      '1231ccfd46815e324f3c541b1e4a0a569a0a16b5c7d320c8c049c36595785224' `
-                             -Checksum64    '1231ccfd46815e324f3c541b1e4a0a569a0a16b5c7d320c8c049c36595785224' `
+                             -Checksum64    '2a82c5f4a29ee467ab1eff82bad1f9c10f71569512161acfabd58e9b8a3da314' `
                              -ChecksumType  'sha256'
                              
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `

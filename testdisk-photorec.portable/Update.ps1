@@ -7,7 +7,7 @@ function global:au_SearchReplace {
             '(?i)(\s*\$url\s+=\s+'')[^'']+'   = "`${1}$($Latest.URL32)"
             '(?i)(\s*\$url64\s+=\s+'')[^'']+' = "`${1}$($Latest.URL64)"
             '(?i)(-Checksum\s+'')[^'']*'      = "`${1}$($Latest.Checksum32)"
-            '(?i)(-Checksum64\s+'')[^'']*'    = "`${1}$($Latest.Checksum32)"
+            '(?i)(-Checksum64\s+'')[^'']*'    = "`${1}$($Latest.Checksum64)"
         }
         '.\testdisk-photorec.portable.nuspec' = @{
             '(<releaseNotes>.*TestDisk_)[\d.]+(_Release</releaseNotes>)' = "`${1}$($Latest.Version)`${2}"
