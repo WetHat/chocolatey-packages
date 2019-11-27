@@ -1,6 +1,6 @@
 ﻿$packageName         = 'ssd-z.portable' # arbitrary name for the package, used in messages
 $url                 = 'http://www.aezay.dk/aezay/ssdz/SSD-Z_16.09.09wip.zip' # download url
-$shortcutLocation    = 'Chocolatey'
+$shortcutLocation    = 'Portable Apps (chocolatey)'
 $shortcutName        = 'SSD-Z.lnk'
 $shortcutDescription = 'Detailed info about your solid-state disks and harddriveschoco pack'
 

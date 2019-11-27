@@ -1,6 +1,6 @@
 ﻿$packageName         = 'instantwordpress' # nuget package ID
 $url                 = 'https://github.com/webtoolsgroup/InstantWP/releases/download/v5.3.6/IWP-v5.3.6-Win.zip' # download url
-$shortcutLocation    = 'Chocolatey'
+$shortcutLocation    = 'Portable Apps (chocolatey)'
 $shortcutName        = 'Instant WordPress.lnk'
 $shortcutDescription = 'Standalone, portable WordPress development environment'
 
