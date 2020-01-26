@@ -1,5 +1,5 @@
 ﻿$packageName         = 'jd-gui.portable' # nuget package id
-$url                 = 'https://github.com/java-decompiler/jd-gui/releases/download/v1.6.5/jd-gui-1.6.5.jar' # download url
+$url                 = 'https://github.com/java-decompiler/jd-gui/releases/download/v1.6.6/jd-gui-1.6.6.jar' # download url
 $shortcutLocation    = 'Portable Apps (Chocolatey)'
 $shortcutName        = 'jD GUI.lnk'
 $shortcutDescription = 'Java decompiler'
@@ -14,7 +14,7 @@ $app                 = Join-Path -Path $installlocation -ChildPath 'jd.jar'
 Get-ChocolateyWebFile -packageName  $packageName `
                       -fileFullPath $app        `
                       -url          $url `
-                      -Checksum     'cca26873bf3541dac53beaba3220ffdbb2da9088d782d59cf0cba18da8e74113' `
+                      -Checksum     '2c9d3efa8b06438a7284139f68f6efcbfb2a11e0b9d20a3370d50189685afc0b' `
                       -ChecksumType 'sha256'
 
 # Generate a launch file
