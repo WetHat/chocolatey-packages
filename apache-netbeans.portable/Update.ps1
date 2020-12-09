@@ -22,6 +22,9 @@ function global:au_SearchReplace {
             '(?i)(\s*\$url\s+=\s+'')[^'']+' = "`${1}$($Latest.URL32)"
             '(?i)(-Checksum\s+'')[^'']*'    = "`${1}$($Latest.Checksum32)"
         }
+        '.\apache-netbeans.portable.nuspec' = @{
+            '(?<=<releaseNotes>)[^<>]+' = $Latest.ReleaseNotesURL
+        }
      }
 }
 
@@ -37,6 +40,12 @@ function global:au_GetLatest {
    
     # the url looks like: '/download/nb111/nb111.html'
     $downloadPage = Invoke-WebRequest -Uri "http://netbeans.apache.org${downloadPageurl}" -UseBasicParsing
+    
+    # Find the release notes link
+    $releaseNotesUrl = $versionsPage.links `
+    | ForEach-Object { $_.href } `
+    | Where-Object { $_ -match 'nb\d+/index\.html$' } `
+    | Select-Object -First 1
     
     # Find link to a page listing the mirrors that can be used to download that version 
     $mirrorPageUrl = $downloadPage.links `
@@ -58,7 +67,11 @@ function global:au_GetLatest {
     $file = $url32 -split '/' | Select-Object -Last 1
     $version = [regex]::Match($file,'[\d.]+').value.trim('.')
    
-    @{ URL32 = $url32; Version = $version ; ChecksumType32 = 'sha256' }
+    @{ URL32 = $url32
+       Version = $version
+       ChecksumType32 = 'sha256'
+       ReleaseNotesURL = "https://netbeans.apache.org${releaseNotesUrl}"
+     }
 }
 
 update-package -ChecksumFor 32
