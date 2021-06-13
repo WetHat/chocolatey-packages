@@ -1,6 +1,5 @@
 import-module au
-$releases = 'http://netbeans.apache.org/download/index.html'
-$mirror = 'http://mirror.netcologne.de/apache.org'
+$releases = 'https://netbeans.apache.org/download/index.html'
 
 function Test-Url([string] $Url)
 {
@@ -39,7 +38,7 @@ function global:au_GetLatest {
     | Select-Object -First 1
    
     # the url looks like: '/download/nb111/nb111.html'
-    $downloadPage = Invoke-WebRequest -Uri "http://netbeans.apache.org${downloadPageurl}" -UseBasicParsing
+    $downloadPage = Invoke-WebRequest -Uri "https://netbeans.apache.org/${downloadPageurl}" -UseBasicParsing
     
     # Find the release notes link
     $releaseNotesUrl = $versionsPage.links `
@@ -47,6 +46,7 @@ function global:au_GetLatest {
     | Where-Object { $_ -match 'nb\d+/index\.html$' } `
     | Select-Object -First 1
     
+
     # Find link to a page listing the mirrors that can be used to download that version 
     $mirrorPageUrl = $downloadPage.links `
     | ForEach-Object { $_.href } `
@@ -54,20 +54,11 @@ function global:au_GetLatest {
     | Select-Object -First 1
     
     ## the url looks like: https://www.apache.org/dyn/closer.cgi/netbeans/netbeans/11.1/netbeans-11.1-bin.zip
-    $mirrorsPage =  Invoke-WebRequest -Uri $mirrorPageUrl -UseBasicParsing 
 
-    # Get the first life url from the list of mirrors.
-    $url32 = $mirrorsPage.links `
-    | ForEach-Object { $_.href } `
-    | Where-Object { $_ -match 'http.*-bin\.zip$' -and (Test-Url $_) } `
-    | Select-Object -First 1
-    
-    # The url looks like: http://mirror.netcologne.de/apache.org/netbeans/netbeans/11.1/netbeans-11.1-bin.zip
-
-    $file = $url32 -split '/' | Select-Object -Last 1
+    $file = $mirrorPageUrl -split '/' | Select-Object -Last 1
     $version = [regex]::Match($file,'[\d.]+').value.trim('.')
    
-    @{ URL32 = $url32
+    @{ URL32 = "https://downloads.apache.org/netbeans/netbeans/${version}/netbeans-${version}-bin.zip"
        Version = $version
        ChecksumType32 = 'sha256'
        ReleaseNotesURL = "https://netbeans.apache.org${releaseNotesUrl}"
