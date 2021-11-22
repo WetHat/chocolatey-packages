@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>free42</id>
+    <version>3.0.7</version>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/hp42s</packageSourceUrl>
+    <owners>WetHat</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Free42 (Portable)</title>
+    <authors>Thomas Okken</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://thomasokken.com/free42/</projectUrl>
+
+    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/hp42s.portable.png</iconUrl>
+    
+    <!--<copyright>Year Software Vendor</copyright> -->
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>--&gt;
+    <projectSourceUrl>ttps://github.com/thomasokken/free42</projectSourceUrl>--&gt;
+    
+    <docsUrl>https://thomasokken.com/free42/#doc</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/thomasokken/free42/issues</bugTrackerUrl>
+    <tags>hp42s calculator</tags>
+    <summary>An HP-42S Calculator Simulator</summary>
+    <description>
+        Free42 is a re-implementation of the HP-42S Scientific Programmable
+        Calculator and HP-82240 Printer. It is a complete rewrite, not using any
+        HP code. It does not require an HP-42S ROM image. Even though it
+        contains significant enhancements compared to the original calculator,
+        Free42 remains fully compatible with the HP-42S, both in its user
+        interface and in its ability to run programs written for the HP-42S.
+    </description>
+    <releaseNotes>https://thomasokken.com/free42/history.html</releaseNotes>
+    
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>--&gt;
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
