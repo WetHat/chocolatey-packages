@@ -17,11 +17,11 @@
 
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>ttps://github.com/thomasokken/free42</projectSourceUrl>
+    <projectSourceUrl>https://github.com/thomasokken/free42</projectSourceUrl>
 
     <docsUrl>https://thomasokken.com/free42/#doc</docsUrl>
     <bugTrackerUrl>https://github.com/thomasokken/free42/issues</bugTrackerUrl>
-    <tags>hp42s calculator</tags>
+    <tags>hp42s calculator simulation portable</tags>
     <summary>An HP-42S Calculator Simulator</summary>
     <description>
         Free42 is a re-implementation of the HP-42S Scientific Programmable
