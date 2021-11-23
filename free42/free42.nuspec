@@ -3,27 +3,23 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- == PACKAGE SPECIFIC SECTION == -->
+
     <id>free42</id>
     <version>3.0.7</version>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/hp42s</packageSourceUrl>
     <owners>WetHat</owners>
 
-    <!-- == SOFTWARE SPECIFIC SECTION == -->
     <title>Free42 (Portable)</title>
     <authors>Thomas Okken</authors>
-    <!-- projectUrl is required for the community feed -->
     <projectUrl>https://thomasokken.com/free42/</projectUrl>
 
-    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/hp42s.portable.png</iconUrl>
-    
-    <!--<copyright>Year Software Vendor</copyright> -->
+    <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/free42/hp42s192x192.png</iconUrl>
+
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>--&gt;
-    <projectSourceUrl>ttps://github.com/thomasokken/free42</projectSourceUrl>--&gt;
-    
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>ttps://github.com/thomasokken/free42</projectSourceUrl>
+
     <docsUrl>https://thomasokken.com/free42/#doc</docsUrl>
-    <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/thomasokken/free42/issues</bugTrackerUrl>
     <tags>hp42s calculator</tags>
     <summary>An HP-42S Calculator Simulator</summary>
@@ -36,13 +32,13 @@
         interface and in its ability to run programs written for the HP-42S.
     </description>
     <releaseNotes>https://thomasokken.com/free42/history.html</releaseNotes>
-    
-    <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>--&gt;
+      <dependency id="vcredist2017" version="14.10.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="skins\**" target="skins" />
   </files>
 </package>

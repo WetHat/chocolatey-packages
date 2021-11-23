@@ -19,11 +19,14 @@ function global:au_GetLatest {
     $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     # unversioned url
-    $url32 = 'https://thomasokken.com/free42/download/Free42Windows.zip' `
+    $url32 = $downloadPage.links `
+    | ForEach-Object { $_.href } `
+    | Where-Object { $_ -match 'Free42Windows\.zip' } `
+    | Select-Object -First 1
 
     $version = [regex]::Match($DownloadPage.RawContent,'(?<=<b>)\d+\.\d+\.\d+').Value
     
-    @{ URL32 = "$url32"; Version = $version ; ChecksumType32 = 'sha256' }
+    @{ URL32 = "https://thomasokken.com/free42/$url32"; Version = $version ; ChecksumType32 = 'sha256' }
 }
 
-update-package -ChecksumFor none -NoCheckUrl # do not call chocolateyInstall to genereate checksum
+update-package -ChecksumFor 32  # do not call chocolateyInstall to genereate checksum
