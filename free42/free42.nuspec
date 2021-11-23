@@ -6,7 +6,7 @@
 
     <id>free42</id>
     <version>3.0.7</version>
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/hp42s</packageSourceUrl>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/free42</packageSourceUrl>
     <owners>WetHat</owners>
 
     <title>Free42 (Portable)</title>
