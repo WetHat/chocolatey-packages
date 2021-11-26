@@ -1,12 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'Steel Bank Common Lisp'
-  fileType      = 'MSI' #only one of these: MSI or EXE (ignore MSU for now)
+  softwareName  = 'Steel Bank Common Lisp*'
+  fileType      = 'MSI'
   # MSI
   silentArgs    = "/qn /norestart"
   validExitCodes= @(0, 3010, 1605, 1614, 1641) # https://msdn.microsoft.com/en-us/library/aa376931(v=vs.85).aspx
- 
 }
 
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']

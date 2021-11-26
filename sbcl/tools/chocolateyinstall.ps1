@@ -3,9 +3,9 @@ $toolsDir   = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileType      = 'MSI' #only one of these: exe, msi, msu
+  fileType      = 'MSI'
   url           = 'http://prdownloads.sourceforge.net/sbcl/sbcl-2.1.10-x86-64-windows-binary.msi'
-  softwareName  = 'Steel Bank Common Lisp'
+  softwareName  = 'Steel Bank Common Lisp*'
   checksum      = '385e6d02df173eebfecf5e25a02240d4cb683e817218eab4cf320ba82af67d96'
   checksumType  = 'sha256'
 
@@ -16,7 +16,7 @@ $packageArgs = @{
 Install-ChocolateyPackage @packageArgs
 
 $sbclhome = Join-Path ([environment]::GetFolderPath([environment+specialfolder]::ProgramFiles)) `
-                      -ChildPath $packageArgs.softwareName
+                      -ChildPath 'Steel Bank Common Lisp'
 
 $target = Join-Path $sbclhome -ChildPath 'sbcl.exe'
 $icon = Join-Path $toolsDir -ChildPath 'sbcl.ico'
