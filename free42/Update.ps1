@@ -10,10 +10,6 @@ function global:au_SearchReplace {
      }
 }
 
-function global:au_BeforeUpdate() {
-     $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
-  }
-
 function global:au_GetLatest {
 
     $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
