@@ -25,7 +25,7 @@
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/jd-gui.portable</packageSourceUrl>
     <projectSourceUrl>https://github.com/java-decompiler/jd-gui</projectSourceUrl>
     <bugTrackerUrl>https://github.com/java-decompiler/jd-gui/issues</bugTrackerUrl>
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <docsUrl>https://github.com/java-decompiler/jd-gui</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!-- =============================== -->
     <dependencies>
