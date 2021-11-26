@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>sbcl</id>
+    <version>2.1.10</version>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/sbcl</packageSourceUrl>
+    <owners>WetHat</owners>
+    
+    <!-- ============================== -->
+    <title>sbcl (Install)</title>
+    <authors>crhodes, demoss, jsnell, pkhuong, and 4 others</authors>
+    <projectUrl>https://sbcl.sourceforge.io/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/sbcl/sbcl615x425.png</iconUrl>
+    <copyright>https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/COPYING</copyright>
+    <licenseUrl>http://www.sbcl.org/history.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://sourceforge.net/projects/sbcl/</projectSourceUrl>
+    <docsUrl>https://sbcl.sourceforge.io/manual/index.html</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/sbcl/mailman/</mailingListUrl>
+    <bugTrackerUrl>https://bugs.launchpad.net/sbcl</bugTrackerUrl>
+    <tags>sbcl commonlisp lisp compiler interpreter runtime steelbanks programming</tags>
+    <summary>Steel Bank Common Lisp</summary>
+    <description>
+        Steel Bank Common Lisp (SBCL) is a high performance Common Lisp
+        compiler. It is open source / free software, with a permissive license.
+        In addition to the compiler and runtime system for ANSI Common Lisp, it
+        provides an interactive environment including a debugger, a statistical
+        profiler, a code coverage tool, and many other extensions.
+    </description>
+    <releaseNotes>http://www.sbcl.org/news.html</releaseNotes>
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
