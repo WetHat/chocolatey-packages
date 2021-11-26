@@ -8,7 +8,7 @@ $ErrorActionPreference = 'Stop'; # stop on all errors
 $appBase        = Split-Path -Parent `
                              -Path (Split-Path -Parent $MyInvocation.MyCommand.Definition)
 $installlocation     = Join-Path -Path $appBase -ChildPath 'App'
-$shortcutRegistry    = Join-Path -Path $appBase  -ChildPath 'shortcuts.txt'
+$shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 
 Install-ChocolateyZipPackage -packageName   $packageID `
                              -Url           $url `

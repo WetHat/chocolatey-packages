@@ -8,16 +8,17 @@ $packageArgs = @{
   validExitCodes= @(0, 3010, 1605, 1614, 1641) # https://msdn.microsoft.com/en-us/library/aa376931(v=vs.85).aspx
  
 }
+
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 
 if ($key.Count -eq 1) {
   $key | % {
-    $packageArgs['file'] = "$($_.UninstallString)" #NOTE: You may need to split this if it contains spaces, see below
+    $packageArgs['file'] = "$($_.UninstallString)"
 
     if ($packageArgs['fileType'] -eq 'MSI') {
       $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
-
       $packageArgs['file'] = ''
+    } 
 
     Uninstall-ChocolateyPackage @packageArgs
   }
@@ -35,5 +36,5 @@ $target = join-Path $sbclhome 'sbcl.exe'
 Uninstall-ChocolateyEnvironmentVariable -VariableName 'SBCL_HOME' -VariableType 'Machine'
 Uninstall-BinFile -Name 'sbcl' -Path $target
 
-$shortcut = Join-Path [environment]::GetFolderPath([environment+specialfolder]::Programs) 'sbcl'
+$shortcut = Join-Path ([environment]::GetFolderPath([environment+specialfolder]::Programs)) -ChildPath 'sbcl.lnk'
 Remove-Item $shortcut -Force
