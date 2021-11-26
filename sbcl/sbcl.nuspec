@@ -20,7 +20,7 @@
     <docsUrl>https://sbcl.sourceforge.io/manual/index.html</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/sbcl/mailman/</mailingListUrl>
     <bugTrackerUrl>https://bugs.launchpad.net/sbcl</bugTrackerUrl>
-    <tags>sbcl commonlisp lisp compiler interpreter runtime steelbanks programming</tags>
+    <tags>sbcl commonlisp lisp compiler interpreter runtime programming</tags>
     <summary>Steel Bank Common Lisp</summary>
     <description>
         Steel Bank Common Lisp (SBCL) is a high performance Common Lisp
