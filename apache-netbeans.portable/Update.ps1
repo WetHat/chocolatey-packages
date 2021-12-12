@@ -43,7 +43,7 @@ function global:au_GetLatest {
     # Find the release notes link
     $releaseNotesUrl = $versionsPage.links `
     | ForEach-Object { $_.href } `
-    | Where-Object { $_ -match 'nb\d+/index\.html$' } `
+    | Where-Object { $_ -match 'nb\d+/$' } `
     | Select-Object -First 1
     
 
