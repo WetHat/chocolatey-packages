@@ -2,7 +2,7 @@
   [string]$source = 'WetHat.dev'
 )
 
-Write-Information "Updating $source package repository" -InformationAction Continue
+Write-Information "*** Updating $source package repository" -InformationAction Continue
 
 $sourceLocation = choco source list | Where-Object {
                     $_.StartsWith($source) } `
@@ -26,7 +26,7 @@ foreach ($package in $devPackages) {
     }
 }
 
-Write-Information 'Pushing Chocolatey packages (choco push)' -InformationAction Continue
+Write-Information '*** Pushing Chocolatey packages (choco push)' -InformationAction Continue
 
 $chocoPackages = @(
     'apache-netbeans.portable'
