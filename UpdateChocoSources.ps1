@@ -30,10 +30,10 @@ Write-Information '*** Pushing Chocolatey packages (choco push)' -InformationAct
 
 $chocoPackages = @(
     'apache-netbeans.portable'
-    'free42'
     'instantwordpress'
     'sbcl'
     'ssd-z.portable'
+    'free42'
 )
 
 foreach ($package in $chocoPackages) {
