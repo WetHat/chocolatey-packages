@@ -1,5 +1,5 @@
 ﻿$packageID           = 'apache-netbeans.portable'
-$url                 = 'https://downloads.apache.org/netbeans/netbeans/12.6/netbeans-12.6-bin.zip'
+$url                 = 'https://downloads.apache.org/netbeans/netbeans/13/netbeans-13-bin.zip'
 $shortcutLocation    = 'Portable Apps (Chocolatey)'
 $shortcutName        = 'Apache Netbeans.lnk'
 $shortcutDescription = 'Apache NetBeans development environment, tooling platform, and application framework.'
@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      '95ea3f8aab954ee44e68ee2f2a8828e46f91fda86efa9312b1186e7736ab8b49' `
+                             -Checksum      '59d8d57410c27429135a1594262673c6e07f47972b4f05f08225c9b56e2f6bd0' `
                              -ChecksumType  'sha256'
 $targetBasename = 'netbeans'
 if (Get-OSArchitectureWidth -compare 64)
