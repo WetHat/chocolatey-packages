@@ -56,9 +56,16 @@ function global:au_GetLatest {
     ## the url looks like: https://www.apache.org/dyn/closer.cgi/netbeans/netbeans/11.1/netbeans-11.1-bin.zip
 
     $file = $mirrorPageUrl -split '/' | Select-Object -Last 1
-    $version = [regex]::Match($file,'[\d.]+').value.trim('.')
+    [string]$version = [regex]::Match($file,'[\d.]+').value.trim('.')
    
-    @{ URL32 = "https://downloads.apache.org/netbeans/netbeans/${version}/netbeans-${version}-bin.zip"
+    $url = "https://downloads.apache.org/netbeans/netbeans/${version}/netbeans-${version}-bin.zip"
+
+    # make sure the version is well formed
+    if (!$version.Contains('.')) {
+      $version += '.0'
+    }
+
+    @{ URL32 = $url
        Version = $version
        ChecksumType32 = 'sha256'
        ReleaseNotesURL = "https://netbeans.apache.org${releaseNotesUrl}"
