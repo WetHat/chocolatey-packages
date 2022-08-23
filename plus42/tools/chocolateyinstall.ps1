@@ -1,8 +1,8 @@
-﻿$packageID           = 'free42'
+﻿$packageID           = 'plus42'
 $url                 = 'https://thomasokken.com/plus42/download/Plus42Windows.zip'
 $shortcutLocation    = 'Portable Apps (Chocolatey)'
-$shortcutName        = 'HP-42S.lnk'
-$shortcutDescription = 'HP-42S Calculator Simulator.'
+$shortcutName        = 'HP-42SE.lnk'
+$shortcutDescription = 'HP-42S Enhanced Calculator Simulator.'
 
 $ErrorActionPreference = 'Stop'; # stop on all errors
 $appBase        = Split-Path -Parent `
@@ -16,7 +16,7 @@ Install-ChocolateyZipPackage -packageName   $packageID `
                              -Checksum      '65861dc322ec2c175416f5946390dc46361517e9aa7fd8fdf51365ce85581387' `
                              -ChecksumType  'sha256'
 
-$targetBasename = 'Free42Decimal'
+$targetBasename = 'Plus42Decimal'
 
 Write-Host "Creating shortcut for $targetBasename"
 
@@ -55,7 +55,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 
 $skins = Join-Path -Path $appBase -ChildPath 'skins'
 $appdata = Join-Path -Path ([environment]::GetFolderPath([environment+specialfolder]::ApplicationData)) `
-                     -ChildPath 'Free42'
+                     -ChildPath 'Plus42'
 
 New-Item -Path $appdata -ItemType Directory -ErrorAction:SilentlyContinue
 
