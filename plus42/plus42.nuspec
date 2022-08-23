@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+
+    <id>plus42</id>
+    <version>1.0.10</version>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/plus42</packageSourceUrl>
+    <owners>WetHat</owners>
+
+    <title>Plus42 (Portable)</title>
+    <authors>Thomas Okken</authors>
+    <projectUrl>https://thomasokken.com/plus42/</projectUrl>
+
+    <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/plus42/hp42s192x192.png</iconUrl>
+
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/thomasokken/plus42desktop</projectSourceUrl>
+
+    <docsUrl>https://thomasokken.com/plus42/#doc</docsUrl>
+    <bugTrackerUrl>https://github.com/thomasokken/plus42desktop/issues</bugTrackerUrl>
+    <tags>hp42s calculator simulation portable</tags>
+    <summary>An Enhanced HP-42S Calculator Simulator</summary>
+    <description>
+        Plus42 is an advanced scientific programmable calculator app. It simulates the
+        Hewlett-Packard 42S calculator, with many features added on top, to give it
+        power closer to the RPL calculators by HP, but without sacrificing the familiar
+        RPN programming style many users prefer.
+    </description>
+    <releaseNotes>https://thomasokken.com/plus42/history.html</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+      <dependency id="vcredist2017" version="14.10.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="skins\**" target="skins" />
+  </files>
+</package>

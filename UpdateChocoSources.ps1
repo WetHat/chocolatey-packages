@@ -14,6 +14,7 @@ $sourceLocation = choco source list | Where-Object {
 $devPackages = @(
     'jd-gui.portable'
     'testdisk-photorec.portable'
+    'plus42'
 )
 
 # Process all folders and move dev packages to the given source
