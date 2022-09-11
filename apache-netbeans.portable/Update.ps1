@@ -34,7 +34,7 @@ function global:au_GetLatest {
     # Find the download page for the latest version
     $downloadPageurl = $versionsPage.links `
     | ForEach-Object { $_.href } `
-    | Where-Object { $_ -match 'nb\d+\.html$' } `
+    | Where-Object { $_ -match '/nb\d+/$' } `
     | Select-Object -First 1
    
     # the url looks like: '/download/nb111/nb111.html'
