@@ -27,7 +27,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/icons/licensecrawler128x128.png</iconUrl>
-    <releaseNotes>http://www.klinzmann.name/licensecrawler.htm</releaseNotes>
+    <releaseNotes>http://www.klinzmann.name/licensecrawler_history.htm</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/licensecrawler.portable</packageSourceUrl>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
@@ -36,7 +36,7 @@
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <!-- =============================== -->
     <dependencies>
-      <dependency id="chocolatey" version="0.9.9.0" />
+      <dependency id="chocolatey" version="0.9.10.0" />
     </dependencies>
   </metadata>
   <files>
