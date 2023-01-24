@@ -4,7 +4,7 @@
   <metadata>
     <id>licensecrawler.portable</id>
     <title>LicenseCrawler (Portable)</title>
-    <version>2.08.2731</version>
+    <version>2.09.2736</version>
     <authors>Martin Klinzmann</authors>
     <owners>WetHat</owners>
     <summary>LicenseCrawler can discover application product keys, serial numbers, or licensess</summary>
@@ -27,6 +27,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/icons/licensecrawler128x128.png</iconUrl>
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>-->
     <releaseNotes>http://www.klinzmann.name/licensecrawler_history.htm</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/licensecrawler.portable</packageSourceUrl>
