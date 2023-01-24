@@ -1,5 +1,5 @@
 import-module au
-$releases = 'https://github.com/WetHat/OnenoteTaggingKit/releases'
+$releases = 'https://github.com/WetHat/OnenoteTaggingKit/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -12,19 +12,17 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 
-    $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $latest = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $url32 = $downloadPage.links `
+    $self = $latest.links `
     | ForEach-Object { $_.href } `
-    | Where-Object { $_ -like '*.msi' } `
+    | Where-Object { $_ -like '*/tag/v*' } `
     | Select-Object -First 1
 
-    # the url looks like '/WetHat/OnenoteTaggingKit/releases/download/v3.6/SetupTaggingKitWiX.3.6.7210.24294.msi'
-    $msi = $url32 -split '/' | Select-Object -Last 1
-
-    $version = [regex]::Match($msi,'[\d.]+').value.trim('.')
+    # the url looks like '/WetHat/OnenoteTaggingKit/releases/tag/v3.6'
+    $version = [regex]::Match($self,'[\d.]+').value.trim('.')
     
-    @{ URL32 = "https://github.com$url32"; Version = $version ; ChecksumType32 = 'sha256' }
+    @{ URL32 = "https://github.com/WetHat/OnenoteTaggingKit/releases/download/v${version}/SetupTaggingKitWiX.${version}.msi"; Version = $version ; ChecksumType32 = 'sha256' }
 }
 
 update-package -ChecksumFor 32
