@@ -15,6 +15,7 @@ $devPackages = @(
     'jd-gui.portable'
     'testdisk-photorec.portable'
     'plus42'
+    'licensecrawler.portable'
 )
 
 # Process all folders and move dev packages to the given source
@@ -45,7 +46,7 @@ foreach ($package in $chocoPackages) {
          $version = $nuspecXML.package.metadata.version
          $nupkg="${package}/${package}.$version.nupkg"
          if (Test-Path -Path $nupkg) {
-            choco push $nupkg --api-key 'asd'
+            choco push $nupkg --api-key '028c9509-dee4-493b-b2c2-3a8387732bb5'
             if ($?) {
                 Write-Information "$nupkg -> Chocolatey" -InformationAction Continue
                 Remove-Item -Path $nupkg
@@ -55,6 +56,5 @@ foreach ($package in $chocoPackages) {
         } else {
             Write-Information "No nupkg found for version $version of package '$package'" -InformationAction Continue
         }
-
     }
 }
