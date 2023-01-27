@@ -36,6 +36,7 @@ $chocoPackages = @(
     'sbcl'
     'ssd-z.portable'
     'free42'
+    'onenote-taggingkit-addin.install'
 )
 
 foreach ($package in $chocoPackages) {
