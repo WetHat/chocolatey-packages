@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nirsoft-ntfslinksview.portable</id>
-    <title>LicenseCrawler (Portable)</title>
+    <title>NTFSLinksView (Portable)</title>
     <version>1.33</version>
     <authors>NirSoft</authors>
     <owners>WetHat</owners>
