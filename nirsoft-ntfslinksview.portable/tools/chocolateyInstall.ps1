@@ -42,8 +42,7 @@ Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
       Install-ChocolateyShortcut -ShortcutFilePath $shortcut `
                                  -Targetpath $exe.FullName `
                                  -WorkingDirectory $exe.DirectoryName `
-                                 -Description $shortcutDescription `
-                                 -RunAsAdmin
+                                 -Description $shortcutDescription
     }
     else
     {
