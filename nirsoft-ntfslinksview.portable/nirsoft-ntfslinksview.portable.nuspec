@@ -22,7 +22,7 @@
     <copyright>Copyright © 2009 - 2022 Nir Sofer</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/icons/ntfslink.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/icons/ntfslinksview_icon.gif</iconUrl>
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://www.nirsoft.net/utils/ntfs_links_view.html</licenseUrl>
     <releaseNotes>https://www.nirsoft.net/utils/ntfs_links_view.html</releaseNotes>
