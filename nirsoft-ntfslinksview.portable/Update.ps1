@@ -4,10 +4,10 @@ $releases = 'https://www.nirsoft.net/utils/ntfs_links_view.html'
 function global:au_SearchReplace {
     @{
        '.\tools\chocolateyInstall.ps1' = @{
-            '(?i)(\s*\$url\s+=\s+'')[^'']+'      = "`${1}$($Latest.URL32)"
-            '(?i)(-Checksum\s+'')[^'']*'         = "`${1}$($Latest.Checksum32)"
-            '(?i)(\s*\$url64Bit\s+=\s+'')[^'']+' = "`${1}$($Latest.URL64)"
-            '(?i)(-Checksum64\sb'')[^'']*'       = "`${1}$($Latest.Checksum64)"
+            '(?i)(\s*\$url32\s*=\s*'')[^'']+' = "`${1}$($Latest.URL32)" 
+            '(?i)(\s*\$url64\s*=\s*'')[^'']+' = "`${1}$($Latest.URL64)"
+            '(?i)(-Checksum\s*'')[^'']*'      = "`${1}$($Latest.Checksum32)"
+            '(?i)(-Checksum64\s*'')[^'']*'    = "`${1}$($Latest.Checksum64)"
         }
      }
 }
@@ -21,12 +21,12 @@ function global:au_GetLatest {
     
     $url32 = $downloadPage.links `
     | ForEach-Object { $_.href } `
-    | Where-Object { $_ -match 'ntfslinkview\.zip' } `
+    | Where-Object { $_ -match 'ntfslinksview\.zip' } `
     | Select-Object -First 1
 
-    $url32 = $downloadPage.links `
+    $url64 = $downloadPage.links `
     | ForEach-Object { $_.href } `
-    | Where-Object { $_ -match 'ntfslinkview-64\.zip' } `
+    | Where-Object { $_ -match 'ntfslinksview-x64\.zip' } `
     | Select-Object -First 1
     
     @{ 
@@ -37,4 +37,4 @@ function global:au_GetLatest {
         Version = $version }
 }
 
-update-package -ChecksumFor 32  # do not call chocolateyInstall to genereate checksum
+update-package -ChecksumFor all  # do not call chocolateyInstall to genereate checksum
