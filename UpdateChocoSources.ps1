@@ -20,10 +20,10 @@ $chocoPackages = @(
 # The list of packages for the local repository.
 ################################################
 $devPackages = @(
-    'jd-gui.portable'
     'testdisk-photorec.portable'
     'plus42'
     'licensecrawler.portable'
+    'nirsoft-ntfslinksview.portable'
 )
 
 ####################################################
