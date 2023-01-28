@@ -10,6 +10,7 @@ Project WordfileW=
 Project TpFileW=
 FilterW=*
 Create Tagfile=0
+Filter Dot Files=0
 [FilesW]
 0=.\
 [GroupFilterW]
@@ -341,3 +342,5 @@ Capture Unicode24=0
 Save Active File24=1
 [FilesU]
 0=.+AFw-
+[Group FilterU]
+.+AFw-=.gitignore+ADsAKg-.ps+ACoAOwAq-.txt+ADsAKg-.nuspec

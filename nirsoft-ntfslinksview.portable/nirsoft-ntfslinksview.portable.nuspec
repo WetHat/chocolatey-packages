@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nirsoft-ntfslinksview.portable</id>
+    <title>LicenseCrawler (Portable)</title>
+    <version>0.0.0</version>
+    <authors>NirSoft</authors>
+    <owners>WetHat</owners>
+    <summary>
+        Shows a list of all symbolic links and junctions in the specified folder, and their target paths.
+    </summary>
+    <description>
+        Starting from Windows Vista, Microsoft uses symbolic links and junction points of NTFS file system
+        in order to make changes in the folders structure of Windows and keep the compatibility of
+        applications written for older versions of Windows. This utility simply shows you a list of all
+        symbolic links and junctions in the specified folder, and their target paths. It also allows you
+        to save the symbolic links/junctions list into text/html/xml/csv file.
+    </description>
+    <projectUrl>https://www.nirsoft.net/utils/ntfs_links_view.html</projectUrl>
+    <tags>NTFS SymbolicLink Junction DiskUtility Sysadmin MSWindows</tags>
+    <copyright>Copyright © 2009 - 2022 Nir Sofer</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/icons/ntfslink.png</iconUrl>
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <licenseUrl>https://www.nirsoft.net/utils/ntfs_links_view.html</licenseUrl>
+    <releaseNotes>https://www.nirsoft.net/utils/ntfs_links_view.html</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/nirsoft</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>https://www.nirsoft.net/utils/ntfs_links_view.html</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.10.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
