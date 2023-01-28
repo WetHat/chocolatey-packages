@@ -24,6 +24,7 @@ $devPackages = @(
     'plus42'
     'licensecrawler.portable'
     'nirsoft-ntfslinksview.portable'
+    'nirsoft-alternatestreamview.portable'
     'mitec-registryrecovery.portable'
 )
 
