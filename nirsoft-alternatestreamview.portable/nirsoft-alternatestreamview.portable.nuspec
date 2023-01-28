@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nirsoft-alternatestreamview.portable</id>
+    <title>AlternateStreamView (Portable)</title>
+    <version>1.58</version>
+    <authors>NirSoft</authors>
+    <owners>WetHat</owners>
+    <summary>
+        Scan a NTFS drive, and find all hidden alternate streams stored in the file system.
+    </summary>
+    <description>
+        AlternateStreamView is a small utility that allows you to scan your NTFS drive, and
+        find all hidden alternate streams stored in the file system. After scanning and finding
+        the alternate streams, you can extract these streams into the specified folder,
+        delete unwanted streams, or save the streams list into text/html/csv/xml file.
+    </description>
+    <projectUrl>https://www.nirsoft.net/utils/alternate_data_streams.html</projectUrl>
+    <tags>NTFS AlternateStream DiskUtility Sysadmin MSWindows</tags>
+    <copyright>© 2009 - 2023 Nir Sofer</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://rawcdn.githack.com/WetHat/chocolatey-packages/master/icons/alternatestreamview_icon.gif</iconUrl>
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <licenseUrl>https://www.nirsoft.net/utils/alternate_data_streams.html</licenseUrl>
+    <releaseNotes>https://www.nirsoft.net/utils/alternate_data_streams.html</releaseNotes>
+    <!-- ==== Chocolatey Extensions ==== -->
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/nirsoft-alternatestreamview.portable</packageSourceUrl>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>https://www.nirsoft.net/utils/alternate_data_streams.html</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.10.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
