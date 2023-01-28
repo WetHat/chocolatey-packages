@@ -12,13 +12,14 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -PackageName  $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      'D19D3AE2F7A5CBA6359C3D20BC7F7049C1C1088CB5DC2B8C0568641D21675D21' `
+                             -Checksum      '7d3d05c5df58fca2d8e10195f588b7c71213e94b1fb29e3a4be092d6b4a20e65' `
                              -ChecksumType  'sha256'
 
+$baseName = if (Get-OSArchitectureWidth -Compere 64) {'WRR64'} else {'WRR'}
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
-    if ($exe.BaseName -eq 'WRR')
+    if ($exe.BaseName -eq $baseName)
     {
       echo '' >"$($exe.FullName).gui"
 
