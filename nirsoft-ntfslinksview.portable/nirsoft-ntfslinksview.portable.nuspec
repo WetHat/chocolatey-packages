@@ -27,7 +27,7 @@
     <licenseUrl>https://www.nirsoft.net/utils/ntfs_links_view.html</licenseUrl>
     <releaseNotes>https://www.nirsoft.net/utils/ntfs_links_view.html</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
-    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/nirsoft</packageSourceUrl>
+    <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/nirsoft-ntfslinksview.portable</packageSourceUrl>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
     <docsUrl>https://www.nirsoft.net/utils/ntfs_links_view.html</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
