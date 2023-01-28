@@ -1,5 +1,5 @@
 import-module au
-$releases = 'https://github.com/java-decompiler/jd-gui/releases'
+$releases = 'https://github.com/java-decompiler/jd-gui/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -18,17 +18,17 @@ function global:au_GetLatest {
 
     $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $url32 = $downloadPage.links `
+    $latest = $downloadPage.links `
     | ForEach-Object { $_.href } `
-    | Where-Object { $_ -match '\d\.jar' } `
+    | Where-Object { $_ -match '/tag/v\d' } `
     | Select-Object -First 1
 
-    # the url looks like '/java-decompiler/jd-gui/releases/download/v1.6.3/jd-gui-1.6.3.jar'
-    $file = $url32 -split '/' | Select-Object -Last 1 
+    # the url looks like '/java-decompiler/jd-gui/releases/tag/v1.6.6'
 
-    $version = [regex]::Match($file,'[\d.]+').value.trim('.')
-    
-    @{ URL32 = "https://github.com$url32"; Version = $version ; ChecksumType32 = 'sha256' }
+    $version = [regex]::Match($latest,'[\d.]+').value.trim('.')
+
+
+    @{ URL32 = "https://github.com/java-decompiler/jd-gui/releases/download/v${version}/jd-gui-${version}.jar"; Version = $version ; ChecksumType32 = 'sha256' }
 }
 
 update-package -ChecksumFor none # do not call chocolateyInstall to genereate checksum
