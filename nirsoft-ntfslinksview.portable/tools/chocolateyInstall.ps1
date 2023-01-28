@@ -22,7 +22,7 @@ Install-ChocolateyZipPackage -PackageName    $packageName `
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
 | ForEach-Object {
     [System.IO.FileInfo]$exe = Join-Path -Path $installlocation -ChildPath $_
-    if ($exe.BaseName -eq 'LicenseCrawler')
+    if ($exe.BaseName -eq 'NTFSLinksView')
     {
       echo '' >"$($exe.FullName).gui"
 
