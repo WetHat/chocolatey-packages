@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>apache-netbeans.portable</id>
-    <version>16.0</version>
+    <version>17.0</version>
     <owners>WetHat</owners>
     <title>Apache Netbeans (Portable)</title>
     <authors>Apache Netbeans Team</authors>
@@ -38,7 +38,7 @@ In order to use Apache Netbeans it is required to also have one of the following
 * adoptopenjdk, adoptopenjdk8, adoptopenjdk11, adoptopenjdk12, adoptopenjdk13
 * zulu, zulu8, zulu9, zulu10, zulu12, zulu13
     </description>
-    <releaseNotes>https://netbeans.apache.org/download/nb16/</releaseNotes>
+    <releaseNotes>https://netbeans.apache.org/download/nb17/</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/apache-netbeans.portable</packageSourceUrl>
     <projectSourceUrl>https://github.com/apache/incubator-netbeans</projectSourceUrl>
