@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -PackageName  $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      '7d3d05c5df58fca2d8e10195f588b7c71213e94b1fb29e3a4be092d6b4a20e65' `
+                             -Checksum      'ff1ab6602f4e960d4eec835e8b5f69f99289006826796ac10ae1cd703c24c046' `
                              -ChecksumType  'sha256'
 
 $baseName = if (Get-OSArchitectureWidth -Compere 64) {'WRR64'} else {'WRR'}
