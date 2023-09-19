@@ -60,7 +60,7 @@ foreach ($package in $chocoPackages) {
          $version = $nuspecXML.package.metadata.version
          $nupkg="${package}/${package}.$version.nupkg"
          if (Test-Path -Path $nupkg) {
-            choco push $nupkg --api-key $apikey
+            choco push $nupkg --api-key $apikey --source=https://push.chocolatey.org/
             if ($?) {
                 Write-Information "$nupkg -> Chocolatey" -InformationAction Continue
                 Remove-Item -Path $nupkg
