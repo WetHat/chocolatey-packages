@@ -37,6 +37,12 @@ In order to use Apache Netbeans it is required to also have one of the following
 * openjdk, openjdk11, openjdk12, openjdk13
 * adoptopenjdk, adoptopenjdk8, adoptopenjdk11, adoptopenjdk12, adoptopenjdk13
 * zulu, zulu8, zulu9, zulu10, zulu12, zulu13
+
+**Note**: For non-Oracle JDKs it might be necessary to configure ist location by setting the
+`netbeans_jdkhome` property in file
+`C:/ProgramData/chocolatey/lib/apache-netbeans.portable/App/netbeans/etc/netbeans.conf`
+
+Example: `netbeans_jdkhome="C:/Program Files/OpenJDK/jdk-13.0.2"`
     </description>
     <releaseNotes>https://netbeans.apache.org/download/nb19/</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
