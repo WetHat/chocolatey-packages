@@ -12,7 +12,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -PackageName   $packageName `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      'f960cdfff41f0cbd414c7d93a1c8a8a6da9a6cedd766431940038979014d377e' `
+                             -Checksum      '0f8759644ca9de07e305dff26ff28e4fa629ac4c51c1701b2c90533dab315735' `
                              -ChecksumType  'sha256'
 
 Get-ChildItem -Name $installlocation -filter '*.exe' -Recurse `
