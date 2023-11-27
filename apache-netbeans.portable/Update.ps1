@@ -1,5 +1,5 @@
 import-module au
-$releases = 'https://netbeans.apache.org/download/index.html'
+$releases = 'https://netbeans.apache.org/front/main/download/index.html'
 
 function Test-Url([string] $Url)
 {
@@ -34,8 +34,9 @@ function global:au_GetLatest {
     # Find the download page for the latest version
     $downloadPageurl = $versionsPage.links `
     | ForEach-Object { $_.href } `
-    | Where-Object { $_ -match '/nb\d+/$' } `
-    | Select-Object -First 1
+    | Where-Object { $_ -match '/nb\d+$' } `
+    | Select-Object -First 1 `
+    
    
     # the url looks like: '/download/nb111/nb111.html'
     $downloadPage = Invoke-WebRequest -Uri "https://netbeans.apache.org/${downloadPageurl}" -UseBasicParsing
