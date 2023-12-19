@@ -65,7 +65,7 @@ function global:au_GetLatest {
 
     # make sure the version is well formed
     if (!$version.Contains('.')) {
-      $chocoversion = $version + '.0'
+      $chocoversion = $version + '.0.0'
     }
 
     @{ URL32 = $url

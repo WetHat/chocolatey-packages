@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>apache-netbeans.portable</id>
-    <version>20.0</version>
+    <version>20.0.0</version>
     <owners>WetHat</owners>
     <title>Apache Netbeans (Portable)</title>
     <authors>Apache Netbeans Team</authors>
