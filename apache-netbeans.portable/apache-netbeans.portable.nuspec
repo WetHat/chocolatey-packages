@@ -49,7 +49,7 @@ Example: `netbeans_jdkhome="C:/Program Files/OpenJDK/jdk-13.0.2"`
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/apache-netbeans.portable</packageSourceUrl>
     <projectSourceUrl>https://github.com/apache/incubator-netbeans</projectSourceUrl>
     <docsUrl>https://netbeans.apache.org/help/index.html#documentation</docsUrl>
-    <mailingListUrl>https://netbeans.apache.org/community/mailing-lists.html</mailingListUrl>
+    <mailingListUrl>https://netbeans.apache.org/front/main/community/mailing-lists</mailingListUrl>
     <bugTrackerUrl>https://netbeans.apache.org/participate/report-issue.html</bugTrackerUrl>
     <!-- =============================== -->
     <dependencies>
