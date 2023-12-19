@@ -36,40 +36,42 @@ function global:au_GetLatest {
     | ForEach-Object { $_.href } `
     | Where-Object { $_ -match '/nb\d+$' } `
     | Select-Object -First 1 `
-    
-   
+
+
     # the url looks like: '/download/nb111/nb111.html'
     $downloadPage = Invoke-WebRequest -Uri "https://netbeans.apache.org/${downloadPageurl}" -UseBasicParsing
-    
+
     # Find the release notes link
     $releaseNotesUrl = $versionsPage.links `
     | ForEach-Object { $_.href } `
     | Where-Object { $_ -match 'nb\d+/$' } `
     | Select-Object -First 1
-    
 
-    # Find link to a page listing the mirrors that can be used to download that version 
+
+    # Find link to a page listing the mirrors that can be used to download that version
     $mirrorPageUrl = $downloadPage.links `
     | ForEach-Object { $_.href } `
     | Where-Object { $_ -match 'http.*-bin\.zip$' } `
     | Select-Object -First 1
-    
+
     ## the url looks like: https://www.apache.org/dyn/closer.cgi/netbeans/netbeans/11.1/netbeans-11.1-bin.zip
 
     $file = $mirrorPageUrl -split '/' | Select-Object -Last 1
     [string]$version = [regex]::Match($file,'[\d.]+').value.trim('.')
-   
+
     $url = "https://downloads.apache.org/netbeans/netbeans/${version}/netbeans-${version}-bin.zip"
+
+    $chocoversion = $version
 
     # make sure the version is well formed
     if (!$version.Contains('.')) {
-      $version += '.0'
+      $chocoversion = $version + '.0'
     }
 
     @{ URL32 = $url
-       Version = $version
+       Version = $chocoversion
        ChecksumType32 = 'sha256'
-       ReleaseNotesURL = "https://netbeans.apache.org${releaseNotesUrl}"
+       ReleaseNotesURL = "https://github.com/apache/netbeans/releases/tag/$version"
      }
 }
 
