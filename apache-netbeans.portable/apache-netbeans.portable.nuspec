@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>apache-netbeans.portable</id>
-    <version>20.0.0</version>
+    <version>21.0.0</version>
     <owners>WetHat</owners>
     <title>Apache Netbeans (Portable)</title>
     <authors>Apache Netbeans Team</authors>
@@ -44,7 +44,7 @@ In order to use Apache Netbeans it is required to also have one of the following
 
 Example: `netbeans_jdkhome="C:/Program Files/OpenJDK/jdk-13.0.2"`
     </description>
-    <releaseNotes>https://github.com/apache/netbeans/releases/tag/20</releaseNotes>
+    <releaseNotes>https://github.com/apache/netbeans/releases/tag/21</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/apache-netbeans.portable</packageSourceUrl>
     <projectSourceUrl>https://github.com/apache/incubator-netbeans</projectSourceUrl>
