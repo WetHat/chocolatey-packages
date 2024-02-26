@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>testdisk-photorec.portable</id>
     <title>TestDisk &amp; PhotoRec (Portable)</title>
-    <version>7.1</version>
+    <version>7.2</version>
     <authors>CGSecurity</authors>
     <owners>WetHat</owners>
     <summary>Data recovery software</summary>
@@ -26,7 +26,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>https://cdn.statically.io/gh/WetHat/chocolatey-packages/897c4404/testdisk-photorec.portable/testdisk128x128.png</iconUrl>
-    <releaseNotes>https://www.cgsecurity.org/wiki/TestDisk_7.1_Release</releaseNotes>
+    <releaseNotes>https://www.cgsecurity.org/wiki/TestDisk_7.2_Release</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/testdisk-photorec.portable</packageSourceUrl>
     <projectSourceUrl>https://git.cgsecurity.org/cgit/testdisk/</projectSourceUrl>
