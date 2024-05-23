@@ -5,7 +5,7 @@
   <metadata>
 
     <id>plus42</id>
-    <version>1.1.10</version>
+    <version>1.1.11</version>
     <packageSourceUrl>https://github.com/WetHat/chocolatey-packages/tree/master/plus42</packageSourceUrl>
     <owners>WetHat</owners>
 
