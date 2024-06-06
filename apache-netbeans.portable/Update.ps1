@@ -58,9 +58,7 @@ function global:au_GetLatest {
 
     $file = $mirrorPageUrl -split '/' | Select-Object -Last 1
     [string]$version = [regex]::Match($file,'[\d.]+').value.trim('.')
-
-    $url = "https://downloads.apache.org/netbeans/netbeans/${version}/netbeans-${version}-bin.zip"
-
+    $url = "https://archive.apache.org/dist/netbeans/netbeans/${version}/netbeans-${version}-bin.zip"
     $chocoversion = $version
 
     # make sure the version is well formed

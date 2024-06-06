@@ -29,20 +29,13 @@ There is no direct upgrade path between Oracle Netbeans and Apache Netbean hence
 chocolatey package had to be created.
 
 **Note**: This package does not depend on a particular jdk since there are so many of them now.
-In order to use Apache Netbeans it is required to also have one of the following jdks
-(Chocolatey package IDs) installed:
-
-* jdk8, jdk11
-* openjdk.portable
-* openjdk, openjdk11, openjdk12, openjdk13
-* adoptopenjdk, adoptopenjdk8, adoptopenjdk11, adoptopenjdk12, adoptopenjdk13
-* zulu, zulu8, zulu9, zulu10, zulu12, zulu13
+Apache Netbeans binary releases require JDK 17+, and officially support running on JDK 17, 21 and 22.
 
 **Note**: For non-Oracle JDKs it might be necessary to configure ist location by setting the
 `netbeans_jdkhome` property in file
 `C:/ProgramData/chocolatey/lib/apache-netbeans.portable/App/netbeans/etc/netbeans.conf`
 
-Example: `netbeans_jdkhome="C:/Program Files/OpenJDK/jdk-13.0.2"`
+Example: `netbeans_jdkhome="C:/Program Files/OpenJDK/jdk-17.0.2"`
     </description>
     <releaseNotes>https://github.com/apache/netbeans/releases/tag/22</releaseNotes>
     <!-- ==== Chocolatey Extensions ==== -->
