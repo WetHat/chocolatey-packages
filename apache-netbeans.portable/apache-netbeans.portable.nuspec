@@ -3,18 +3,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>apache-netbeans.portable</id>
-    <version>22.0.0</version>
+    <version>22.0.1</version>
     <owners>WetHat</owners>
-    <title>Apache Netbeans (Portable)</title>
+    <title>[Deprecated] Apache Netbeans (Portable)</title>
     <authors>Apache Netbeans Team</authors>
     <projectUrl>https://netbeans.apache.org</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/WetHat/chocolatey-packages/843e59f3/apache-netbeans.portable/ApacheNetBeans444x512.png</iconUrl>
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://github.com/apache/incubator-netbeans/blob/9.0-vc3/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>netbeans.portable netbeans portable Java IDE JavaScript PHP HTML5 CSS HTML Development</tags>
     <summary>NetBeans is an open source development environment, tooling platform, and application framework.</summary>
     <description>
+Maintentance of the original netbeans package (https://community.chocolatey.org/packages/NetBeans) has resumend and that this package is now redundant.
+To avoid confusion this package is deprecated and installs the original `netbeans` package on upgrade.
+
 Apache NetBeans is an integrated development environment for Java. NetBeans allows applications
 to be developedfrom a set of software components called modules.
 NetBeans runs on Microsoft Windows, macOS, Linux and Solaris.
@@ -47,9 +49,8 @@ Example: `netbeans_jdkhome="C:/Program Files/OpenJDK/jdk-17.0.2"`
     <!-- =============================== -->
     <dependencies>
       <dependency id="chocolatey" version="0.9.10.0" />
+      <dependency id="netbeans"/>
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files/>
 </package>
