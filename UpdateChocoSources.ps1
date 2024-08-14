@@ -8,7 +8,6 @@
 # The list of packages for Chocolatey.
 ######################################
 $chocoPackages = @(
-    'apache-netbeans.portable'
     'instantwordpress'
     'sbcl'
     'ssd-z.portable'
