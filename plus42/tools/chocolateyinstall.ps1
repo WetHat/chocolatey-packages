@@ -13,7 +13,7 @@ $shortcutRegistry    = Join-Path -Path $appBase -ChildPath 'shortcuts.txt'
 Install-ChocolateyZipPackage -packageName   $packageID `
                              -Url           $url `
                              -UnzipLocation $installlocation `
-                             -Checksum      '25a2b9ae6ad040126a44efeeb1f07b09df957e5bd6182a88313d41e0c73f1391' `
+                             -Checksum      '65ca841e335c9f0226334f303c6f75da8bb1ba90407e1d331c5d888f2bf8ad8e' `
                              -ChecksumType  'sha256'
 
 $targetBasename = 'Plus42Decimal'
