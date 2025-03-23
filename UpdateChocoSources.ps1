@@ -13,6 +13,7 @@ $chocoPackages = @(
     'ssd-z.portable'
     'free42'
     'onenote-taggingkit-addin.install'
+    'recuva.portable'
 )
 
 ################################################

@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>recuva.portable</id>
     <title>[Deprecated] Recuva File Recovery (Portable)</title>
-    <version>1.53.1087.20191004</version>
+    <version>1.53.1087.20191005</version>
     <authors>Piriform</authors>
     <owners>WetHat</owners>
     <summary>Recuva File Recovery. Portable and adware free</summary>
@@ -26,7 +26,7 @@
     <bugTrackerUrl>https://forum.piriform.com/index.php?showforum=17</bugTrackerUrl>
     <!-- =============================== -->
     <dependencies>
-      <dependency id="recuva" version="1.53.1087" />
+      <dependency id="recuva"/>
     </dependencies>
   </metadata>
   <files/>
