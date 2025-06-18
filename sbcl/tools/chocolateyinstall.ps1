@@ -4,9 +4,9 @@ $toolsDir   = Split-Path -parent $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
-  url           = 'http://prdownloads.sourceforge.net/sbcl/sbcl-2.5.4-x86-64-windows-binary.msi'
+  url           = 'http://prdownloads.sourceforge.net/sbcl/sbcl-2.5.5-x86-64-windows-binary.msi'
   softwareName  = 'Steel Bank Common Lisp*'
-  checksum      = '327c7773278729d6754af52152c350b8f265d5b004a1eb64220c39e0d4f15447'
+  checksum      = 'fd571d1deddf8d421c55203c554e9a40edefb2b1a408a784736a23165ecc7664'
   checksumType  = 'sha256'
 
   # MSI
