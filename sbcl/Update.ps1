@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 
-    $downloadPage = Invoke-WebRequest -Uri $releases
+    $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $url = $downloadPage.links `
     | ForEach-Object { $_.href } `
