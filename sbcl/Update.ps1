@@ -1,5 +1,5 @@
 import-module au
-$releases = 'http://www.sbcl.org/platform-table.html'
+$releases = 'https://www.sbcl.org/platform-table.html'
 
 function global:au_SearchReplace {
     @{
@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 
-    $downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $downloadPage = Invoke-WebRequest -Uri $releases
 
     $url = $downloadPage.links `
     | ForEach-Object { $_.href } `
