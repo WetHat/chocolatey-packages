@@ -1,6 +1,6 @@
 import-module au
-$releases = 'http://www.mitec.cz/'
-$download = 'http://www.mitec.cz/Downloads'
+$releases = 'https://www.mitec.cz/wp/mwrr/'
+$download = 'https://www.mitec.cz/wp/files'
 
 function global:au_SearchReplace {
     @{
@@ -12,11 +12,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-
     $releasesPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $version = [regex]::Match($releasesPage.RawContent,'(?<=MiTeC Windows Registry Recovery.*)\d\.[.\d]+').Value
-    
+    $version = [regex]::Match($releasesPage.RawContent,'(?<=Version History.*?)*\d\.[.\d]+').Value
+    echo "$version !!!!" 
     @{ URL32 = "$download/WRR.zip"; Version = $version ; ChecksumType32 = 'sha256' }
 }
 
