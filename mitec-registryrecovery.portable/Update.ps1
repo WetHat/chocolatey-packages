@@ -15,7 +15,6 @@ function global:au_GetLatest {
     $releasesPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $version = [regex]::Match($releasesPage.RawContent,'(?<=Version History.*?)*\d\.[.\d]+').Value
-    echo "$version !!!!" 
     @{ URL32 = "$download/WRR.zip"; Version = $version ; ChecksumType32 = 'sha256' }
 }
 
